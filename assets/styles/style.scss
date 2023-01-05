@@ -1,22 +1,11 @@
-:root {
-    --color-white-100: hsl(206, 5%, 98%);
-    --color-white-200: hsl(206, 5%, 90%);
-    --color-white-300: hsl(206, 5%, 80%);
-    --color-white-400: hsl(206, 5%, 65%);
-    --color-white-500: hsl(206, 5%, 50%);
- 
-    --color-black-100: hsl(213, 23%, 8%);
-    --color-black-200: hsl(214, 21%, 6%);
-    --color-black-300: hsl(210, 21%, 6%);
-    --color-black-400: hsl(216, 22%, 4%);
-    --color-black-500: hsl(220, 18%, 3%);
- 
-    --color-pink-100: hsl(326, 85%, 90%);
-    --color-pink-200: hsl(327, 87%, 80%);
-    --color-pink-300: hsl(329, 86%, 70%);
-    --color-pink-400: hsl(330, 81%, 60%);
-    --color-pink-500: hsl(333, 71%, 50%);
- 
+@import './header';
+
+
+$dark-blue: #003F91;
+$medium-blue: #5DA9E9;
+$light-blue: #F5FBFF;
+
+:root { 
     --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
        0 1px 2px 0 rgba(0, 0, 0, 0.06);
     --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -52,8 +41,8 @@
     font-weight: 400;
     line-height: 1.5;
     height: -webkit-fill-available;
-    color: var(--color-black-500);
-    background-color: var(--color-white-100);
+    color: black;
+    background-color: white;
  }
  
  a,
@@ -67,7 +56,7 @@
  }
 
  .primary-btn{
-    background-color: blue;
+    background-color: $dark-blue;
     width: 5rem;
     height: 2.5rem;
 
@@ -110,7 +99,7 @@
     line-height: 1.25;
     letter-spacing: -1px;
     text-transform: uppercase;
-    color: blue;
+    color: $dark-blue;
  }
  
  // Header
@@ -123,7 +112,6 @@
     z-index: 100;
     margin: 0 auto;
     box-shadow: var(--shadow-medium);
-    background-color: var(--color-white-100);
  }
  
  // Wrapper
@@ -144,14 +132,14 @@
        position: fixed;
        top: 0;
        left: -100%;
-       width: 75%;
+       width: 50%;
        height: 100%;
        z-index: 10;
        opacity: 0;
        overflow-y: auto;
        visibility: hidden;
        box-shadow: var(--shadow-medium);
-       background-color: var(--color-white-100);
+       background-color: white;
        transition: all 0.5s ease;
  
        &.active {
@@ -167,7 +155,7 @@
     &-item {
        position: relative;
        display: inline-block;
-       margin-left: 4rem;
+       margin-left: 2rem;
     }
  
     &-link {
@@ -181,19 +169,20 @@
        line-height: inherit;
        cursor: pointer;
        text-transform: capitalize;
-       color: var(--color-black-500);
+       color: black;
        transition: all 0.3s ease-in-out;
 
        &-tel{
-        color: blue;
+        color: $dark-blue;
 
         &:hover{
-            color: purple;
+            color: $medium-blue;
         }
+
        }
 
        &-btn{
-        background-color: blue;
+        background-color: $dark-blue;
         color: white;
         padding: 10px;
         border-radius: 20px;
@@ -211,7 +200,6 @@
  
        &:hover {
           outline: none;
-          color: var(--color-pink-500);
        }
     }
  
@@ -248,7 +236,7 @@
  // Submenu
  .submenu {
     position: absolute;
-    top: 2.35rem;
+    top: 2.5rem;
     left: -2rem;
     min-width: 10rem;
     height: auto;
@@ -257,9 +245,9 @@
     visibility: hidden;
     transform: translateY(1rem);
     border-radius: 0 0 0.25rem 0.25rem;
-    border-top: 2px solid var(--color-pink-400);
+    border-top: 2px solid $dark-blue;
     box-shadow: var(--shadow-medium);
-    background-color: var(--color-white-100);
+    background-color: $light-blue;
     transition: all 0.3s ease-in-out;
  
     &-item {
@@ -273,12 +261,12 @@
        font-weight: 500;
        line-height: inherit;
        cursor: pointer;
-       color: var(--color-black-500);
+       color: black;
        transition: all 0.35s ease;
  
        &:hover {
           outline: none;
-          color: var(--color-pink-500);
+          color: $dark-blue;
        }
     }
  
@@ -322,7 +310,7 @@
        opacity: 1;
        border: none;
        outline: none;
-       background: var(--color-black-500);
+       background: $dark-blue;
  
        &:nth-child(1) {
           top: 0px;
@@ -354,7 +342,7 @@
     opacity: 0;
     visibility: hidden;
     transition: all 0.35s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: $light-blue;
  
     // Responsive Media Query
     @media only screen and (max-width: 992px) {

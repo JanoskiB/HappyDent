@@ -56,3 +56,20 @@ burgerMenu.addEventListener("click", toggleMenu);
 overlayMenu.addEventListener("click", toggleMenu);
 navbarMenu.addEventListener("click", toggleSubMenu);
 window.addEventListener("resize", resizeWindow);
+
+// Open/close question card
+const cards = document.querySelectorAll('.faq-card');
+
+cards.forEach(card => {
+   const header = card.querySelector('.faq-heading');
+   const content = card.querySelector('.faq-content');
+
+   header.addEventListener('click', () => {
+      if (content.style.display === 'block') {
+         content.style.display = 'none';
+      } else {
+         content.style.display = 'block';
+      }
+   });
+});
+

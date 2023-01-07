@@ -67,7 +67,7 @@ button {
   padding: 2px;
 }
 .primary-btn:hover {
-  background-color: purple;
+  background-color: #5DA9E9;
 }
 
 img,
@@ -399,6 +399,7 @@ h4 {
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 5rem;
+  position: relative;
 }
 .process-section > h2 {
   margin-bottom: 5rem;
@@ -407,9 +408,7 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 50vh;
 }
 .process-section-grid > div > img {
   scale: 0.5;
@@ -425,7 +424,7 @@ h4 {
 .process-section > a {
   margin-left: 45%;
   text-decoration: underline;
-  position: relative;
+  position: absolute;
   bottom: 10rem;
   font-size: 1.5rem;
 }
@@ -704,16 +703,37 @@ h4 {
 
 footer {
   background-color: #003F91;
+  min-height: 40vh;
+  background-image: url(/assets/images/waves.png);
+  background-size: cover;
 }
 footer .footer-grid {
-  width: 80vw;
-  min-height: 80vh;
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-left: 10vw;
+  margin-right: 10vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+footer .footer-grid > div {
+  margin-top: 3rem;
+  line-height: 3rem;
+}
+footer .footer-grid .footer-r {
+  text-align: right;
+}
+footer .footer-grid .footer-r > button {
+  background-color: #F5FBFF;
+  margin-right: 2rem;
+}
+footer .footer-grid .footer-r > button > a {
+  color: #003F91;
+}
+footer .footer-grid .fb-icon {
+  float: right;
+}
 footer .footer-grid > div > a {
+  color: #F5FBFF;
+  text-decoration: underline;
+}
+footer .footer-grid > div > p {
   color: #F5FBFF;
 }/*# sourceMappingURL=style.css.map */

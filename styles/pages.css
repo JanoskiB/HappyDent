@@ -1,3 +1,10 @@
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
 .sub-navigation {
   display: inline-block;
   grid-row: 1/span 6;
@@ -46,6 +53,9 @@
 .faq-header > h1 {
   margin: 0 0 1vh 0;
 }
+.faq-cards-sec {
+  margin-bottom: 2vw;
+}
 .faq-cards-sec > h2 {
   margin: 0;
   font-size: 2rem;
@@ -56,19 +66,19 @@
   grid-template-rows: auto auto;
   width: auto;
   margin-bottom: 1vw;
-  background-color: rgb(255, 255, 255);
-  border-radius: 2%;
-  -webkit-border-radius: 2%;
-  -moz-border-radius: 2%;
-  -ms-border-radius: 2%;
-  -o-border-radius: 2%;
+  padding: 2vh;
+  background-color: #F5FBFF;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 .faq-heading {
   grid-row: 1;
 }
 .faq-heading > h3 {
   margin: 0;
-  padding: 2vh 1vh;
 }
 .faq-arrow {
   grid-row: 1;
@@ -83,9 +93,58 @@
   display: none;
   grid-row: 2;
   grid-column: 1/2;
+  padding: 2vh 0;
 }
 
 .contact {
   padding: 10vh 0;
   text-align: center;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 55vw 20vw;
+  grid-template-rows: auto auto;
+  padding: 10vw;
+  gap: 5vh;
+}
+.contact-booking, .contact-form {
+  background-color: #5DA9E9;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 5vh;
+}
+.contact-booking {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  height: 800px;
+}
+.contact-booking-header {
+  grid-column: 1/span 2;
+}
+.contact-booking-header > p {
+  color: white;
+}
+.contact-info-grid {
+  padding-top: 5vh;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: auto auto auto auto;
+}
+.contact-info-grid-img {
+  height: 1vw;
+  grid-column: 1;
+}
+.contact-info-grid-text {
+  grid-column: 2;
+}
+.contact-info > h2 {
+  grid-column: 1/span 2;
+}
+.contact-form {
+  grid-column: 1/span 2;
+  height: 400px;
 }/*# sourceMappingURL=pages.css.map */

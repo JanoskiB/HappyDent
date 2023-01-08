@@ -1,3 +1,28 @@
+$dark-blue: #003F91;
+$medium-blue: #5DA9E9;
+$light-blue: #F5FBFF;
+$grey: #777676;
+
+$mediaMaxWidth: 1260px;
+$mediaBp1Width: 960px;
+$mediaMinWidth: 480px;
+
+@mixin borderrad {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+// FAQ page
 .sub-navigation {
   display: inline-block;
   grid-row: 1/ span 6;
@@ -19,83 +44,78 @@
 
   // Sub-navigation buttons
   &-btn {
-     display: grid;
-     grid-template-rows: 1fr 1fr;
-     align-items: center;
-     justify-items: center;
-     background-color: rgb(213, 213, 213);
-     color: grey;
-     border-radius: 15%;
-     width: 20vh;
-     height: 20vh;
-     text-align: center;
-     -webkit-border-radius: 15%;
-     -moz-border-radius: 15%;
-     -ms-border-radius: 15%;
-     -o-border-radius: 15%;
-     font-weight: bold;
-     margin-bottom: 3vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(213, 213, 213);
+    color: grey;
+    border-radius: 15%;
+    width: 20vh;
+    height: 20vh;
+    text-align: center;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+    font-weight: bold;
+    margin-bottom: 3vh;
   }
 
   &-btn>img {
-     height: 7vh;
-     align-self: end;
+    height: 7vh;
+    align-self: end;
   }
 
   &-btn>p {
-     font-size: 90%;
+    font-size: 90%;
   }
 
   // FAQ header
   &-header {
-     width: auto;
-     grid-column: 2/ 3;
-     padding-top: 1vh;
-     margin-bottom: 8vh;
+    width: auto;
+    grid-column: 2/ 3;
+    padding-top: 1vh;
+    margin-bottom: 8vh;
   }
 
   &-header>h1 {
-     margin: 0 0 1vh 0;
+    margin: 0 0 1vh 0;
   }
 
-  // &-cards-sec {
-
-  // }
+  &-cards-sec {
+    margin-bottom: 2vw;
+  }
 
   &-cards-sec>h2 {
-     margin: 0;
-     font-size: 2rem;
+    margin: 0;
+    font-size: 2rem;
   }
 
   // cards
   &-card {
-     display: grid;
-     grid-template-columns: auto auto;
-     grid-template-rows: auto auto;
-     width: auto;
-     margin-bottom: 1vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: auto;
+    margin-bottom: 1vw;
+    padding: 2vh;
 
-     background-color: rgb(255, 255, 255);
-      // ! the border is fucked, have to change the structure probably
-     border-radius: 2%;
-     -webkit-border-radius: 2%;
-     -moz-border-radius: 2%;
-     -ms-border-radius: 2%;
-     -o-border-radius: 2%;
+    background-color: $light-blue;
+    @include borderrad()
   }
 
   &-heading {
-     grid-row: 1;
+    grid-row: 1;
   }
 
   &-heading>h3 {
-     margin: 0;
-     padding: 2vh 1vh;
+    margin: 0;
   }
 
   &-arrow {
-     grid-row: 1;
-     grid-column: 2;
+    grid-row: 1;
+    grid-column: 2;
     align-self: center;
 
     &>img {
@@ -106,9 +126,10 @@
 
 
   &-content {
-     display: none;
-     grid-row: 2;
-     grid-column: 1/ 2;
+    display: none;
+    grid-row: 2;
+    grid-column: 1/ 2;
+    padding: 2vh 0;
   }
 
 }
@@ -116,4 +137,70 @@
 .contact {
   padding: 10vh 0;
   text-align: center;
+
+
+  // Contact page
+  &-grid {
+    display: grid;
+    grid-template-columns: 55vw 20vw;
+    grid-template-rows: auto auto;
+    padding: 10vw;
+    gap: 5vh;
+
+
+
+  }
+
+  &-booking,
+  &-form {
+    background-color: $medium-blue;
+    @include borderrad();
+    padding: 5vh;
+  }
+
+  &-booking {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    // ! height only to see how the place will look like
+    height: 800px;
+
+    &-header {
+      grid-column: 1/ span 2;
+
+      &>p {
+        color: white;
+      }
+    }
+  }
+
+  &-info {
+    
+
+    &-grid {
+      padding-top: 5vh;
+      display: grid;
+      grid-template-columns: 20% 80%;
+      grid-template-rows: auto auto auto auto;
+
+      &-img {
+        height: 1vw;
+        grid-column: 1;
+      }
+
+      &-text {
+        grid-column: 2;
+      }
+    }
+
+    &>h2 {
+      grid-column: 1/ span 2;
+    }
+  }
+
+  &-form {
+    grid-column: 1/ span 2;
+    // ! height only to see how the place will look like
+    height: 400px;
+  }
 }

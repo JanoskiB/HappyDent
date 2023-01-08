@@ -138,7 +138,6 @@ video {
    z-index: 100;
    margin: 0 auto;
    padding-top: .5rem;
-   
 }
 
 .top-wrapper {
@@ -156,6 +155,10 @@ video {
    width: 80%;
    height: 3.5rem;
    margin: 0 auto;
+}
+
+.navbar {
+   height: 200px;
 }
 
 .navbar {
@@ -418,7 +421,7 @@ h1 {
 
 h2 {
    color: $dark-blue;
-   font-size: 3rem;
+   font-size: 2rem;
 }
 
 h3 {
@@ -427,6 +430,10 @@ h3 {
    font-size: 1.5rem;
    color: $grey;
    font-weight: 300;
+}
+
+.bodytext {
+   font-size: 1rem;
 }
 
 h4 {

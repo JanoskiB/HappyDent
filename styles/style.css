@@ -140,6 +140,10 @@ video {
   margin: 0 auto;
 }
 
+.navbar {
+  height: 200px;
+}
+
 @media screen and (max-width: 1056px) {
   .navbar {
     position: fixed;
@@ -381,7 +385,7 @@ h1 {
 
 h2 {
   color: #003F91;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h3 {
@@ -390,6 +394,10 @@ h3 {
   font-size: 1.5rem;
   color: #777676;
   font-weight: 300;
+}
+
+.bodytext {
+  font-size: 1rem;
 }
 
 h4 {

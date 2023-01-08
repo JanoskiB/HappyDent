@@ -1,0 +1,119 @@
+.sub-navigation {
+  display: inline-block;
+  grid-row: 1/ span 6;
+}
+
+.faq-grid {
+  // margin: 75px 10vw 0 10vw;
+  margin-top: 75px;
+  padding: 0 10vw;
+  display: grid;
+  grid-template-columns: 15vw 65vw;
+  // grid-template-rows: auto auto auto auto auto auto;
+  width: 100%;
+  min-height: 100vh;
+
+}
+
+.faq {
+
+  // Sub-navigation buttons
+  &-btn {
+     display: grid;
+     grid-template-rows: 1fr 1fr;
+     align-items: center;
+     justify-items: center;
+     background-color: rgb(213, 213, 213);
+     color: grey;
+     border-radius: 15%;
+     width: 20vh;
+     height: 20vh;
+     text-align: center;
+     -webkit-border-radius: 15%;
+     -moz-border-radius: 15%;
+     -ms-border-radius: 15%;
+     -o-border-radius: 15%;
+     font-weight: bold;
+     margin-bottom: 3vh;
+  }
+
+  &-btn>img {
+     height: 7vh;
+     align-self: end;
+  }
+
+  &-btn>p {
+     font-size: 90%;
+  }
+
+  // FAQ header
+  &-header {
+     width: auto;
+     grid-column: 2/ 3;
+     padding-top: 1vh;
+     margin-bottom: 8vh;
+  }
+
+  &-header>h1 {
+     margin: 0 0 1vh 0;
+  }
+
+  // &-cards-sec {
+
+  // }
+
+  &-cards-sec>h2 {
+     margin: 0;
+     font-size: 2rem;
+  }
+
+  // cards
+  &-card {
+     display: grid;
+     grid-template-columns: auto auto;
+     grid-template-rows: auto auto;
+     width: auto;
+     margin-bottom: 1vw;
+
+     background-color: rgb(255, 255, 255);
+      // ! the border is fucked, have to change the structure probably
+     border-radius: 2%;
+     -webkit-border-radius: 2%;
+     -moz-border-radius: 2%;
+     -ms-border-radius: 2%;
+     -o-border-radius: 2%;
+  }
+
+  &-heading {
+     grid-row: 1;
+  }
+
+  &-heading>h3 {
+     margin: 0;
+     padding: 2vh 1vh;
+  }
+
+  &-arrow {
+     grid-row: 1;
+     grid-column: 2;
+    align-self: center;
+
+    &>img {
+      height: 1.5rem;
+      float: right;
+    }
+  }
+
+
+  &-content {
+     display: none;
+     grid-row: 2;
+     grid-column: 1/ 2;
+  }
+
+}
+
+.contact {
+  padding: 10vh 0;
+  text-align: center;
+}

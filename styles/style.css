@@ -53,7 +53,9 @@ button {
 
 .primary-btn {
   background-color: #003F91;
-  width: 7rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 2.3rem;
   margin-bottom: 1rem;
   border-radius: 20px;
@@ -64,7 +66,9 @@ button {
 }
 .primary-btn > a {
   color: white;
-  padding: 2px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
 }
 .primary-btn:hover {
   background-color: #5DA9E9;
@@ -118,7 +122,7 @@ video {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1056px) {
   .navbar {
     position: fixed;
     top: 0;
@@ -145,7 +149,7 @@ video {
   display: inline-block;
   margin-left: 1rem;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1056px) {
   .menu .menu-item {
     margin-left: 10vw;
   }
@@ -202,7 +206,12 @@ video {
 .menu-link:hover {
   outline: none;
 }
-@media only screen and (min-width: 992px) {
+@media screen and (max-width: 1274px) {
+  .menu .menu-item-tel {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1056px) {
   .menu-dropdown:hover > .submenu {
     display: block;
     opacity: 1;
@@ -210,7 +219,7 @@ video {
     transform: translateY(0);
   }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1056px) {
   .menu {
     width: 100%;
     height: auto;
@@ -259,7 +268,7 @@ video {
   outline: none;
   color: #003F91;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1056px) {
   .submenu {
     position: relative;
     top: -0.5rem;
@@ -312,7 +321,7 @@ video {
 .burger-line:nth-child(3) {
   top: 1rem;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1056px) {
   .burger {
     display: block;
     opacity: 1;
@@ -332,7 +341,7 @@ video {
   transition: all 0.35s ease-in-out;
   background-color: #F5FBFF;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1056px) {
   .overlay.active {
     display: block;
     opacity: 1;
@@ -364,7 +373,7 @@ h4 {
 .hero-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 .hero-section-left > h1 {
   margin-top: 14rem;
@@ -386,6 +395,37 @@ h4 {
   text-decoration: underline;
 }
 
+.mobile-btn {
+  display: none;
+}
+
+@media screen and (max-width: 1056px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+  .hero-section .h1-span {
+    display: none;
+  }
+  .hero-section-left > h1 {
+    margin-top: 4rem;
+    font-size: 250%;
+  }
+  .hero-section-right > img {
+    width: 80%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 2rem;
+  }
+  .desktop-btn {
+    display: none;
+  }
+  .mobile-btn {
+    display: block;
+    margin-left: 10vw;
+    margin-top: 1.5rem;
+    text-decoration: underline;
+  }
+}
 .about-btn {
   margin-left: 10vw;
   margin-top: 5rem;
@@ -400,15 +440,16 @@ h4 {
   margin-top: 5rem;
   margin-bottom: 5rem;
   position: relative;
+  width: 100vw;
 }
 .process-section > h2 {
-  margin-bottom: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 .process-section-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
-  height: 50vh;
 }
 .process-section-grid > div > img {
   scale: 0.5;
@@ -429,6 +470,28 @@ h4 {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 1056px) {
+  .process-section {
+    width: 80vw;
+    min-height: 80vh;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .process-section > div > a {
+    bottom: 0;
+  }
+  .process-section-grid {
+    grid-template-columns: 1fr;
+  }
+  .process-section-grid > div {
+    margin-top: 3rem;
+    height: 10rem;
+  }
+  .process-section-grid > div > img {
+    scale: 0.3;
+  }
+}
 #wave1 {
   position: relative;
 }
@@ -689,7 +752,6 @@ h4 {
 .consultation-section > div > button {
   position: absolute;
   bottom: 3rem;
-  height: 3rem;
   width: 9rem;
   font-size: 1rem;
 }

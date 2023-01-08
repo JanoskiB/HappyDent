@@ -800,4 +800,64 @@ footer .footer-grid > div > a {
 }
 footer .footer-grid > div > p {
   color: #F5FBFF;
+}
+
+.expectations-section {
+  width: 80vw;
+  min-height: 80vh;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.expectations-section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+}
+.expectations-section-grid > div > img {
+  scale: 0.7;
+}
+.expectations-section-grid > div > h4 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.staff-section {
+  width: 80vw;
+  min-height: 80vh;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.staff-section > h3 {
+  margin-left: 0;
+  margin-bottom: 2rem;
+}
+.staff-section > .staff-card {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 0;
+  background-color: #5DA9E9;
+}
+.staff-section > .staff-card > div > h3 {
+  margin-left: 2rem;
+  color: #003F91;
+  font-weight: 500;
+}
+.staff-section > .staff-card > div > .role {
+  margin: 1rem 2rem;
+  color: #F5FBFF;
+}
+.staff-section > .staff-card > div > .abt-p {
+  margin-top: 1rem;
+  margin: 0 2rem;
 }/*# sourceMappingURL=style.css.map */

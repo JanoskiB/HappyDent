@@ -532,7 +532,8 @@ h4 {
    .process-section {
       @include w-h-m;
    }
-   .process-section>div>a{
+
+   .process-section>div>a {
       bottom: 0;
    }
 
@@ -869,4 +870,60 @@ footer {
       }
    }
 
+}
+
+// About page
+
+.expectations-section {
+   @include w-h-m;
+
+   &-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 4rem;
+
+      &>div>img{
+         scale: .7;
+      }
+
+      &>div>h4{
+         margin-top: 1rem;
+         margin-bottom: 2rem;
+      }
+   }
+}
+
+.staff-section{
+   @include w-h-m;
+
+   &>h3{
+      margin-left: 0;
+      margin-bottom: 2rem;
+   }
+
+   &>.staff-card{
+      @include borderrad;
+      height: fit-content;
+      margin-bottom: 4rem;
+      display: grid;
+      grid-template-columns: 1fr 2.5fr;
+      gap: 0;
+      background-color: $medium-blue;
+
+      &>div>h3{
+         margin-left: 2rem;
+         color: $dark-blue;
+         font-weight: 500;
+      }
+
+      &>div>.role{
+         margin: 1rem  2rem;
+         color: $light-blue;
+      }
+
+      &>div>.abt-p{
+         margin-top: 1rem;
+         margin: 0 2rem;
+      }
+   }
 }

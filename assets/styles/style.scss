@@ -5,6 +5,7 @@
 $dark-blue: #003F91;
 $medium-blue: #5DA9E9;
 $light-blue: #F5FBFF;
+$white: #FFFFFF;
 $grey: #777676;
 
 $mediaMaxWidth: 1274px;
@@ -73,13 +74,15 @@ button {
    background-color: $dark-blue;
    width: fit-content;
    height: 2.3rem;
-   margin-bottom: 1rem;
+   margin-top: 5rem;
+
 
    &>a {
-      color: white;
-      padding-left: 1rem;
-      padding-right: 1rem;
+      color: $white;
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
       font-size: 1rem;
+      font-weight: 500;
    }
 
    &:hover {
@@ -88,6 +91,17 @@ button {
 
    @include borderrad;
 
+}
+
+.secondary-btn {
+   color: $medium-blue;
+   text-decoration: underline;
+   font-size: 1rem;
+   font-weight: 500;
+
+   &:hover {
+      color: $dark-blue;
+   }
 }
 
 img,
@@ -123,7 +137,14 @@ video {
    height: auto;
    z-index: 100;
    margin: 0 auto;
-   box-shadow: var(--shadow-medium);
+   padding-top: .5rem;
+   
+}
+
+.top-wrapper {
+   background-image: url(/assets/images/hero-bg.png);
+   background-size: auto;
+   background-repeat: no-repeat;
 }
 
 .wrapper {
@@ -384,12 +405,20 @@ video {
 }
 
 h1 {
-   margin-left: 10vw;
+   font-size: 2.8rem;
    color: $dark-blue;
+}
+
+.hero-text {
+   font-size: 1.4rem;
+   color: $grey;
+   font-weight: 300;
+   margin-top: 2rem;
 }
 
 h2 {
    color: $dark-blue;
+   font-size: 3rem;
 }
 
 h3 {
@@ -409,30 +438,22 @@ h4 {
    display: grid;
    grid-template-columns: 1fr 1fr;
    min-height: 90vh;
+   margin: 0 10vw;
 
    &-left>h1 {
       margin-top: 8rem;
-      font-size: 250%;
-   }
-
-   &-left>h2 {
-      font-size: 120%;
    }
 
    &-right>img {
       margin-top: 8rem;
-      width: 60%;
+      width: 70%;
       position: relative;
       float: right;
-      margin-right: 10vw;
    }
 
-   & .contact-a {
-      margin-left: 2rem;
-      color: $medium-blue;
-      text-decoration: underline;
+   & .hero-secondary-btn {
+      margin-left: 1.5rem;
    }
-
 }
 
 .mobile-btn {
@@ -472,21 +493,12 @@ h4 {
    }
 }
 
-.about-btn {
-   margin-left: 10vw;
-   margin-top: 5rem;
-   padding-left: 7px;
-   padding-right: 7px;
-}
-
 @mixin w-h-m {
    width: 80vw;
    min-height: 80vh;
    margin: 0 auto;
    margin-top: 5rem;
    margin-bottom: 5rem;
-
-
 }
 
 .process-section {

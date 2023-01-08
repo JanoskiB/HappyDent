@@ -901,26 +901,26 @@ footer {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 4rem;
 
-      &>div>img{
+      &>div>img {
          scale: .7;
       }
 
-      &>div>h4{
+      &>div>h4 {
          margin-top: 1rem;
          margin-bottom: 2rem;
       }
    }
 }
 
-.staff-section{
+.staff-section {
    @include w-h-m;
 
-   &>h3{
+   &>h3 {
       margin-left: 0;
       margin-bottom: 2rem;
    }
 
-   &>.staff-card{
+   &>.staff-card {
       @include borderrad;
       height: fit-content;
       margin-bottom: 4rem;
@@ -929,20 +929,72 @@ footer {
       gap: 0;
       background-color: $medium-blue;
 
-      &>div>h3{
+      &>div>h3 {
          margin-left: 2rem;
          color: $dark-blue;
          font-weight: 500;
       }
 
-      &>div>.role{
-         margin: 1rem  2rem;
+      &>div>.role {
+         margin: 1rem 2rem;
          color: $light-blue;
       }
 
-      &>div>.abt-p{
+      &>div>.abt-p {
          margin-top: 1rem;
          margin: 0 2rem;
       }
+   }
+}
+
+// Swiper
+
+.swiper-slide {
+
+   &-grid {
+      @include w-h-m;
+      min-height: 50vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+
+      &>.swiper-card {
+         background-color: $medium-blue;
+         @include borderrad;
+
+         &>span>img {
+            margin: 3rem;
+         }
+
+         &>p {
+            margin: 0 3rem;
+         }
+
+         &>div {
+            &>img {
+               display: inline-block;
+               float: right;
+               margin: 1rem 3rem;
+               scale: .7;
+            }
+
+            &>h4 {
+              display: inline-block;
+              margin: 3rem 3rem;
+            }
+         }
+
+      }
+   }
+}
+
+.swiper-pagination{
+   scale: 2;
+}
+
+.location-section{
+   @include w-h-m;
+   &>h2{
+      margin: 2rem 0;
    }
 }

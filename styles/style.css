@@ -880,4 +880,55 @@ footer .footer-grid > div > p {
 .staff-section > .staff-card > div > .abt-p {
   margin-top: 1rem;
   margin: 0 2rem;
+}
+
+.swiper-slide-grid {
+  width: 80vw;
+  min-height: 80vh;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.swiper-slide-grid > .swiper-card {
+  background-color: #5DA9E9;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.swiper-slide-grid > .swiper-card > span > img {
+  margin: 3rem;
+}
+.swiper-slide-grid > .swiper-card > p {
+  margin: 0 3rem;
+}
+.swiper-slide-grid > .swiper-card > div > img {
+  display: inline-block;
+  float: right;
+  margin: 1rem 3rem;
+  scale: 0.7;
+}
+.swiper-slide-grid > .swiper-card > div > h4 {
+  display: inline-block;
+  margin: 3rem 3rem;
+}
+
+.swiper-pagination {
+  scale: 2;
+}
+
+.location-section {
+  width: 80vw;
+  min-height: 80vh;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.location-section > h2 {
+  margin: 2rem 0;
 }/*# sourceMappingURL=style.css.map */

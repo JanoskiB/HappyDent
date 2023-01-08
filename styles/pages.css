@@ -5,11 +5,10 @@ h3 {
   padding: 0;
 }
 
-.sub-navigation {
+.faq-navigation {
   display: inline-block;
   grid-row: 1/span 6;
 }
-
 .faq-grid {
   margin-top: 75px;
   padding: 0 10vw;
@@ -18,22 +17,21 @@ h3 {
   width: 100%;
   min-height: 100vh;
 }
-
 .faq-btn {
   display: grid;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   justify-items: center;
-  background-color: rgb(213, 213, 213);
-  color: grey;
-  border-radius: 15%;
+  background-color: #003F91;
+  color: white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
   width: 20vh;
   height: 20vh;
   text-align: center;
-  -webkit-border-radius: 15%;
-  -moz-border-radius: 15%;
-  -ms-border-radius: 15%;
-  -o-border-radius: 15%;
   font-weight: bold;
   margin-bottom: 3vh;
 }
@@ -147,4 +145,35 @@ h3 {
 .contact-form {
   grid-column: 1/span 2;
   height: 400px;
+}
+
+.treatments-grid {
+  display: grid;
+  grid-template-columns: 80vw;
+  grid-template-rows: auto;
+  padding: 5vw 10vw;
+}
+.treatments-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 5vh 0;
+}
+.treatments-cards-sec {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: auto;
+  margin-bottom: 2vw;
+}
+.treatments-cards-sec > h2 {
+  font-size: 2rem;
+  grid-column: 1/span 2;
+  margin-bottom: 2vw;
+}
+.treatments-btn {
+  grid-column: 1;
+  grid-row: 2/span 10;
+}
+.treatments-card {
+  grid-column: 2;
 }/*# sourceMappingURL=pages.css.map */

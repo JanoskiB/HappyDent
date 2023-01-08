@@ -23,24 +23,24 @@ h3 {
 }
 
 // FAQ page
-.sub-navigation {
-  display: inline-block;
-  grid-row: 1/ span 6;
-}
-
-.faq-grid {
-  // margin: 75px 10vw 0 10vw;
-  margin-top: 75px;
-  padding: 0 10vw;
-  display: grid;
-  grid-template-columns: 15vw 65vw;
-  // grid-template-rows: auto auto auto auto auto auto;
-  width: 100%;
-  min-height: 100vh;
-
-}
-
 .faq {
+
+  &-navigation {
+    display: inline-block;
+    grid-row: 1/ span 6;
+  }
+
+  &-grid {
+    // margin: 75px 10vw 0 10vw;
+    margin-top: 75px;
+    padding: 0 10vw;
+    display: grid;
+    grid-template-columns: 15vw 65vw;
+    // grid-template-rows: auto auto auto auto auto auto;
+    width: 100%;
+    min-height: 100vh;
+
+  }
 
   // Sub-navigation buttons
   &-btn {
@@ -48,16 +48,13 @@ h3 {
     grid-template-rows: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    background-color: rgb(213, 213, 213);
-    color: grey;
-    border-radius: 15%;
+    background-color: $dark-blue;
+    color: white;
+    @include borderrad();
+
     width: 20vh;
     height: 20vh;
     text-align: center;
-    -webkit-border-radius: 15%;
-    -moz-border-radius: 15%;
-    -ms-border-radius: 15%;
-    -o-border-radius: 15%;
     font-weight: bold;
     margin-bottom: 3vh;
   }
@@ -175,7 +172,7 @@ h3 {
   }
 
   &-info {
-    
+
 
     &-grid {
       padding-top: 5vh;
@@ -202,5 +199,44 @@ h3 {
     grid-column: 1/ span 2;
     // ! height only to see how the place will look like
     height: 400px;
+  }
+}
+
+// Treatments page 
+.treatments {
+  &-grid {
+    display: grid;
+    grid-template-columns: 80vw;
+    grid-template-rows: auto;
+    padding: 5vw 10vw;
+  }
+
+  &-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 5vh 0;
+  }
+
+  &-cards-sec {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    margin-bottom: 2vw;
+
+    &>h2 {
+      font-size: 2rem;
+      grid-column: 1/ span 2;
+      margin-bottom: 2vw;
+    }
+  }
+
+  &-btn {
+    grid-column: 1;
+    grid-row: 2/ span 10;
+  }
+
+  &-card {
+    grid-column: 2;
   }
 }

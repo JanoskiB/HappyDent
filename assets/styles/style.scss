@@ -300,6 +300,7 @@ video {
 
 .submenu {
    position: absolute;
+   z-index: 100;
    top: 2.5rem;
    left: -2rem;
    min-width: 10rem;
@@ -421,44 +422,51 @@ video {
 /* Typography*/
 
 h1 {
-   font-size: 2.5rem; /* 2.5 times body text*/
+   font-size: 2.5rem;
+   /* 2.5 times body text*/
    color: $dark-blue;
    font-weight: 700;
 }
 
 h2 {
-   font-size: 2.25rem; /* 2.25 times body text*/
+   font-size: 2.25rem;
+   /* 2.25 times body text*/
    color: $dark-blue;
    font-weight: 700;
    margin: 2rem 0;
 }
 
 h3 {
-   font-size: 2rem; /* 2 times body text*/
+   font-size: 2rem;
+   /* 2 times body text*/
    color: $dark-blue;
    font-weight: 300;
 }
 
 h4 {
-   font-size: 1.75rem; /* 1.75 times body text*/
+   font-size: 1.75rem;
+   /* 1.75 times body text*/
    color: $dark-blue;
 }
 
 .hero-text {
-   font-size: 1.5rem; /* 1.5 times body text*/
+   font-size: 1.5rem;
+   /* 1.5 times body text*/
    color: $grey;
    font-weight: 300;
    margin: 2rem 0;
 }
 
 .intro-text {
-   font-size: 1.25rem; /* 1.25 times body text*/
+   font-size: 1.25rem;
+   /* 1.25 times body text*/
    color: $grey;
    font-weight: 500;
 }
 
 p {
-   font-size: 1rem; /* body text */
+   font-size: 1rem;
+   /* body text */
    color: $grey;
 }
 
@@ -541,32 +549,33 @@ p {
       @include intro-content-margin;
       justify-items: start;
 
-      &>div{
+      &>div {
          margin-bottom: 2.5rem;
          width: 80%;
          display: inline-block;
       }
 
-      &>.step-2{
+      &>.step-2 {
          justify-self: center;
       }
 
-      &>.step-3{
+      &>.step-3 {
          justify-self: end;
       }
 
-      &>div>img, .step{
+      &>div>img,
+      .step {
          display: inline-block;
       }
 
-      &>div>.step{
+      &>div>.step {
          font-size: 3rem;
          color: $dark-blue;
          font-weight: 700;
          margin-left: 1rem;
       }
 
-      &>div>p{
+      &>div>p {
          margin-top: 1.5rem;
       }
 
@@ -944,10 +953,10 @@ footer {
       display: grid;
       grid-template-columns: 1fr 2.5fr;
       gap: 0;
-      background-color: $medium-blue;
+      background-color: #5daae983;
 
       &>div>h3 {
-         margin-left: 2rem;
+         margin: 1rem 2rem;
          color: $dark-blue;
          font-weight: 500;
       }
@@ -955,6 +964,7 @@ footer {
       &>div>.role {
          margin: 1rem 2rem;
          color: $light-blue;
+         font-weight: 500;
       }
 
       &>div>.abt-p {
@@ -996,8 +1006,8 @@ footer {
             }
 
             &>h4 {
-              display: inline-block;
-              margin: 3rem 3rem;
+               display: inline-block;
+               margin: 3rem 3rem;
             }
          }
 
@@ -1005,13 +1015,63 @@ footer {
    }
 }
 
-.swiper-pagination{
+.swiper-pagination {
    scale: 2;
 }
 
-.location-section{
+.location-section {
    @include w-h-m;
-   &>h2{
-      margin: 2rem 0;
+
+   &>p {
+      margin-bottom: 2rem;
+   }
+}
+
+//Why Hungary?
+
+.tourist-img-1,
+.tourist-img-2 {
+   background-size: 102%;
+   background-repeat: no-repeat;
+   @include borderrad;
+
+   &>h4 {
+      margin: 1rem 3rem;
+   }
+
+   &>p {
+      color: $white;
+      font-weight: 600;
+   }
+
+}
+
+.tourist-img-1 {
+   background-image: url(/assets/images/tourist-img-1.png);
+   background-position: -.5rem;
+}
+
+.tourist-img-2 {
+   background-image: url(/assets/images/tourist-img-2.png);
+   background-position: bottom;
+}
+
+.cost-section {
+   @include w-h-m;
+
+   &-grid {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 4rem;
+
+      &>div>h5,
+      p {
+         margin: .5rem 1rem;
+      }
+
+      &>div>h5 {
+         color: $dark-blue;
+      }
    }
 }

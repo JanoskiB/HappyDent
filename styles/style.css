@@ -266,6 +266,7 @@ video {
 
 .submenu {
   position: absolute;
+  z-index: 100;
   top: 2.5rem;
   left: -2rem;
   min-width: 10rem;
@@ -380,44 +381,51 @@ video {
 
 /* Typography*/
 h1 {
-  font-size: 2.5rem; /* 2.5 times body text*/
+  font-size: 2.5rem;
+  /* 2.5 times body text*/
   color: #003F91;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25rem; /* 2.25 times body text*/
+  font-size: 2.25rem;
+  /* 2.25 times body text*/
   color: #003F91;
   font-weight: 700;
   margin: 2rem 0;
 }
 
 h3 {
-  font-size: 2rem; /* 2 times body text*/
+  font-size: 2rem;
+  /* 2 times body text*/
   color: #003F91;
   font-weight: 300;
 }
 
 h4 {
-  font-size: 1.75rem; /* 1.75 times body text*/
+  font-size: 1.75rem;
+  /* 1.75 times body text*/
   color: #003F91;
 }
 
 .hero-text {
-  font-size: 1.5rem; /* 1.5 times body text*/
+  font-size: 1.5rem;
+  /* 1.5 times body text*/
   color: #5A5A5A;
   font-weight: 300;
   margin: 2rem 0;
 }
 
 .intro-text {
-  font-size: 1.25rem; /* 1.25 times body text*/
+  font-size: 1.25rem;
+  /* 1.25 times body text*/
   color: #5A5A5A;
   font-weight: 500;
 }
 
 p {
-  font-size: 1rem; /* body text */
+  font-size: 1rem;
+  /* body text */
   color: #5A5A5A;
 }
 
@@ -497,7 +505,8 @@ p {
 .process-section-grid > .step-3 {
   justify-self: end;
 }
-.process-section-grid > div > img, .process-section-grid .step {
+.process-section-grid > div > img,
+.process-section-grid .step {
   display: inline-block;
 }
 .process-section-grid > div > .step {
@@ -876,16 +885,17 @@ footer .footer-grid > div > p {
   display: grid;
   grid-template-columns: 1fr 2.5fr;
   gap: 0;
-  background-color: #5DA9E9;
+  background-color: rgba(93, 170, 233, 0.5137254902);
 }
 .staff-section > .staff-card > div > h3 {
-  margin-left: 2rem;
+  margin: 1rem 2rem;
   color: #003F91;
   font-weight: 500;
 }
 .staff-section > .staff-card > div > .role {
   margin: 1rem 2rem;
   color: #F5FBFF;
+  font-weight: 500;
 }
 .staff-section > .staff-card > div > .abt-p {
   margin-top: 1rem;
@@ -939,6 +949,57 @@ footer .footer-grid > div > p {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
-.location-section > h2 {
-  margin: 2rem 0;
+.location-section > p {
+  margin-bottom: 2rem;
+}
+
+.tourist-img-1,
+.tourist-img-2 {
+  background-size: 102%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.tourist-img-1 > h4,
+.tourist-img-2 > h4 {
+  margin: 1rem 3rem;
+}
+.tourist-img-1 > p,
+.tourist-img-2 > p {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.tourist-img-1 {
+  background-image: url(/assets/images/tourist-img-1.png);
+  background-position: -0.5rem;
+}
+
+.tourist-img-2 {
+  background-image: url(/assets/images/tourist-img-2.png);
+  background-position: bottom;
+}
+
+.cost-section {
+  width: 80vw;
+  min-height: 80vh;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.cost-section-grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4rem;
+}
+.cost-section-grid > div > h5,
+.cost-section-grid p {
+  margin: 0.5rem 1rem;
+}
+.cost-section-grid > div > h5 {
+  color: #003F91;
 }/*# sourceMappingURL=style.css.map */

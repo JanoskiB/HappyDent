@@ -6,7 +6,7 @@ $dark-blue: #003F91;
 $medium-blue: #5DA9E9;
 $light-blue: #F5FBFF;
 $white: #FFFFFF;
-$grey: #777676;
+$grey: #5A5A5A;
 
 $mediaMaxWidth: 1274px;
 $mediaBp1Width: 960px;
@@ -18,6 +18,11 @@ $mediaMinWidth: 480px;
    -moz-border-radius: 20px;
    -ms-border-radius: 20px;
    -o-border-radius: 20px;
+}
+
+/* Margin between the intro text and the section's main content*/
+@mixin intro-content-margin {
+   margin-top: 5rem;
 }
 
 :root {
@@ -48,6 +53,7 @@ html {
    box-sizing: inherit;
    scroll-behavior: smooth;
    height: -webkit-fill-available;
+   overflow-x: hidden;
 }
 
 body {
@@ -102,6 +108,11 @@ button {
    &:hover {
       color: $dark-blue;
    }
+}
+
+.btn-center-position {
+   margin-left: 45%;
+   width: 5rem;
 }
 
 img,
@@ -289,6 +300,7 @@ video {
 
 .submenu {
    position: absolute;
+   z-index: 100;
    top: 2.5rem;
    left: -2rem;
    min-width: 10rem;
@@ -407,39 +419,57 @@ video {
    }
 }
 
+/* Typography*/
+
 h1 {
-   font-size: 2.8rem;
+   font-size: 2.5rem;
+   /* 2.5 times body text*/
+   color: $dark-blue;
+   font-weight: 700;
+}
+
+h2 {
+   font-size: 2.25rem;
+   /* 2.25 times body text*/
+   color: $dark-blue;
+   font-weight: 700;
+   margin: 2rem 0;
+}
+
+h3 {
+   font-size: 2rem;
+   /* 2 times body text*/
+   color: $dark-blue;
+   font-weight: 300;
+}
+
+h4 {
+   font-size: 1.75rem;
+   /* 1.75 times body text*/
    color: $dark-blue;
 }
 
 .hero-text {
-   font-size: 1.4rem;
-   color: $grey;
-   font-weight: 300;
-   margin-top: 2rem;
-}
-
-h2 {
-   color: $dark-blue;
-   font-size: 2rem;
-}
-
-h3 {
-   margin-top: 2rem;
-   margin-left: 10vw;
    font-size: 1.5rem;
+   /* 1.5 times body text*/
    color: $grey;
    font-weight: 300;
+   margin: 2rem 0;
 }
 
-.bodytext {
+.intro-text {
+   font-size: 1.25rem;
+   /* 1.25 times body text*/
+   color: $grey;
+   font-weight: 500;
+}
+
+p {
    font-size: 1rem;
+   /* body text */
+   color: $grey;
 }
 
-h4 {
-   color: $dark-blue;
-   font-size: 1.5rem;
-}
 
 .hero-section {
    display: grid;
@@ -455,19 +485,11 @@ h4 {
       }
    }
 
-   &-right {
-      grid-column: 2;
-
-      &>img {
-         margin-top: 8rem;
-         width: 70%;
-         position: relative;
-         float: right;
-      }
-   }
-
-   &-left>h1 {
+   &-right>img {
       margin-top: 8rem;
+      width: 70%;
+      position: relative;
+      float: right;
    }
 
    & .hero-secondary-btn {
@@ -522,40 +544,45 @@ h4 {
 
 .process-section {
    @include w-h-m;
-   position: relative;
-   width: 100vw;
-
-   &>h2 {
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-   }
+   margin: 0 10vw;
 
    &-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       width: 100%;
+      @include intro-content-margin;
+      justify-items: start;
 
-      &>div>img {
-         scale: .5;
-         position: relative;
-         right: 5rem;
-         bottom: 13rem;
+      &>div {
+         margin-bottom: 2.5rem;
+         width: 80%;
+         display: inline-block;
+      }
+
+      &>.step-2 {
+         justify-self: center;
+      }
+
+      &>.step-3 {
+         justify-self: end;
+      }
+
+      &>div>img,
+      .step {
+         display: inline-block;
+      }
+
+      &>div>.step {
+         font-size: 3rem;
+         color: $dark-blue;
+         font-weight: 700;
+         margin-left: 1rem;
       }
 
       &>div>p {
-         margin-left: 8rem;
-         width: 55%;
-         display: inline-block;
-
+         margin-top: 1.5rem;
       }
-   }
 
-   &>a {
-      margin-left: 45%;
-      text-decoration: underline;
-      position: absolute;
-      bottom: 10rem;
-      font-size: 1.5rem
    }
 }
 
@@ -600,21 +627,17 @@ h4 {
 .prices-section {
    @include w-h-m;
 
-   &>h2 {
-      margin-bottom: 2rem;
-   }
-
    &>h4 {
       margin-bottom: 8rem;
-      font-size: 1rem;
    }
 
    &-grid {
       display: grid;
       grid-template-columns: 1fr .6fr 1fr;
+      @include intro-content-margin;
+
 
       &>div>h4 {
-         font-size: 1.5rem;
          margin-top: 1.5rem;
          margin-bottom: 4rem;
          text-align: center;
@@ -627,7 +650,7 @@ h4 {
 
       &>.hun-prices {
          color: $medium-blue;
-         background-color: white;
+         background-color: $white;
          box-shadow: 1px 1px 2px $dark-blue;
          @include borderrad;
       }
@@ -650,17 +673,12 @@ h4 {
       margin-top: 4rem;
    }
 
-   &>h4 {
-      margin-top: 3rem;
-      margin-bottom: 3rem;
-      font-size: 1rem;
-   }
-
    &-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
       margin-bottom: 4rem;
+      @include intro-content-margin;
 
       &>img {
          width: 100%;
@@ -939,9 +957,9 @@ footer {
       display: grid;
       grid-template-columns: 1fr 2.5fr;
       gap: 0;
-      background-color: $medium-blue;
+      background-color: #5daae983;
 
-      &>div>h3 {
+      &>div>h3{
          margin-left: 2rem;
          color: $dark-blue;
          font-weight: 500;
@@ -950,11 +968,114 @@ footer {
       &>div>.role {
          margin: 1rem 2rem;
          color: $light-blue;
+         font-weight: 500;
       }
 
       &>div>.abt-p {
          margin-top: 1rem;
          margin: 0 2rem;
+      }
+   }
+}
+
+// Swiper
+
+.swiper-slide {
+
+   &-grid {
+      @include w-h-m;
+      min-height: 50vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+
+      &>.swiper-card {
+         background-color: $medium-blue;
+         @include borderrad;
+
+         &>span>img {
+            margin: 3rem;
+         }
+
+         &>p {
+            margin: 0 3rem;
+         }
+
+         &>div {
+            &>img {
+               display: inline-block;
+               float: right;
+               margin: 1rem 3rem;
+               scale: .7;
+            }
+
+            &>h4 {
+               display: inline-block;
+               margin: 3rem 3rem;
+            }
+         }
+
+      }
+   }
+}
+
+.swiper-pagination {
+   scale: 2;
+}
+
+.location-section {
+   @include w-h-m;
+
+   &>p {
+      margin-bottom: 2rem;
+   }
+}
+
+//Why Hungary?
+
+.tourist-img-1,
+.tourist-img-2 {
+   background-size: 102%;
+   background-repeat: no-repeat;
+   @include borderrad;
+
+   &>h4 {
+      margin: 1rem 3rem;
+   }
+
+   &>p {
+      color: $white;
+      font-weight: 600;
+   }
+
+}
+
+.tourist-img-1 {
+   background-image: url(/assets/images/tourist-img-1.png);
+   background-position: -.5rem;
+}
+
+.tourist-img-2 {
+   background-image: url(/assets/images/tourist-img-2.png);
+   background-position: bottom;
+}
+
+.cost-section {
+   @include w-h-m;
+
+   &-grid {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 4rem;
+
+      &>div>h5,
+      p {
+         margin: .5rem 1rem;
+      }
+
+      &>div>h5 {
+         color: $dark-blue;
       }
    }
 }

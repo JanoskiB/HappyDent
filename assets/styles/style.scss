@@ -28,10 +28,25 @@ $mediaMinWidth: 480px;
    -o-border-radius: 15px;
 }
 
+
 /* Margin between the intro text and the section's main content*/
 @mixin intro-content-margin {
    margin-top: 5rem;
+   @media screen and (max-width: 480px){
+      margin-top: 1rem; 
+   }
 }
+
+
+/* Margins between the section's main content and the (usually centered) button below it*/
+@mixin content-button-margin {
+   margin-bottom: 2rem;
+   @media screen and (max-width: 480px){
+      margin-bottom: 4rem; 
+   }
+}
+
+
 
 :root {
    --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
@@ -120,8 +135,13 @@ button {
 }
 
 .btn-center-position {
-   margin-left: 45%;
-   width: 5rem;
+   display: block;
+   margin: 0 auto;
+   width: fit-content;
+}
+
+.btn-container {
+   width: 80vw;
 }
 
 img,
@@ -458,6 +478,12 @@ h4 {
    color: $dark-blue;
 }
 
+@media screen and (max-width: 1056px) {
+   h4 {
+      font-size: 1rem;
+   }
+}
+
 .hero-text {
    font-size: 1.5rem;
    /* 1.5 times body text*/
@@ -555,7 +581,7 @@ p {
    min-height: 80vh;
    margin: 0 auto;
    margin-top: 5rem;
-   margin-bottom: 5rem;
+   margin-bottom: 10rem;
 }
 
 .process-section {
@@ -567,6 +593,7 @@ p {
       grid-template-columns: 1fr 1fr 1fr;
       width: 100%;
       @include intro-content-margin;
+      @include content-button-margin;
       justify-items: start;
 
       &>div {
@@ -589,14 +616,14 @@ p {
       }
 
       &>div>img{
-         height: 2.5rem;
+         height: 2rem;
+         margin-left: 1rem;
       }
 
       &>div>.step {
          font-size: 3rem;
          color: $dark-blue;
          font-weight: 700;
-         margin-left: 1rem;
       }
 
       &>div>p {
@@ -605,25 +632,34 @@ p {
    }
 }
 
+
 @media screen and (max-width: 1056px) {
    .process-section {
       @include w-h-m;
    }
 
-   .process-section>div>a {
-      bottom: 0;
-   }
-
    .process-section-grid {
       grid-template-columns: 1fr;
 
+      &>div>.step {
+         font-size: 2rem;
+      }
+
+      &>.step-2 {
+         justify-self: start;
+      }
+
+      &>.step-3 {
+         justify-self: start;
+      }
+
       &>div {
-         margin-top: 3rem;
-         height: 10rem;
+         margin-bottom: 1.5rem;
+         width: 80vw;
       }
 
       &>div>img {
-         scale: .3;
+         scale: .8;
       }
 
    }
@@ -637,25 +673,32 @@ p {
    position: relative;
 }
 
-.prices-wrapper {
-   background-image: url(/assets/images/waves.png);
-   background-size: auto;
-   background-repeat: no-repeat;
-}
 
 .prices-section {
    @include w-h-m;
+   min-height: 45vh;
+   display: grid;
+   grid-template-columns: 2fr 3fr;
 
-   &-grid{
-      @include intro-content-margin;
+   &-left {
+      float: left; 
+      margin-right: 5rem;
+   }
+
+   &-left>h2{
+      margin-top: 0;
+   }
+
+   &-right{
       @include borderrad;
       background-color: #DFEEFB;
       color: $dark-blue;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1.5fr 1fr 1fr;
       justify-items: start;
       width: 100%;
-      padding: 2rem 5rem;
+      height: fit-content;
+      padding: 1.5rem 2rem;
           
       &>.treatments-column {
          padding: 1.5rem .5rem;
@@ -664,11 +707,13 @@ p {
       &>.hungary-column {
          @include borderrad-15;
          background-color: $white;
-         color: $medium-blue;
          justify-self: center;
          text-align: center;
          padding: 1.5rem 2.5rem;
-         box-shadow: 1px 1px 2px $dark-blue;
+      }
+
+      &>.hungary-column> p {
+         color: $medium-blue;
       }
 
       
@@ -683,6 +728,53 @@ p {
       }
    }
 }
+
+@media screen and (max-width: 1056px) {
+   .prices-section {
+      @include w-h-m;
+      grid-template-columns: 1fr;
+
+      &-right {
+         grid-template-columns: 1fr 1fr 1fr;
+         width: 80vw;
+         padding: .5rem .5rem;
+
+         &>div>p{
+            margin-top: .8rem;
+         }
+      }
+
+      &-right>.treatments-column {
+         padding: .5rem;
+         padding-left: 1rem;
+      }
+
+      &-right>.hungary-column {
+         background-color: #DFEEFB;
+         padding: .5rem .5rem
+      }
+
+      &-right>.hungary-column>p {
+         margin-bottom: 2.3rem;
+      }
+
+      &-right>.denmark-column {
+         padding: .5rem;
+         padding-right: 1rem;
+      }
+
+      &-right>.denmark-column>p {
+         margin-bottom: 2.3rem;
+      }
+
+   }
+
+}
+
+.text-highlight {
+   color: $dark-blue
+}
+
 
 .about-us-section {
    @include w-h-m;
@@ -701,6 +793,7 @@ p {
 
       &>img {
          width: 100%;
+         @include borderrad;
       }
    }
 }
@@ -708,11 +801,8 @@ p {
 .flights-section {
    @include w-h-m;
 
-   &>button {
-      margin: 0 33vw;
-   }
-
    &-grid {
+      @include content-button-margin;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto;
@@ -722,11 +812,10 @@ p {
 
       &>.f-s-card {
          @include borderrad;
-         box-shadow: 1px 1px 2px $grey;
          height: fit-content;
          padding-bottom: 2rem;
          margin-bottom: 2rem;
-         background-color: $light-blue;
+         background-color: #DFEEFB;
 
          h4 {
             margin-top: 1rem;
@@ -737,15 +826,9 @@ p {
             color: $medium-blue;
             margin-left: 1.5rem;
          }
-
-         a {
-            margin-left: 5.5vw;
-            width: 5rem;
-         }
       }
    }
 }
-
 
 
 .f-s-card-grid {
@@ -765,8 +848,66 @@ p {
    }
 }
 
+/*medium devices - tablets*/
+@media screen and (max-width: 1250px){
+   .flights-section-grid {
+      gap: 2rem;
+
+      &>.f-s-card {
+         width: 25vw;
+      }
+   }
+} 
+
+@media screen and (max-width: 1200px){
+   .flights-section-grid {
+      gap: 1rem;
+   }
+
+   .f-s-card {
+      &-grid {
+         grid-template-columns: 1fr;
+      }
+   }
+
+   .f-s-card-grid {
+      &-right {
+         margin-left: 1.5rem;
+         margin-top: 1rem;
+      }
+   }
+} 
+
+/*small devices - mobiles*/
+@media screen and (max-width: 600px){
+   .flights-section-grid {
+      grid-template-columns: 1fr;
+
+      &>.f-s-card {
+         height: 60vh;
+         width: 80vw;
+      }
+   }
+
+   .f-s-card {
+      &-grid {
+         grid-template-columns: 1fr 1fr;
+      }
+   }
+}
+
+
+.card-btn-container {
+   width: 100%;
+}
+
+.card-btn-position {
+   display: block;
+   margin: 0 auto;
+   width: 12rem;
+}
+
 .accomodation-section {
-   margin-top: 5rem;
    @include w-h-m;
 
    &-grid {
@@ -810,7 +951,7 @@ p {
       }
 
       &>.asc-2 {
-         background-image: url(/assets/images/hotel-room-2.jpg);
+         background-image: url(/assets/images/hotel-room-2.png);
       }
 
       &>.asc-3 {
@@ -819,6 +960,16 @@ p {
       }
    }
 }
+
+@media screen and (max-width: 1056px){
+   .accomodation-section-grid {
+      grid-template-columns: 1fr;
+
+      &>div {
+         height: 60vh;
+      }
+   }
+} 
 
 .consultation-section {
    @include w-h-m;

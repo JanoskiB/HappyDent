@@ -80,6 +80,12 @@ button {
   background-color: #5DA9E9;
 }
 
+@media screen and (max-width: 1056px) {
+  .primary-btn {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
 .secondary-btn {
   color: #5DA9E9;
   text-decoration: underline;
@@ -487,10 +493,8 @@ p {
     font-size: 250%;
   }
   .hero-section-right > img {
-    width: 80%;
-    margin-left: 10vw;
-    margin-right: 10vw;
     margin-top: 2rem;
+    float: none;
   }
   .desktop-btn {
     display: none;
@@ -639,6 +643,9 @@ p {
   justify-self: center;
   text-align: center;
   padding: 1.5rem 2.5rem;
+}
+.prices-section-right > .hungary-column > p {
+  color: #5DA9E9;
 }
 .prices-section-right > .hungary-column > p {
   color: #5DA9E9;
@@ -906,6 +913,15 @@ p {
   width: 55%;
 }
 
+@media screen and (max-width: 1056px) {
+  .consultation-section {
+    grid-template-columns: 1fr;
+    min-height: 70vh;
+  }
+  .consultation-section > div > img {
+    float: none;
+  }
+}
 footer {
   background-color: #003F91;
   min-height: 40vh;
@@ -937,6 +953,14 @@ footer .footer-grid > div > p {
   color: #F5FBFF;
 }
 
+@media screen and (max-width: 1056px) {
+  footer > .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  footer > .footer-grid > .footer-r {
+    text-align: left;
+  }
+}
 .expectations-section {
   width: 80vw;
   min-height: 80vh;
@@ -957,6 +981,12 @@ footer .footer-grid > div > p {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 1056px) {
+  .expectations-section-grid {
+    grid-template-columns: 1fr;
+    min-height: 70vh;
+  }
+}
 .staff-section {
   width: 80vw;
   min-height: 80vh;
@@ -968,7 +998,7 @@ footer .footer-grid > div > p {
   margin-left: 0;
   margin-bottom: 2rem;
 }
-.staff-section > .staff-card {
+.staff-section > .staff-card-grid {
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -983,21 +1013,29 @@ footer .footer-grid > div > p {
   gap: 0;
   background-color: rgba(93, 170, 233, 0.5137254902);
 }
-.staff-section > .staff-card > div > h3 {
+.staff-section > .staff-card-grid > div > h3 {
   margin-left: 2rem;
   color: #003F91;
   font-weight: 500;
 }
-.staff-section > .staff-card > div > .role {
+.staff-section > .staff-card-grid > div > .role {
   margin: 1rem 2rem;
   color: #F5FBFF;
   font-weight: 500;
 }
-.staff-section > .staff-card > div > .abt-p {
+.staff-section > .staff-card-grid > div > .abt-p {
   margin-top: 1rem;
   margin: 0 2rem;
 }
 
+@media screen and (max-width: 1056px) {
+  .staff-card-grid {
+    background-color: #003F91;
+  }
+  .staff-card-grid > img {
+    display: none;
+  }
+}
 .swiper-slide-grid {
   width: 80vw;
   min-height: 80vh;
@@ -1034,8 +1072,22 @@ footer .footer-grid > div > p {
   margin: 3rem 3rem;
 }
 
+@media screen and (max-width: 1056px) {
+  .swiper-slide-grid {
+    grid-template-columns: 1fr;
+    min-height: 70vh;
+  }
+}
 .swiper-pagination {
   scale: 2;
+}
+
+.swiper-button-next {
+  right: 4rem;
+}
+
+.swiper-button-prev {
+  left: 4rem;
 }
 
 .location-section {

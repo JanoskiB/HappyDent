@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="assets/script/script.js"></script>
-    <link rel="stylesheet" href="styles/style.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <style>
+    <link rel="stylesheet" href="styles/style.css">
+   <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
     </style>
     <title>About-us</title>
@@ -64,8 +64,7 @@
                 We are Lehoczky Dental, a Hungarian dental clinic with more than 30 years of experience
             </p>
             <div class="desktop-btn">
-                <button class="primary-btn about-btn"><a href="#">Take a tour</a></button>
-                <a class="secondary-btn hero-secondary-btn" href="#">Contact us</a>
+                <a class="secondary-btn" href="#">Contact us</a>
             </div>
             <div class="mobile-btn">
                 <a href="#">Contact</a>
@@ -104,7 +103,7 @@
         <div class="staff-section">
             <h2>Meet our staff</h2>
             <h3>Our colleagues are professionals eager to help you achieve the smile of your dreams</h3>
-            <div class="staff-card">
+            <div class="staff-card-grid">
                 <img src="assets/images/staff-img.png" alt="">
                 <div>
                     <h3>Dr. Lehoczky Márton</h3>
@@ -118,7 +117,7 @@
                         close to my heart. I spend my free time reading and playing sports.</p>
                 </div>
             </div>
-            <div class="staff-card">
+            <div class="staff-card-grid">
                 <img src="assets/images/staff-img.png" alt="">
                 <div>
                     <h3>Dr. Lehoczky Márton</h3>
@@ -132,7 +131,7 @@
                         close to my heart. I spend my free time reading and playing sports.</p>
                 </div>
             </div>
-            <div class="staff-card">
+            <div class="staff-card-grid">
                 <img src="assets/images/staff-img.png" alt="">
                 <div>
                     <h3>Dr. Lehoczky Márton</h3>
@@ -238,6 +237,8 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>       
                 <div class="swiper-pagination"></div>
             </div>
         </div>
@@ -252,9 +253,9 @@
             <div>
                 <h2>
                     Are you ready to get the smile of your dreams?</h2>
-                <h4>
+                <p class="intro-text">
                     Book a consultation meeting with us to get your journey started! 
-                </h4>
+                </p>
                 <button class="primary-btn"><a href="#">Book a meeting</a></button>
             </div>
             <div>
@@ -297,12 +298,15 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-                dynamicBullets: true,
-            },
-        });
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination"
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
 </body>
 

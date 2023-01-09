@@ -123,6 +123,15 @@ button {
 
 }
 
+@media screen and (max-width: 1056px) {
+   .primary-btn{
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+   }
+}
+
+
+
 .secondary-btn {
    color: $medium-blue;
    text-decoration: underline;
@@ -500,7 +509,7 @@ h4 {
 }
 
 .intro-text-var {
-   font-size: 1.25rem; 
+   font-size: 1.25rem;
    color: $medium-blue;
    font-weight: 500;
 }
@@ -557,10 +566,8 @@ p {
       }
 
       &-right>img {
-         width: 80%;
-         margin-left: 10vw;
-         margin-right: 10vw;
          margin-top: 2rem;
+         float: none;
       }
    }
 
@@ -703,7 +710,7 @@ p {
       &>.treatments-column {
          padding: 1.5rem .5rem;
       }
-   
+
       &>.hungary-column {
          @include borderrad-15;
          background-color: $white;
@@ -716,14 +723,18 @@ p {
          color: $medium-blue;
       }
 
-      
+      &>.hungary-column> p {
+         color: $medium-blue;
+      }
+
+
       &>.denmark-column {
          padding: 1.5rem .5rem;
          justify-self: end;
          text-align: center;
       }
 
-      &>div>p{
+      &>div>p {
          margin-top: 1.5rem;
       }
    }
@@ -839,7 +850,7 @@ p {
 
    &-left {
       margin-left: 1.5rem;
-      
+
    }
 
    &-right {
@@ -924,7 +935,7 @@ p {
       }
 
       &>div>h3,
-      h4{
+      h4 {
          margin-left: 10%;
       }
 
@@ -989,6 +1000,20 @@ p {
    }
 }
 
+@media screen and (max-width: 1056px) {
+   .consultation-section {
+      grid-template-columns: 1fr;
+      min-height: 70vh;
+
+      &>div>img{
+         float: none;
+      }
+   }
+
+
+}
+
+
 footer {
    background-color: $dark-blue;
    min-height: 40vh;
@@ -1030,6 +1055,18 @@ footer {
 
 }
 
+@media screen and (max-width: 1056px) {
+   footer>.footer-grid {
+      grid-template-columns: 1fr;
+   }
+
+   footer>.footer-grid>.footer-r {
+      text-align:left;
+   }
+
+}
+
+
 // About page
 
 .expectations-section {
@@ -1051,6 +1088,13 @@ footer {
    }
 }
 
+@media screen and (max-width: 1056px) {
+   .expectations-section-grid {
+      grid-template-columns: 1fr;
+      min-height: 70vh;
+   }
+}
+
 .staff-section {
    @include w-h-m;
 
@@ -1059,7 +1103,7 @@ footer {
       margin-bottom: 2rem;
    }
 
-   &>.staff-card {
+   &>.staff-card-grid {
       @include borderrad;
       height: fit-content;
       margin-bottom: 4rem;
@@ -1068,7 +1112,7 @@ footer {
       gap: 0;
       background-color: #5daae983;
 
-      &>div>h3{
+      &>div>h3 {
          margin-left: 2rem;
          color: $dark-blue;
          font-weight: 500;
@@ -1086,6 +1130,17 @@ footer {
       }
    }
 }
+
+@media screen and (max-width: 1056px) {
+   .staff-card-grid{
+      background-color: #003F91;
+   }
+
+   .staff-card-grid>img {
+      display: none
+   }
+}
+
 
 // Swiper
 
@@ -1128,8 +1183,24 @@ footer {
    }
 }
 
+@media screen and (max-width: 1056px) {
+   .swiper-slide-grid {
+      grid-template-columns: 1fr;
+      min-height: 70vh;
+   }
+
+}
+
 .swiper-pagination {
    scale: 2;
+}
+
+.swiper-button-next {
+   right: 4rem;
+}
+
+.swiper-button-prev {
+   left: 4rem;
 }
 
 .location-section {

@@ -14,165 +14,172 @@
 <body>
   <header class="header" id="header">
     <section class="wrapper container">
-        <a href="index.html" class="brand">Lehoczky Dental </a>
-        <div class="burger" id="burger">
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-        </div>
-        <span class="overlay"></span>
-        <nav class="navbar" id="navbar">
-            <ul class="menu" id="menu">
-                <li class="menu-item menu-dropdown">
-                    <span class="menu-link" data-toggle="submenu"><a class="menu-link" href="treatments.html">Treatments</a></span>
-                    <ul class="submenu">
-                        <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-                        <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-                        <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-                        <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
+      <a href="index.html" class="brand">Lehoczky Dental </a>
+      <div class="burger" id="burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </div>
+      <span class="overlay"></span>
+      <nav class="navbar" id="navbar">
+        <ul class="menu" id="menu">
+          <li class="menu-item menu-dropdown">
+            <span class="menu-link" data-toggle="submenu"><a class="menu-link"
+                href="treatments.html">Treatments</a></span>
+            <ul class="submenu">
+              <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
+              <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
+              <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
+              <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
 
-                    </ul>
-                </li>
-                <li class="menu-item"><a href="why-hungary.html" class="menu-link">Why Hungary?</a></li>
-                <li class="menu-item menu-dropdown">
-                    <span class="menu-link" data-toggle="submenu"><a class="menu-link" href="travelling.html">Travelling</a></span>
-                    <ul class="submenu">
-                        <li class="submenu-item"><a href="#" class="submenu-link">Before travelling</a></li>
-                        <li class="submenu-item"><a href="#" class="submenu-link">Travelling</a></li>
-                        <li class="submenu-item"><a href="#" class="submenu-link">During your stay</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item"><a href="about-us.html" class="menu-link">About us</a></li>
-                <li class="menu-item"><a href="faq.html" class="menu-link" style="text-decoration:underline;">FAQ</a></li>
-                <li class="menu-item menu-item-tel"><img class="phone-icon" src="assets/icons/phone-icon.png"
-                        alt="phone icon"><a href="tel:+4591810272" class="menu-link-tel"> +45 91 81 02 72</a></li>
-                <li class="menu-item"><button class="primary-btn"><a href="contact.html">Contact</a></button></li>
             </ul>
-        </nav>
+          </li>
+          <li class="menu-item"><a href="why-hungary.html" class="menu-link">Why Hungary?</a></li>
+          <li class="menu-item menu-dropdown">
+            <span class="menu-link" data-toggle="submenu"><a class="menu-link"
+                href="travelling.html">Travelling</a></span>
+            <ul class="submenu">
+              <li class="submenu-item"><a href="#" class="submenu-link">Before travelling</a></li>
+              <li class="submenu-item"><a href="#" class="submenu-link">Travelling</a></li>
+              <li class="submenu-item"><a href="#" class="submenu-link">During your stay</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="about-us.html" class="menu-link">About us</a></li>
+          <li class="menu-item"><a href="faq.html" class="menu-link" style="text-decoration:underline;">FAQ</a></li>
+          <li class="menu-item menu-item-tel"><img class="phone-icon" src="assets/icons/phone-icon.png"
+              alt="phone icon"><a href="tel:+4591810272" class="menu-link-tel"> +45 91 81 02 72</a></li>
+          <li class="menu-item"><button class="primary-btn"><a href="contact.html">Contact</a></button></li>
+        </ul>
+      </nav>
     </section>
-</header>
+  </header>
 
   <main>
     <div class="faq-grid">
+
       <div class="faq-navigation">
-        <div class="sub-btn">
-          <img src="/assets/icons/faq/calendar-icon.svg" alt="Calendar icon">
-          <h5>Consultation<br>meeting</h5>
+        <div class="faq-squares">
+          <div class="sub-btn">
+            <img src="/assets/icons/faq/calendar-icon.svg" alt="Calendar icon">
+            <h5>Consultation<br>meeting</h5>
+          </div>
+          <div class="sub-btn">
+            <img src="/assets/icons/faq/treatments-icon.svg" alt="Calendar icon">
+            <h5>Treatments</h5>
+          </div>
+          <div class="sub-btn">
+            <img src="/assets/icons/faq/plane-icon.svg" alt="Calendar icon">
+            <h5>Traveling<br>process</h5>
+          </div>
+          <div class="sub-btn">
+            <img src="/assets/icons/faq/vacation-icon.svg" alt="Calendar icon">
+            <h5>Staying in<br>Hungary</h5>
+          </div>
         </div>
-        <div class="sub-btn">
-          <img src="/assets/icons/faq/treatments-icon.svg" alt="Calendar icon">
-          <h5>Treatments</h5>
+      </div>
+      <div class="faq-list">
+        <div class="faq-header">
+          <h1>Frequently asked question</h1>
+          <p>Do you have any questions? We are here to help find the answers.</p>
         </div>
-        <div class="sub-btn">
-          <img src="/assets/icons/faq/plane-icon.svg" alt="Calendar icon">
-          <h5>Traveling<br>process</h5>
+
+        <!-- cards -->
+        <!-- problem: the card is opening only by clicking the question, but not the arrow. -->
+        <div class="card-sec">
+          <h2>Consultation meeting</h2>
+          <div class="card-base">
+            <div class="card-heading">
+              <h3>How can I set up a consultation meeting?</h3>
+            </div>
+            <div class="card-arrow">
+              <img src="/assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
+            </div>
+            <div class="card-content">
+              <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
+                about
+                yourself and your dental issue. </p>
+            </div>
+          </div>
+          <div class="card-base">
+            <div class="card-heading">
+              <h3>How can I set up a consultation meeting?</h3>
+            </div>
+            <div class="card-arrow">
+              <img src="/assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
+            </div>
+            <div class="card-content">
+              <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
+                about
+                yourself and your dental issue. </p>
+            </div>
+          </div>
+          <div class="card-base">
+            <div class="card-heading">
+              <h3>How can I set up a consultation meeting?</h3>
+            </div>
+            <div class="card-arrow">
+              <img src="/assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
+            </div>
+            <div class="card-content">
+              <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
+                about
+                yourself and your dental issue. </p>
+            </div>
+          </div>
         </div>
-        <div class="sub-btn">
-          <img src="/assets/icons/faq/vacation-icon.svg" alt="Calendar icon">
-          <h5>Staying in<br>Hungary</h5>
+
+        <div class="card-sec">
+          <h2>Treatments</h2>
+          <div class="card-base">
+            <div class="card-heading">
+              <h3>How can I set up a consultation meeting?</h3>
+            </div>
+            <div class="card-arrow">
+              <img src="/assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
+            </div>
+            <div class="card-content">
+              <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
+                about
+                yourself and your dental issue. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-sec">
+          <h2>Traveling process</h2>
+          <div class="card-base">
+            <div class="card-heading">
+              <h3>How can I set up a consultation meeting?</h3>
+            </div>
+            <div class="card-arrow">
+              <img src="/assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
+            </div>
+            <div class="card-content">
+              <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
+                about
+                yourself and your dental issue. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-sec">
+          <h2>Staying in Hungary</h2>
+          <div class="card-base">
+            <div class="card-heading">
+              <h3>How can I set up a consultation meeting?</h3>
+            </div>
+            <div class="card-arrow">
+              <img src="/assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
+            </div>
+            <div class="card-content">
+              <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
+                about
+                yourself and your dental issue. </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="faq-header">
-        <h1>Frequently asked question</h1>
-        <p>Do you have any questions? We are here to help find the answers.</p>
-      </div>
-
-      <!-- cards -->
-      <!-- problem: the card is opening only by clicking the question, but not the arrow. -->
-      <div class="card-sec">
-        <h2>Consultation meeting</h2>
-        <div class="card-base">
-          <div class="card-heading">
-            <h3>How can I set up a consultation meeting?</h3>
-          </div>
-          <div class="card-arrow">
-            <img src="/assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
-          </div>
-          <div class="card-content">
-            <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
-              about
-              yourself and your dental issue. </p>
-          </div>
-        </div>
-        <div class="card-base">
-          <div class="card-heading">
-            <h3>How can I set up a consultation meeting?</h3>
-          </div>
-          <div class="card-arrow">
-            <img src="/assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
-          </div>
-          <div class="card-content">
-            <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
-              about
-              yourself and your dental issue. </p>
-          </div>
-        </div>
-        <div class="card-base">
-          <div class="card-heading">
-            <h3>How can I set up a consultation meeting?</h3>
-          </div>
-          <div class="card-arrow">
-            <img src="/assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
-          </div>
-          <div class="card-content">
-            <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
-              about
-              yourself and your dental issue. </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-sec">
-        <h2>Treatments</h2>
-        <div class="card-base">
-          <div class="card-heading">
-            <h3>How can I set up a consultation meeting?</h3>
-          </div>
-          <div class="card-arrow">
-            <img src="/assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
-          </div>
-          <div class="card-content">
-            <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
-              about
-              yourself and your dental issue. </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-sec">
-        <h2>Traveling process</h2>
-        <div class="card-base">
-          <div class="card-heading">
-            <h3>How can I set up a consultation meeting?</h3>
-          </div>
-          <div class="card-arrow">
-            <img src="/assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
-          </div>
-          <div class="card-content">
-            <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
-              about
-              yourself and your dental issue. </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-sec">
-        <h2>Staying in Hungary</h2>
-        <div class="card-base">
-          <div class="card-heading">
-            <h3>How can I set up a consultation meeting?</h3>
-          </div>
-          <div class="card-arrow">
-            <img src="/assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
-          </div>
-          <div class="card-content">
-            <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
-              about
-              yourself and your dental issue. </p>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="contact">
@@ -202,7 +209,8 @@
         <a href="mailto:info@lehoczkydental.com">info@lehoczkydental.com</a>
         <p>6726 Töltés street 21. <br>
           Szeged, Hungary</p>
-        <a class="fb-icon" href="https://www.facebook.com/lehoczkydental"><img src="assets/icons/FB-icon.png" alt="FB icon"></a>
+        <a class="fb-icon" href="https://www.facebook.com/lehoczkydental"><img src="assets/icons/FB-icon.png"
+            alt="FB icon"></a>
       </div>
 
     </div>

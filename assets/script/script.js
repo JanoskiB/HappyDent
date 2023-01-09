@@ -62,9 +62,18 @@ const cards = document.querySelectorAll('.card-base');
 
 cards.forEach(card => {
    const header = card.querySelector('.card-heading');
+   const arrow = card.querySelector('.card-arrow');
    const content = card.querySelector('.card-content');
 
    header.addEventListener('click', () => {
+      if (content.style.display === 'block') {
+         content.style.display = 'none';
+      } else {
+         content.style.display = 'block';
+      }
+   });
+
+   arrow.addEventListener('click', () => {
       if (content.style.display === 'block') {
          content.style.display = 'none';
       } else {

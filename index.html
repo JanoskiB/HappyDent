@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="assets/script/script.js"></script>
+  <script defer src="toTop.js"></script>
   <link rel="stylesheet" href="styles/style.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -17,44 +18,46 @@
   <div class="top-wrapper">
     <header class="header" id="header">
       <section class="wrapper container">
-          <a href="index.html" class="brand">Lehoczky Dental </a>
-          <div class="burger" id="burger">
-              <span class="burger-line"></span>
-              <span class="burger-line"></span>
-              <span class="burger-line"></span>
-          </div>
-          <span class="overlay"></span>
-          <nav class="navbar" id="navbar">
-              <ul class="menu" id="menu">
-                  <li class="menu-item menu-dropdown">
-                      <span class="menu-link" data-toggle="submenu"><a class="menu-link" href="treatments.html">Treatments</a></span>
-                      <ul class="submenu">
-                          <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-                          <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-                          <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-                          <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-  
-                      </ul>
-                  </li>
-                  <li class="menu-item"><a href="why-hungary.html" class="menu-link">Why Hungary?</a></li>
-                  <li class="menu-item menu-dropdown">
-                      <span class="menu-link" data-toggle="submenu"><a class="menu-link" href="travelling.html">Travelling</a></span>
-                      <ul class="submenu">
-                          <li class="submenu-item"><a href="#" class="submenu-link">Before travelling</a></li>
-                          <li class="submenu-item"><a href="#" class="submenu-link">Travelling</a></li>
-                          <li class="submenu-item"><a href="#" class="submenu-link">During your stay</a></li>
-                      </ul>
-                  </li>
-                  <li class="menu-item"><a href="about-us.html" class="menu-link">About us</a></li>
-                  <li class="menu-item"><a href="faq.html" class="menu-link">FAQ</a></li>
-                  <li class="menu-item menu-item-tel"><img class="phone-icon" src="assets/icons/phone-icon.png"
-                          alt="phone icon"><a href="tel:+4591810272" class="menu-link-tel"> +45 91 81 02 72</a></li>
-                  <li class="menu-item"><button class="primary-btn"><a href="contact.html">Contact</a></button></li>
+        <a href="index.html" class="brand">Lehoczky Dental </a>
+        <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
+        <span class="overlay"></span>
+        <nav class="navbar" id="navbar">
+          <ul class="menu" id="menu">
+            <li class="menu-item menu-dropdown">
+              <span class="menu-link" data-toggle="submenu"><a class="menu-link"
+                  href="treatments.html">Treatments</a></span>
+              <ul class="submenu">
+                <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
+                <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
+                <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
+                <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
+
               </ul>
-          </nav>
+            </li>
+            <li class="menu-item"><a href="why-hungary.html" class="menu-link">Why Hungary?</a></li>
+            <li class="menu-item menu-dropdown">
+              <span class="menu-link" data-toggle="submenu"><a class="menu-link"
+                  href="travelling.html">Travelling</a></span>
+              <ul class="submenu">
+                <li class="submenu-item"><a href="#" class="submenu-link">Before travelling</a></li>
+                <li class="submenu-item"><a href="#" class="submenu-link">Travelling</a></li>
+                <li class="submenu-item"><a href="#" class="submenu-link">During your stay</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="about-us.html" class="menu-link">About us</a></li>
+            <li class="menu-item"><a href="faq.html" class="menu-link">FAQ</a></li>
+            <li class="menu-item menu-item-tel"><img class="phone-icon" src="assets/icons/phone-icon.png"
+                alt="phone icon"><a href="tel:+4591810272" class="menu-link-tel"> +45 91 81 02 72</a></li>
+            <li class="menu-item"><button class="primary-btn"><a href="contact.html">Contact</a></button></li>
+          </ul>
+        </nav>
       </section>
-  </header>
-  
+    </header>
+
     <div class="hero-section">
       <div class="hero-section-left">
         <h1>
@@ -64,11 +67,11 @@
           Our clinic with over 30 years of experience is ready to welcome you for a dental vacation in Hungary
         <p>
         <div class="desktop-btn">
-          <button class="primary-btn"><a href="">About our clinic</a></button>
-          <a class="secondary-btn hero-secondary-btn" href="#">Contact us</a>
+          <button class="primary-btn"><a href="about-us.html">About our clinic</a></button>
+          <a class="secondary-btn hero-secondary-btn" href="contact.html">Contact us</a>
         </div>
         <div class="mobile-btn">
-          <a href="#">Learn more</a>
+          <a href="#processSection">Learn more</a>
         </div>
       </div>
       <div class="hero-section-right">
@@ -78,7 +81,7 @@
   </div>
 
   <main>
-    <div class="process-section">
+    <div id="processSection" class="process-section">
       <h2>How does dental tourism work?</h2>
       <p class="intro-text-var">The process involves three easy steps</p>
       <div class="process-section-grid">
@@ -103,7 +106,7 @@
 
       </div>
       <div class="btn-container">
-        <a class="secondary-btn btn-center-position" href="#">Learn more</a>
+        <a class="secondary-btn btn-center-position" href="travelling.html">Learn more</a>
       </div>
     </div>
 
@@ -111,10 +114,11 @@
     <div class="prices-section">
       <div class="prices-section-left">
         <h2>Did you know?</h2>
-        <p class="intro-text">On average, dental treatments in Denmark are <span class="text-highlight">4 times more expensive </span> than treatments in
+        <p class="intro-text">On average, dental treatments in Denmark are <span class="text-highlight">4 times more
+            expensive </span> than treatments in
           Hungary</p>
         <div class="desktop-btn">
-          <button class="primary-btn"><a href="">See our prices</a></button>
+          <button class="primary-btn"><a href="treatments.html">See our prices</a></button>
         </div>
       </div>
       <div class="prices-section-right">
@@ -179,7 +183,7 @@
             <div class="f-s-card-grid-right">
               <p><strong>Airline</strong></p>
               <p>Ryanair</p><br>
-              
+
               <p><strong>Flight duration</strong></p>
               <p>1 hr 45 mins</p>
             </div>
@@ -249,7 +253,7 @@
         </div>
       </div>
       <div class="btn-container">
-        <button class="primary-btn btn-center-position"><a href="#">More about travelling</a></button>
+        <button class="primary-btn btn-center-position"><a href="travelling.html">More about travelling</a></button>
       </div>
     </div>
 
@@ -261,17 +265,23 @@
         <div class="asc-1">
           <h4>Mozart Hotel ****</h4>
           <h3>DKK 360/night</h3>
-          <a class="secondary-btn" href="#">See on hotel's website</a>
+          <a class="secondary-btn" target="_blank"
+            href="https://www.booking.com/hotel/hu/mozart-hotel.hu.html?aid=319854&label=mozart-hotel-ztM9J4CXnpp0A_kkHJHWjgS438106056175%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-146342137030%3Akwd-26972332083%3Alp1005329%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YUNMGHk8cZwoB0esNmU1BR4&sid=b84158e62d4a4c81f2eb69683d333b5d&all_sr_blocks=33467601_350403408_1_2_0;checkin=2023-07-03;checkout=2023-07-06;dest_id=-867005;dest_type=city;dist=0;group_adults=1;group_children=0;hapos=1;highlighted_blocks=33467601_350403408_1_2_0;hpos=1;matching_block_id=33467601_350403408_1_2_0;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;sr_pri_blocks=33467601_350403408_1_2_0__19023;srepoch=1673292512;srpvid=1cec88ef93d00126;type=total;ucfs=1&#hotelTmpl">See
+            on Booking.com</a>
         </div>
         <div class="asc-2">
           <h4>Maya Panzio ***</h4>
           <h3>DKK 270/night</h3>
-          <a class="secondary-btn" href="#">See on hotel's website</a>
+          <a class="secondary-btn" target="_blank"
+            href="https://www.booking.com/hotel/hu/maya-panzio.hu.html?aid=319854&label=mozart-hotel-ztM9J4CXnpp0A_kkHJHWjgS438106056175%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-146342137030%3Akwd-26972332083%3Alp1005329%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YUNMGHk8cZwoB0esNmU1BR4&sid=b84158e62d4a4c81f2eb69683d333b5d&all_sr_blocks=140420901_168493044_1_0_0;checkin=2023-07-03;checkout=2023-07-06;dest_id=1404209;dest_type=hotel;dist=0;group_adults=1;group_children=0;hapos=1;highlighted_blocks=140420901_168493044_1_0_0;hpos=1;matching_block_id=140420901_168493044_1_0_0;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;sr_pri_blocks=140420901_168493044_1_0_0__11550;srepoch=1673292854;srpvid=55d5899a93950807;type=total;ucfs=1&#hotelTmpl">See
+            on Booking.com</a>
         </div>
         <div class="asc-3">
           <h4>Entire apartment</h4>
           <h3>DKK 250/night</h3>
-          <a class="secondary-btn" href="#">See on hotel's website</a>
+          <a class="secondary-btn"
+            href="https://www.booking.com/hotel/hu/kupolaapartman.hu.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaD2IAQGYARG4ARfIAQzYAQHoAQH4AQyIAgGoAgO4AujY8Z0GwAIB0gIkNDQ5YzI1N2YtZjMzMy00NWQxLWFiYzYtYmFlZWFjMjY5ZDEy2AIG4AIB&sid=b84158e62d4a4c81f2eb69683d333b5d&atlas_src=sr_iw_btn;checkin=2023-07-03;checkout=2023-07-06;dest_id=-867005;dest_type=city;dist=0;group_adults=1;group_children=0;highlighted_blocks=502280502_179180360_2_0_0;no_rooms=1;room1=A;sb_price_type=total;type=total;ucfs=1&">See
+            on Booking.com</a>
         </div>
       </div>
     </div>
@@ -284,7 +294,7 @@
         <p class="intro-text">
           We only need a panoramic X-ray from you to create a specialised treatment plan
         </p>
-        <button class="primary-btn"><a href="#">Book a meeting</a></button>
+        <button class="primary-btn"><a href="contact.html">Book a meeting</a></button>
       </div>
       <div>
         <img src="assets/images/consultation.png" alt="consultation meeting Lehoczky dental tourism clinic">
@@ -314,7 +324,8 @@
         <a href="mailto:info@lehoczkydental.com">info@lehoczkydental.com</a>
         <p>6726 Töltés street 21. <br>
           Szeged, Hungary</p>
-        <a class="fb-icon" href="https://www.facebook.com/lehoczkydental"><img src="assets/icons/FB-icon.png" alt="FB icon"></a>
+        <a class="fb-icon" href="https://www.facebook.com/lehoczkydental"><img src="assets/icons/FB-icon.png"
+            alt="FB icon"></a>
       </div>
 
     </div>
@@ -323,5 +334,5 @@
 
 </html>
 
-<!-- Resources:  -->
+<!-- References:  -->
 <!-- Inspo for  Responsive Dropdown Navigation Menu by Syahrizal from Codepen - https://codepen.io/syrizaldev/pen/vYRoVZX-->

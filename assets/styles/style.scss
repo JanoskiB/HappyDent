@@ -298,7 +298,7 @@ video {
       }
 
       &:hover {
-         outline: none;
+        color: $dark-blue;
       }
    }
 
@@ -335,6 +335,8 @@ video {
       }
    }
 }
+
+
 
 .submenu {
    position: absolute;
@@ -534,6 +536,10 @@ p {
       &>h1 {
          margin-top: 8rem;
       }
+
+      &>.hero-text-hun{
+         padding-right: 10rem;
+      }
    }
 
    &-right>img {
@@ -541,6 +547,10 @@ p {
       width: 70%;
       position: relative;
       float: right;
+   }
+
+   .hero-hun-img>img{
+      width: 90%;
    }
 
    & .hero-secondary-btn {
@@ -1007,6 +1017,7 @@ p {
 
       &>div>img{
          float: none;
+         width: 100%;
       }
    }
 
@@ -1247,7 +1258,7 @@ footer {
       margin-top: 4rem;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 4rem;
+      gap: 2rem;
 
       &>div>h5,
       p {
@@ -1257,5 +1268,11 @@ footer {
       &>div>h5 {
          color: $dark-blue;
       }
+   }
+}
+
+@media screen and (max-width: 1056px) {
+   .cost-section-grid{
+      grid-template-columns: 1fr 1fr;
    }
 }

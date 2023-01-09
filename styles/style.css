@@ -448,17 +448,11 @@ p {
 .hero-section-left > h1 {
   margin-top: 8rem;
 }
-.hero-section-right {
-  grid-column: 2;
-}
 .hero-section-right > img {
   margin-top: 8rem;
-  width: 75%;
+  width: 70%;
   position: relative;
   float: right;
-}
-.hero-section-left > h1 {
-  margin-top: 8rem;
 }
 .hero-section .hero-secondary-btn {
   margin-left: 1.5rem;
@@ -850,7 +844,7 @@ footer .footer-grid > div > p {
   background-color: rgba(93, 170, 233, 0.5137254902);
 }
 .staff-section > .staff-card > div > h3 {
-  margin: 1rem 2rem;
+  margin-left: 2rem;
   color: #003F91;
   font-weight: 500;
 }

@@ -411,14 +411,23 @@ h4 {
   min-height: 90vh;
   margin: 0 10vw;
 }
+.hero-section-left {
+  grid-column: 1;
+}
 .hero-section-left > h1 {
   margin-top: 8rem;
+}
+.hero-section-right {
+  grid-column: 2;
 }
 .hero-section-right > img {
   margin-top: 8rem;
   width: 70%;
   position: relative;
   float: right;
+}
+.hero-section-left > h1 {
+  margin-top: 8rem;
 }
 .hero-section .hero-secondary-btn {
   margin-left: 1.5rem;

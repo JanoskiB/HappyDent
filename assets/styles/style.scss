@@ -447,15 +447,27 @@ h4 {
    min-height: 90vh;
    margin: 0 10vw;
 
-   &-left>h1 {
-      margin-top: 8rem;
+   &-left {
+      grid-column: 1;
+
+      &>h1 {
+         margin-top: 8rem;
+      }
    }
 
-   &-right>img {
+   &-right {
+      grid-column: 2;
+
+      &>img {
+         margin-top: 8rem;
+         width: 70%;
+         position: relative;
+         float: right;
+      }
+   }
+
+   &-left>h1 {
       margin-top: 8rem;
-      width: 70%;
-      position: relative;
-      float: right;
    }
 
    & .hero-secondary-btn {
@@ -901,26 +913,26 @@ footer {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 4rem;
 
-      &>div>img{
+      &>div>img {
          scale: .7;
       }
 
-      &>div>h4{
+      &>div>h4 {
          margin-top: 1rem;
          margin-bottom: 2rem;
       }
    }
 }
 
-.staff-section{
+.staff-section {
    @include w-h-m;
 
-   &>h3{
+   &>h3 {
       margin-left: 0;
       margin-bottom: 2rem;
    }
 
-   &>.staff-card{
+   &>.staff-card {
       @include borderrad;
       height: fit-content;
       margin-bottom: 4rem;
@@ -929,18 +941,18 @@ footer {
       gap: 0;
       background-color: $medium-blue;
 
-      &>div>h3{
+      &>div>h3 {
          margin-left: 2rem;
          color: $dark-blue;
          font-weight: 500;
       }
 
-      &>div>.role{
-         margin: 1rem  2rem;
+      &>div>.role {
+         margin: 1rem 2rem;
          color: $light-blue;
       }
 
-      &>div>.abt-p{
+      &>div>.abt-p {
          margin-top: 1rem;
          margin: 0 2rem;
       }

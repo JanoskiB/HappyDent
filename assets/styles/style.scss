@@ -20,6 +20,14 @@ $mediaMinWidth: 480px;
    -o-border-radius: 20px;
 }
 
+@mixin borderrad-15 {
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   -o-border-radius: 15px;
+}
+
 /* Margin between the intro text and the section's main content*/
 @mixin intro-content-margin {
    margin-top: 5rem;
@@ -81,6 +89,7 @@ button {
    width: fit-content;
    height: 2.3rem;
    margin-top: 5rem;
+   box-shadow: var(--shadow-large);
 
 
    &>a {
@@ -457,6 +466,13 @@ h4 {
    font-weight: 500;
 }
 
+.intro-text-var {
+   font-size: 1.25rem; 
+   color: $medium-blue;
+   font-weight: 500;
+}
+
+
 p {
    font-size: 1rem; /* body text */
    color: $grey;
@@ -559,6 +575,10 @@ p {
          display: inline-block;
       }
 
+      &>div>img{
+         height: 2.5rem;
+      }
+
       &>div>.step{
          font-size: 3rem;
          color: $dark-blue;
@@ -569,7 +589,6 @@ p {
       &>div>p{
          margin-top: 1.5rem;
       }
-
    }
 }
 
@@ -614,40 +633,40 @@ p {
 .prices-section {
    @include w-h-m;
 
-   &>h4 {
-      margin-bottom: 8rem;
-   }
-
-   &-grid {
-      display: grid;
-      grid-template-columns: 1fr .6fr 1fr;
+   &-grid{
       @include intro-content-margin;
-
-
-      &>div>h4 {
-         margin-top: 1.5rem;
-         margin-bottom: 4rem;
-         text-align: center;
+      @include borderrad;
+      background-color: #DFEEFB;
+      color: $dark-blue;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: start;
+      width: 100%;
+      padding: 2rem 5rem;
+          
+      &>.treatments-column {
+         padding: 1.5rem .5rem;
       }
-
-      &>div>p {
-         margin-bottom: 2rem;
-         text-align: center;
-      }
-
-      &>.hun-prices {
-         color: $medium-blue;
+   
+      &>.hungary-column {
+         @include borderrad-15;
          background-color: $white;
+         color: $medium-blue;
+         justify-self: center;
+         text-align: center;
+         padding: 1.5rem 2.5rem;
          box-shadow: 1px 1px 2px $dark-blue;
-         @include borderrad;
       }
 
-      &>.p-s-g-treatments>h4 {
-         text-align: left;
+      
+      &>.denmark-column {
+         padding: 1.5rem .5rem;
+         justify-self: end;
+         text-align: center;
       }
 
-      &>.p-s-g-treatments>p {
-         text-align: left;
+      &>div>p{
+         margin-top: 1.5rem;
       }
    }
 }
@@ -671,107 +690,79 @@ p {
          width: 100%;
       }
    }
-
-   &>a {
-      text-decoration: underline;
-      width: 5rem;
-      color: $medium-blue;
-      margin-left: 40%;
-      font-size: 1.3rem;
-   }
-
 }
 
 .flights-section {
    @include w-h-m;
 
-   &>h2 {
-      margin-bottom: 1rem;
-   }
-
-   &>h4 {
-      font-size: 1rem;
-      color: $grey;
-   }
-
    &>button {
-      width: fit-content;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      align-content: center;
-      margin-left: 40%;
+      margin: 0 33vw;
    }
 
    &-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto;
-      gap: 4rem;
+      gap: 3rem;
       margin-top: 4rem;
 
 
       &>.f-s-card {
          @include borderrad;
-         box-shadow: 1px 1px 2px $dark-blue;
+         box-shadow: 1px 1px 2px $grey;
          height: fit-content;
          padding-bottom: 2rem;
          margin-bottom: 2rem;
+         background-color: $light-blue;
 
-
-         &>h5,
-         h6,
-         div {
-            margin-left: 10%;
-            margin-right: 10%;
-            color: $grey;
+         h4 {
+            margin-top: 1rem;
+            margin-left: 1.5rem;
          }
 
-         &>h5 {
-            margin-top: 2rem;
-            font-size: 1.5rem;
-            color: $dark-blue;
-         }
-
-         &>h6 {
-            margin-top: .5rem;
-            font-size: 1rem;
+         h3 {
             color: $medium-blue;
+            margin-left: 1.5rem;
          }
 
-         &>div {
-            margin-top: 2rem;
-            margin-bottom: 1.5rem;
-            width: 26%;
-            display: inline-block;
-            line-height: 95%;
+         a {
+            margin-left: 5.5vw;
+            width: 5rem;
          }
-
-         &>a {
-            text-decoration: underline;
-            margin-left: 25%;
-         }
-
       }
    }
+}
 
+
+
+.f-s-card-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin: 3rem auto;
+
+
+   &-left {
+      margin-left: 1.5rem;
+      
+   }
+
+   &-right {
+      margin-left: 1rem;
+      margin-right: 1.5rem;
+   }
 }
 
 .accomodation-section {
    margin-top: 5rem;
    @include w-h-m;
 
-   &>h4 {
-      color: $grey;
-      font-size: 1rem;
-      margin-top: 1rem;
-   }
-
    &-grid {
-      margin-top: 5rem;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      min-height: 45vh;
-      gap: 4rem;
+      grid-template-rows: auto;
+      gap: 3rem;
+      height: 55vh;
+      margin-top: 4rem;
 
       &>div {
          @include borderrad;
@@ -779,8 +770,7 @@ p {
       }
 
       &>div>h3,
-      h4,
-      button {
+      h4{
          margin-left: 10%;
       }
 
@@ -790,38 +780,28 @@ p {
 
       &>div>h3 {
          margin-top: .5rem;
-         color: $medium-blue;
+         color: $white;
       }
 
-      &>div>button {
-         background-color: $light-blue;
-         width: fit-content;
+      &>div>a {
          padding: 10px;
-         @include borderrad;
          position: absolute;
          bottom: 1rem;
          left: 20%;
-
-         &:hover {
-            background-color: $dark-blue;
-         }
-
-         &:hover a {
-            color: $light-blue;
-         }
+         color: $white;
       }
 
       &>.asc-1 {
-         background-image: url(/assets/images/hotel1.png);
+         background-image: url(/assets/images/hotel-room-1.jpg);
 
       }
 
       &>.asc-2 {
-         background-image: url(/assets/images/panzio.png);
+         background-image: url(/assets/images/hotel-room-2.jpg);
       }
 
       &>.asc-3 {
-         background-image: url(/assets/images/apartment.png);
+         background-image: url(/assets/images/hotel-room-3.jpg);
 
       }
    }
@@ -830,33 +810,13 @@ p {
 .consultation-section {
    @include w-h-m;
    min-height: 50vh;
-   margin-top: 5rem;
+   margin-top: 10rem;
    display: grid;
-   grid-template-columns: 2fr 1fr;
-
-   &>div {
-      position: relative;
-   }
-
-   &>div>h2 {
-      font-size: 2rem;
-   }
-
-   &>div>h4 {
-      font-size: 1rem;
-      color: $grey;
-      margin-top: 1rem;
-   }
-
-   &>div>button {
-      position: absolute;
-      bottom: 3rem;
-      width: 9rem;
-      font-size: 1rem;
-   }
+   grid-template-columns: 1fr 1fr;
 
    &>div>img {
       @include borderrad;
+      float: right;
    }
 }
 
@@ -881,18 +841,11 @@ footer {
       .footer-r {
          text-align: right;
 
-         &>button {
-            background-color: $light-blue;
-            margin-right: 2rem;
-
-            &>a {
-               color: $dark-blue;
-            }
-         }
       }
 
       .fb-icon {
          float: right;
+         margin-top: 1rem;
       }
 
       &>div>a {

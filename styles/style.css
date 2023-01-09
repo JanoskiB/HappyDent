@@ -842,7 +842,7 @@ p {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   gap: 3rem;
-  height: 55vh;
+  min-height: 55vh;
   margin-top: 4rem;
 }
 .accomodation-section-grid > div {

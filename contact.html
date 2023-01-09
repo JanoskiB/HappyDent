@@ -30,7 +30,7 @@
               <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
             </ul>
           </li>
-          <li class="menu-item"><a href="#" class="menu-link">Why Hungary?</a></li>
+          <li class="menu-item"><a href="why-hungary.html" class="menu-link">Why Hungary?</a></li>
           <li class="menu-item menu-dropdown">
             <span class="menu-link" data-toggle="submenu">Travelling<i class="bx bx-chevron-down"></i></span>
             <ul class="submenu">
@@ -40,11 +40,11 @@
               <li class="submenu-item"><a href="#" class="submenu-link">Discover Link</a></li>
             </ul>
           </li>
-          <li class="menu-item"><a href="#" class="menu-link">About us</a></li>
-          <li class="menu-item"><a href="#" class="menu-link">FAQ</a></li>
+          <li class="menu-item"><a href="about-us.html" class="menu-link">About us</a></li>
+          <li class="menu-item"><a href="faq.html" class="menu-link">FAQ</a></li>
           <li class="menu-item"><img class="phone-icon" src="assets/icons/phone-icon.png" alt="phone icon"><a href="#"
               class="menu-link-tel"> +45 91 81 02 72</a></li>
-          <li class="menu-item"><button class="primary-btn"><a href="#">Contact</a></button></li>
+          <li class="menu-item"><button class="primary-btn"><a href="contact.html">Contact</a></button></li>
         </ul>
       </nav>
     </section>
@@ -53,15 +53,47 @@
   <main>
     <div class="contact-grid">
       <div class="contact-booking">
-        <div class="contact-booking-header">
-          <h1>Book a meeting with us</h1>
-          <p>Fill out details and we will get back to you as soon as we can
-            about scheduling a consultation meeting with you.</p>
-        </div>
-        <div>
-          <!-- booking form -->
-        </div>
+        <h1>Book a meeting with us</h1>
+        <p>Fill out details and we will get back to you as soon as we can
+          about scheduling a consultation meeting with you.</p>
+
+        <!-- booking form -->
+        <form class="booking-form" action="https://api.web3forms.com/submit" method="POST" id="form2">
+          <input type="hidden" name="access_key" value="52470951-92ea-4077-933c-c9268694030b" />
+          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+          <input type="checkbox" name="botcheck" style="display: none;" />
+
+          <div class="booking-form-name">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" placeholder="John Smith" required>
+          </div>
+          <div class="booking-form-date">
+            <label for="date">Date of birth</label>
+            <input type="date" name="date" id="date" required>
+          </div>
+          <div class="booking-form-email">
+            <label for="email">Your email address</label>
+            <input type="email" name="email" id="email" placeholder="example@example.com" required>
+          </div>
+          <div class="booking-form-description">
+            <label for="description">Short description of your issue</label>
+            <input type="text" name="description" id="description" placeholder="Type your issue here" required>
+          </div>
+          <div class="booking-form-attachment">
+            <label for="file">Attachment of panoramic X-ray</label>
+            <input type="file" name="file" id="file" placeholder="Drop your media file here or browse files" required>
+          </div>
+          <div class="booking-form-submit">
+            <button type="submit" class="primary-btn form-submit-btn">
+              Send message
+            </button>
+          </div>
+          <p id="result2">
+
+          </p>
+        </form>
       </div>
+
       <div class="contact-info">
         <h2>Our contact<br>information</h2>
         <div class="contact-info-grid">
@@ -74,7 +106,6 @@
               as possible</p>
             <a href="">lehoczky.dentaltour@gmail.com</a>
           </div>
-
           <div class="contact-info-grid-img">
             <img src="/assets/icons/phone-icon.svg" alt="">
           </div>
@@ -84,7 +115,6 @@
               and 16:00 CET</p>
             <a href="">+45 91 85 14 39</a>
           </div>
-
           <div class="contact-info-grid-img">
             <img src="/assets/icons/location-icon.svg" alt="">
           </div>
@@ -95,13 +125,38 @@
             <a href="">6726 Töltés street 21.
               Szeged, Hungary</a>
           </div>
-
-
         </div>
       </div>
+
       <div class="contact-form">
         <h2>Not sure about something? Contact us!</h2>
         <p>Are you uncertain about something? You can simply contact us with any questions you have.</p>
+        <form class="form-grid" action="https://api.web3forms.com/submit" method="POST" id="form">
+          <input type="hidden" name="access_key" value="7ee02572-1eb7-4910-b2f5-de28eb7cddfc" />
+          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+          <input type="checkbox" name="botcheck" style="display: none;" />
+
+          <div class="contact-form-name">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" placeholder="John Smith" required>
+          </div>
+          <div class="contact-form-email">
+            <label for="email">Your email</label>
+            <input type="email" name="email" id="email" placeholder="example@example.com" required>
+          </div>
+          <div class="contact-form-question">
+            <label for="question">Your question</label>
+            <input type="text" name="question" id="question" placeholder="Type your question here" required>
+          </div>
+          <div class="booking-form-submit">
+            <button type="submit" class="primary-btn form-submit-btn">
+              Send message
+            </button>
+          </div>
+          <p id="result">
+
+          </p>
+        </form>
       </div>
     </div>
   </main>

@@ -5,19 +5,7 @@ h3 {
   padding: 0;
 }
 
-.faq-navigation {
-  display: inline-block;
-  grid-row: 1/span 6;
-}
-.faq-grid {
-  margin-top: 75px;
-  padding: 0 10vw;
-  display: grid;
-  grid-template-columns: 15vw 65vw;
-  width: 100%;
-  min-height: 100vh;
-}
-.faq-btn {
+.sub-btn {
   display: grid;
   grid-template-rows: 1fr 1fr;
   align-items: center;
@@ -35,12 +23,75 @@ h3 {
   font-weight: bold;
   margin-bottom: 3vh;
 }
-.faq-btn > img {
+.sub-btn > img {
   height: 7vh;
   align-self: end;
 }
-.faq-btn > p {
+.sub-btn > p {
   font-size: 90%;
+}
+
+.card-sec {
+  margin-bottom: 2vw;
+}
+.card-sec > h2 {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+}
+.card-base {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  width: auto;
+  margin-bottom: 1vw;
+  padding: 2vh;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.card-heading {
+  grid-row: 1;
+}
+.card-heading > h3 {
+  margin: 0;
+  color: #003F91;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.card-arrow {
+  grid-row: 1;
+  grid-column: 2;
+  align-self: center;
+}
+.card-arrow > img {
+  height: 1.5rem;
+  float: right;
+}
+.card-content {
+  display: none;
+  grid-row: 2;
+  grid-column: 1/2;
+  padding: 2vh 0;
+}
+.card-content > p {
+  color: #003F91;
+}
+
+.faq-navigation {
+  display: inline-block;
+  grid-row: 1/span 6;
+}
+.faq-grid {
+  margin-top: 75px;
+  padding: 0 10vw;
+  display: grid;
+  grid-template-columns: 15vw 65vw;
+  width: 100%;
+  min-height: 100vh;
 }
 .faq-header {
   width: auto;
@@ -51,48 +102,6 @@ h3 {
 .faq-header > h1 {
   margin: 0 0 1vh 0;
 }
-.faq-cards-sec {
-  margin-bottom: 2vw;
-}
-.faq-cards-sec > h2 {
-  margin: 0;
-  font-size: 2rem;
-}
-.faq-card {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  width: auto;
-  margin-bottom: 1vw;
-  padding: 2vh;
-  background-color: #F5FBFF;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
-.faq-heading {
-  grid-row: 1;
-}
-.faq-heading > h3 {
-  margin: 0;
-}
-.faq-arrow {
-  grid-row: 1;
-  grid-column: 2;
-  align-self: center;
-}
-.faq-arrow > img {
-  height: 1.5rem;
-  float: right;
-}
-.faq-content {
-  display: none;
-  grid-row: 2;
-  grid-column: 1/2;
-  padding: 2vh 0;
-}
 
 .contact {
   padding: 10vh 0;
@@ -102,28 +111,17 @@ h3 {
   display: grid;
   grid-template-columns: 55vw 20vw;
   grid-template-rows: auto auto;
-  padding: 10vw;
+  padding: 5vw 10vw;
   gap: 5vh;
 }
 .contact-booking, .contact-form {
-  background-color: #5DA9E9;
+  background-color: rgba(93, 169, 233, 0.5);
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   padding: 5vh;
-}
-.contact-booking {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  height: 800px;
-}
-.contact-booking-header {
-  grid-column: 1/span 2;
-}
-.contact-booking-header > p {
   color: white;
 }
 .contact-info-grid {
@@ -135,16 +133,150 @@ h3 {
 .contact-info-grid-img {
   height: 1vw;
   grid-column: 1;
+  margin-top: 0.3rem;
 }
 .contact-info-grid-text {
   grid-column: 2;
+}
+.contact-info-grid-text > h3 {
+  font-weight: bold;
+  color: #003F91;
+  margin-bottom: 1rem;
+}
+.contact-info-grid-text > p {
+  color: #777676;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.contact-info-grid-text > a {
+  display: block;
+  color: #777676;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+.contact-info-grid-text > a:hover {
+  text-decoration: underline;
+}
+.contact-info-grid-text > a:active {
+  color: #777676;
+  font-weight: bold;
+  padding-bottom: 2rem;
 }
 .contact-info > h2 {
   grid-column: 1/span 2;
 }
 .contact-form {
   grid-column: 1/span 2;
-  height: 400px;
+}
+.contact-form-name {
+  grid-column: 1;
+}
+.contact-form-email {
+  grid-column: 2;
+}
+.contact-form-question {
+  grid-column: 1/span 2;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 2vw;
+  margin: 4vh 0;
+}
+.form-sumbit {
+  grid-column: 1/span 2;
+}
+.form-sumbit-btn {
+  margin: 0;
+  color: white;
+}
+
+.booking-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 2vw;
+  margin: 4vh 0;
+}
+.booking-form-name {
+  grid-column: 1;
+}
+.booking-form-date {
+  grid-column: 2;
+}
+.booking-form-email {
+  grid-column: 1/span 2;
+}
+.booking-form-description {
+  grid-column: 1/span 2;
+}
+.booking-form-description > input {
+  height: 4rem;
+}
+.booking-form-attachment {
+  grid-column: 1/span 2;
+}
+.booking-form-attachment > input[type=file] {
+  height: 8rem;
+  background-color: white;
+}
+.booking-form-attachment > input[type=file]::-moz-placeholder {
+  text-align: center;
+}
+.booking-form-attachment > input[type=file]:-ms-input-placeholder {
+  text-align: center;
+}
+.booking-form-attachment > input[type=file]::placeholder {
+  text-align: center;
+}
+
+label {
+  color: #003F91;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+input::-moz-placeholder {
+  color: #777676;
+  align-self: baseline;
+}
+input:-ms-input-placeholder {
+  color: #777676;
+  align-self: baseline;
+}
+input::placeholder {
+  color: #777676;
+  align-self: baseline;
+}
+
+.btn {
+  background-color: #003F91;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 2.3rem;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-top: 2rem;
+}
+.btn > a {
+  color: white;
+  padding: 1rem;
+  font-weight: 600;
 }
 
 .treatments-grid {

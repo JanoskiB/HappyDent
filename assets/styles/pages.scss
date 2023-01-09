@@ -20,6 +20,12 @@ $mediaMinWidth: 480px;
   box-shadow: 0px 4px 4px rgba($color: #000000, $alpha: 0.1);
 }
 
+// @mixin sectiongrid {
+//   display: grid;
+//   grid-template-rows: auto;
+//   margin: 0 10vw;
+// }
+
 h1,
 h2,
 h3 {
@@ -157,7 +163,7 @@ h3 {
 
   &-grid {
     display: grid;
-    grid-template-columns: 55vw 20vw;
+    grid-template-columns: 25vw 50vw;
     grid-template-rows: auto auto;
     padding: 5vw 10vw;
     gap: 5vh;
@@ -171,7 +177,12 @@ h3 {
     color: white;
   }
 
+
+
   &-info {
+    position: sticky;
+    top: 0;
+
     &-grid {
       padding-top: 5vh;
       display: grid;
@@ -224,7 +235,12 @@ h3 {
   }
 
   &-form {
-    grid-column: 1/ span 2;
+    grid-column: 2;
+
+
+    &>h2 {
+      margin-top: 0;
+    }
 
     &-name {
       grid-column: 1;
@@ -246,7 +262,7 @@ h3 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 2vw;
-    margin: 4vh 0;
+    margin-top: 4vh;
   }
 
   &-sumbit {
@@ -266,7 +282,7 @@ h3 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 2vw;
-    margin: 4vh 0;
+    margin: 4vh 0 0 0;
 
     &-name {
       grid-column: 1;
@@ -300,6 +316,14 @@ h3 {
         }
       }
     }
+
+    &-submit>button {
+      height: auto;
+
+      &>h5 {
+        margin: 0.8rem 1rem;
+      }
+    }
   }
 }
 
@@ -323,21 +347,23 @@ input {
 
 .btn {
   background-color: $dark-blue;
-  width: fit-content;
-  height: 2.3rem;
   @include borderrad();
-  margin-top: 2rem;
+  margin-top: 0;
 
   &>a {
     color: white;
     padding: 1rem;
     font-weight: 600;
   }
+
+  &>h5 {
+    color: white;
+  }
 }
 
 
 
-// ! Treatments page 
+// Treatments page 
 .treatments {
   &-grid {
     display: grid;
@@ -351,6 +377,8 @@ input {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin: 5vh 0;
+    // position: sticky;
+    // top: 0;
   }
 
   &-cards-sec {
@@ -373,5 +401,49 @@ input {
 
   &-card {
     grid-column: 2;
+  }
+}
+
+//Travelling page
+.travel {
+  &-card {
+    &-sec {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: auto auto;
+      gap: 4vw;
+      padding: 0 10vw;
+
+      &>h2 {
+        grid-column: 1/ span 2;
+      }
+    }
+
+    &-number {
+      grid-column: 1;
+    }
+
+    &-list {
+      grid-column: 2;
+
+      &>p {
+        margin-bottom: 2vw;
+      }
+
+      &>.card-base {
+        background-color: $meduim-blue-background;
+      }
+    }
+  }
+
+  &-cost {
+    padding: 5vw 10vw;
+
+    &-info {
+      background-color: $meduim-blue-background;
+      @include borderrad();
+      padding: 3vw;
+
+    }
   }
 }

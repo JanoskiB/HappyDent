@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="assets/script/script.js"></script>
-  <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/pages.css">
+  <link rel="stylesheet" href="styles/style.css">
   <title>Happy Dent</title>
 </head>
 
@@ -46,7 +46,7 @@
                 <li class="menu-item"><a href="faq.html" class="menu-link">FAQ</a></li>
                 <li class="menu-item menu-item-tel"><img class="phone-icon" src="assets/icons/phone-icon.png"
                         alt="phone icon"><a href="tel:+4591810272" class="menu-link-tel"> +45 91 81 02 72</a></li>
-                <li class="menu-item"><button class="primary-btn"><a href="contact.html" style="text-decoration:underline;">Contact</a></button></li>
+                <li class="menu-item"><button class="primary-btn"><a href="contact.html"  style="text-decoration:underline;">Contact</a></button></li>
             </ul>
         </nav>
     </section>
@@ -54,6 +54,41 @@
 
   <main>
     <div class="contact-grid">
+
+      <div class="contact-info">
+        <h2>Our contact<br>information</h2>
+        <div class="contact-info-grid">
+          <div class="contact-info-grid-img">
+            <img src="/assets/icons/mail-icon.svg" alt="">
+          </div>
+          <div class="contact-info-grid-text">
+            <h4>Chat with us</h4>
+            <p>Our staff will respond to you as soon
+              as possible</p>
+            <a href="">lehoczky.dentaltour@gmail.com</a>
+          </div>
+          <div class="contact-info-grid-img">
+            <img src="/assets/icons/phone-icon.svg" alt="">
+          </div>
+          <div class="contact-info-grid-text">
+            <h4>Call us</h4>
+            <p>Talk to us on every day between 8:00
+              and 16:00 CET</p>
+            <a href="">+45 91 85 14 39</a>
+          </div>
+          <div class="contact-info-grid-img">
+            <img src="/assets/icons/location-icon.svg" alt="">
+          </div>
+          <div class="contact-info-grid-text">
+            <h4>Visit us</h4>
+            <p>Our office is open on weekdays
+              between 8:00 and 18:00 CET</p>
+            <a href="">6726 Töltés street 21.
+              Szeged, Hungary</a>
+          </div>
+        </div>
+      </div>
+
       <div class="contact-booking">
         <h1>Book a meeting with us</h1>
         <p>Fill out details and we will get back to you as soon as we can
@@ -86,8 +121,8 @@
             <input type="file" name="file" id="file" placeholder="Drop your media file here or browse files" required>
           </div>
           <div class="booking-form-submit">
-            <button type="submit" class="primary-btn form-submit-btn">
-              Send message
+            <button type="submit" class="btn">
+              <h5> Send message</h5>
             </button>
           </div>
           <p id="result2">
@@ -96,42 +131,8 @@
         </form>
       </div>
 
-      <div class="contact-info">
-        <h2>Our contact<br>information</h2>
-        <div class="contact-info-grid">
-          <div class="contact-info-grid-img">
-            <img src="/assets/icons/mail-icon.svg" alt="">
-          </div>
-          <div class="contact-info-grid-text">
-            <h3>Chat with us</h3>
-            <p>Our staff will respond to you as soon
-              as possible</p>
-            <a href="">lehoczky.dentaltour@gmail.com</a>
-          </div>
-          <div class="contact-info-grid-img">
-            <img src="/assets/icons/phone-icon.svg" alt="">
-          </div>
-          <div class="contact-info-grid-text">
-            <h3>Call us</h3>
-            <p>Talk to us on every day between 8:00
-              and 16:00 CET</p>
-            <a href="">+45 91 85 14 39</a>
-          </div>
-          <div class="contact-info-grid-img">
-            <img src="/assets/icons/location-icon.svg" alt="">
-          </div>
-          <div class="contact-info-grid-text">
-            <h3>Visit us</h3>
-            <p>Our office is open on weekdays
-              between 8:00 and 18:00 CET</p>
-            <a href="">6726 Töltés street 21.
-              Szeged, Hungary</a>
-          </div>
-        </div>
-      </div>
-
       <div class="contact-form">
-        <h2>Not sure about something? Contact us!</h2>
+        <h2>Not sure about something?</h2>
         <p>Are you uncertain about something? You can simply contact us with any questions you have.</p>
         <form class="form-grid" action="https://api.web3forms.com/submit" method="POST" id="form">
           <input type="hidden" name="access_key" value="7ee02572-1eb7-4910-b2f5-de28eb7cddfc" />
@@ -151,8 +152,8 @@
             <input type="text" name="question" id="question" placeholder="Type your question here" required>
           </div>
           <div class="booking-form-submit">
-            <button type="submit" class="primary-btn form-submit-btn">
-              Send message
+            <button type="submit" class="btn">
+              <h5> Send message</h5>
             </button>
           </div>
           <p id="result">

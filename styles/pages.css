@@ -109,7 +109,7 @@ h3 {
 }
 .contact-grid {
   display: grid;
-  grid-template-columns: 55vw 20vw;
+  grid-template-columns: 25vw 50vw;
   grid-template-rows: auto auto;
   padding: 5vw 10vw;
   gap: 5vh;
@@ -123,6 +123,11 @@ h3 {
   -o-border-radius: 20px;
   padding: 5vh;
   color: white;
+}
+.contact-info {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 .contact-info-grid {
   padding-top: 5vh;
@@ -166,7 +171,10 @@ h3 {
   grid-column: 1/span 2;
 }
 .contact-form {
-  grid-column: 1/span 2;
+  grid-column: 2;
+}
+.contact-form > h2 {
+  margin-top: 0;
 }
 .contact-form-name {
   grid-column: 1;
@@ -183,7 +191,7 @@ h3 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 2vw;
-  margin: 4vh 0;
+  margin-top: 4vh;
 }
 .form-sumbit {
   grid-column: 1/span 2;
@@ -198,7 +206,7 @@ h3 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 2vw;
-  margin: 4vh 0;
+  margin: 4vh 0 0 0;
 }
 .booking-form-name {
   grid-column: 1;
@@ -231,6 +239,12 @@ h3 {
 .booking-form-attachment > input[type=file]::placeholder {
   text-align: center;
 }
+.booking-form-submit > button {
+  height: auto;
+}
+.booking-form-submit > button > h5 {
+  margin: 0.8rem 1rem;
+}
 
 label {
   color: #003F91;
@@ -262,21 +276,20 @@ input::placeholder {
 
 .btn {
   background-color: #003F91;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 2.3rem;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 .btn > a {
   color: white;
   padding: 1rem;
   font-weight: 600;
+}
+.btn > h5 {
+  color: white;
 }
 
 .treatments-grid {
@@ -308,4 +321,39 @@ input::placeholder {
 }
 .treatments-card {
   grid-column: 2;
+}
+
+.travel-card-sec {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto;
+  gap: 4vw;
+  padding: 0 10vw;
+}
+.travel-card-sec > h2 {
+  grid-column: 1/span 2;
+}
+.travel-card-number {
+  grid-column: 1;
+}
+.travel-card-list {
+  grid-column: 2;
+}
+.travel-card-list > p {
+  margin-bottom: 2vw;
+}
+.travel-card-list > .card-base {
+  background-color: rgba(93, 169, 233, 0.5);
+}
+.travel-cost {
+  padding: 5vw 10vw;
+}
+.travel-cost-info {
+  background-color: rgba(93, 169, 233, 0.5);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 3vw;
 }/*# sourceMappingURL=pages.css.map */

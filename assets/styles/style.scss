@@ -976,11 +976,16 @@ p {
    min-height: 50vh;
    margin-top: 10rem;
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr 1.2fr;
+
+   &>div>h2 {
+      margin-top: 0;
+   }
 
    &>div>img {
       @include borderrad;
       float: right;
+      width: 55%;
    }
 }
 

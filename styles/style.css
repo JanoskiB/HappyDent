@@ -891,7 +891,10 @@ p {
   min-height: 50vh;
   margin-top: 10rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.2fr;
+}
+.consultation-section > div > h2 {
+  margin-top: 0;
 }
 .consultation-section > div > img {
   border-radius: 20px;
@@ -900,6 +903,7 @@ p {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   float: right;
+  width: 55%;
 }
 
 footer {

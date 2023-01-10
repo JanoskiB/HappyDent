@@ -20,13 +20,23 @@ $mediaMinWidth: 480px;
    -o-border-radius: 20px;
 }
 
-@mixin borderrad-15 {
+@mixin borderrad-var {
    border-radius: 15px;
    -webkit-border-radius: 15px;
    -moz-border-radius: 15px;
    -ms-border-radius: 15px;
    -o-border-radius: 15px;
 }
+
+@mixin borderrad-mobile {
+   border-radius: 30px;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   -ms-border-radius: 30px;
+   -o-border-radius: 30px;
+}
+
+
 
 
 /* Margin between the intro text and the section's main content*/
@@ -101,10 +111,12 @@ button {
    box-shadow: none;
 }
 
+/*Buttons*/
+
 .primary-btn {
    background-color: $dark-blue;
    width: fit-content;
-   height: 2.3rem;
+   height: 2.75rem;
    margin-top: 5rem;
    box-shadow: var(--shadow-large);
 
@@ -113,8 +125,15 @@ button {
       color: $white;
       padding-left: 1.2rem;
       padding-right: 1.2rem;
-      font-size: 1rem;
-      font-weight: 500;
+      font-size: 1.1rem;
+      font-weight: 600;
+   }
+
+   &>a>img {
+      display: inline;
+      height: 1rem;
+      padding-left: .5rem;
+      padding-top: .2rem;
    }
 
    &:hover {
@@ -131,19 +150,24 @@ button {
 
 }
 
-@media screen and (max-width: 1056px) {
+@media screen and (max-width: 600px) {
    .primary-btn {
-      margin-top: 2.5rem;
-      margin-bottom: 2.5rem;
-   }
+         height: 60px;
+         width: fit-content;
+         padding: 0 1rem;
+         @include borderrad-mobile;
+
+         &>a {
+            font-size: 1.2rem;
+            font-weight: 600;
+         }
+      }
 }
-
-
 
 .secondary-btn {
    color: $medium-blue;
    text-decoration: underline;
-   font-size: 1rem;
+   font-size: 1.1rem;
    font-weight: 500;
 
    &:hover {
@@ -491,12 +515,6 @@ h4 {
    color: $dark-blue;
 }
 
-@media screen and (max-width: 1056px) {
-   h4 {
-      font-size: 1rem;
-   }
-}
-
 .hero-text {
    font-size: 1.5rem;
    /* 1.5 times body text*/
@@ -525,6 +543,58 @@ p {
    color: $grey;
 }
 
+@media screen and (max-width: 600px) {
+   h1 {
+      font-size: 2rem;
+      /* 2 times body text*/
+      color: $dark-blue;
+      font-weight: 700;
+   }
+   
+   h2 {
+      font-size: 1.8rem;
+      /* 1.8 times body text*/
+      color: $dark-blue;
+      font-weight: 700;
+      margin: 2rem 0;
+   }
+   
+   h3 {
+      font-size: 1.6rem;
+      /* 1.6 times body text*/
+      color: $dark-blue;
+      font-weight: 300;
+   }
+   
+   h4 {
+      font-size: 1.4rem;
+      /* 1.4 times body text*/
+      color: $dark-blue;
+   }
+
+   .hero-text {
+      font-size: 1.2rem;
+      /* 1.2 times body text*/
+      color: $grey;
+      font-weight: 300;
+      margin: 1rem 0;
+   }
+   
+   .intro-text {
+      font-size: 1.2rem;
+      /* 1.2 times body text*/
+      color: $grey;
+      font-weight: 500;
+   }
+   
+   .intro-text-var {
+      font-size: 1.2rem;
+      color: $medium-blue;
+      font-weight: 500;
+   }
+}
+
+
 
 .hero-section {
    display: grid;
@@ -552,7 +622,7 @@ p {
    }
 
    .hero-hun-img>img {
-      width: 100%;
+      width: 90%;
       @include borderrad;
    }
 
@@ -575,7 +645,6 @@ p {
 
       &-left>h1 {
          margin-top: 4rem;
-         font-size: 250%;
       }
 
       &-right>img {
@@ -586,6 +655,26 @@ p {
 
    .hero-text-hun {
       padding-right: 0;
+   }
+
+   .desktop-btn {
+      display: none;
+   }
+
+   .mobile-btn {
+      display: block;
+      margin-top: 1.5rem;
+      text-decoration: underline;
+   }
+}
+
+
+@media screen and (max-width: 600px) {
+   .hero-section-right {
+
+      &>img {
+         width: 80vw;
+      }
    }
 
    .desktop-btn {
@@ -639,7 +728,7 @@ p {
       }
 
       &>div>img {
-         height: 2rem;
+         height: 2.5rem;
          margin-left: 1rem;
       }
 
@@ -690,7 +779,7 @@ p {
       }
 
       &>div>img {
-         scale: .8;
+         height: 2rem;
       }
 
    }
@@ -741,7 +830,7 @@ p {
       }
 
       &>.hungary-column {
-         @include borderrad-15;
+         @include borderrad-var;
          background-color: $white;
          justify-self: center;
          text-align: center;
@@ -809,6 +898,19 @@ p {
 
    }
 
+}
+
+@media screen and (max-width: 600px) {
+   .prices-section {
+      
+      &-left>p {
+         width: 80vw;
+      }
+
+      &-right {
+         margin-top: 2rem;
+      }
+   }
 }
 
 .text-highlight {
@@ -899,6 +1001,15 @@ p {
    }
 }
 
+@media screen and (max-width: 600px) {
+   .card-btn-container {
+
+      &>a {
+         display: none;
+      }
+   }
+}
+
 @media screen and (max-width: 1200px) {
    .flights-section-grid {
       gap: 1rem;
@@ -944,7 +1055,7 @@ p {
 .card-btn-position {
    display: block;
    margin: 0 auto;
-   width: 12rem;
+   width: 13rem;
 }
 
 .accomodation-section {
@@ -987,15 +1098,18 @@ p {
 
       &>.asc-1 {
          background-image: url(/assets/images/hotel-room-1.jpg);
+         background-repeat: no-repeat;
 
       }
 
       &>.asc-2 {
          background-image: url(/assets/images/hotel-room-2.png);
+         background-repeat: no-repeat;
       }
 
       &>.asc-3 {
          background-image: url(/assets/images/hotel-room-3.jpg);
+         background-repeat: no-repeat;
 
       }
    }
@@ -1075,12 +1189,21 @@ footer {
 
       .fb-icon {
          float: right;
-         margin-top: 1rem;
+         margin: 1rem 0;
+      }
+
+      .fb-icon>img {
+         height: 2rem;
       }
 
       &>div>a {
          color: $light-blue;
          text-decoration: underline;
+
+      }
+
+      &>div>a>img {
+         height: 2.5rem;
 
       }
 
@@ -1094,6 +1217,12 @@ footer {
 @media screen and (max-width: 1056px) {
    footer>.footer-grid {
       grid-template-columns: 1fr;
+
+      .fb-icon {
+         float: left;
+         margin: 1.5rem 0;
+      }
+
    }
 
    footer>.footer-grid>.footer-r {
@@ -1216,7 +1345,6 @@ footer {
          &>div {
             &>img {
                display: inline-block;
-               float: right;
                margin: 1rem 3rem;
                scale: .7;
             }

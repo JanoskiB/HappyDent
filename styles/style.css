@@ -234,7 +234,7 @@ video {
   -moz-column-gap: 0.25rem;
        column-gap: 0.25rem;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: inherit;
   cursor: pointer;
@@ -268,6 +268,9 @@ video {
 }
 .menu-link:hover {
   color: #003F91;
+}
+.menu-link > a {
+  padding-left: 0;
 }
 @media screen and (max-width: 1274px) {
   .menu .menu-item-tel {

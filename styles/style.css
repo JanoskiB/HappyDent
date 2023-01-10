@@ -130,9 +130,8 @@ video {
   margin-left: 10vw;
 }
 
-.brand > img {
-  scale: 0.75;
-  padding-top: 5px;
+.logo {
+  height: 3rem;
 }
 
 .header {

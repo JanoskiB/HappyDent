@@ -48,7 +48,6 @@ $mediaMinWidth: 480px;
    }
 }
 
-
 /* Margins between the section's main content and the (usually centered) button below it*/
 @mixin content-button-margin {
    margin-bottom: 2rem;
@@ -1253,7 +1252,7 @@ footer {
       margin-top: 5rem;
 
       &>div>img {
-         scale: .7;
+         height: 3.5rem;
       }
 
       &>div>h4 {
@@ -1445,11 +1444,16 @@ footer {
 
 .cost-section {
    @include w-h-m;
+   &>h4{
+      font-size: 2rem;
+      color: $medium-blue;
+      padding: .5rem 0;
+    }
 
    &-grid {
-      margin-top: 4rem;
+      margin: 5rem 0;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 2rem;
 
       &>div>img{

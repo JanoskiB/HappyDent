@@ -751,7 +751,7 @@ p {
 .process-section-why-hun {
    margin-top: 5rem;
 
-   &>.process-section-grid>div>h3 {
+   &>.process-section-grid>div>h4 {
       margin-top: 2rem;
    }
 }
@@ -1244,11 +1244,13 @@ footer {
 
 .expectations-section {
    @include w-h-m;
+   height: fit-content;
 
    &-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 4rem;
+      margin-top: 5rem;
 
       &>div>img {
          scale: .7;
@@ -1454,10 +1456,10 @@ footer {
         @include borderrad; 
       }
 
-      &>div>h5,
-      p {
-         margin: .5rem 1rem;
-      }
+      &>div>h4{
+         font-size: 1.2rem;
+         padding: .5rem 0;
+       }
    }
 }
 

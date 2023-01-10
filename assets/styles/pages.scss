@@ -422,7 +422,7 @@ input {
 
 .btn {
   background-color: $dark-blue;
-  @include borderrad();
+  @include borderrad;
   margin-top: 0;
   padding: 0.5rem;
 

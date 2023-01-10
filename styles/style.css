@@ -649,7 +649,7 @@ p {
 .process-section-why-hun {
   margin-top: 5rem;
 }
-.process-section-why-hun > .process-section-grid > div > h3 {
+.process-section-why-hun > .process-section-grid > div > h4 {
   margin-top: 2rem;
 }
 
@@ -1107,11 +1107,15 @@ footer .footer-grid > div > p {
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .expectations-section-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 4rem;
+  margin-top: 5rem;
 }
 .expectations-section-grid > div > img {
   scale: 0.7;
@@ -1326,9 +1330,9 @@ footer .footer-grid > div > p {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-.cost-section-grid > div > h5,
-.cost-section-grid p {
-  margin: 0.5rem 1rem;
+.cost-section-grid > div > h4 {
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
 }
 
 @media screen and (max-width: 1056px) {

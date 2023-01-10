@@ -610,7 +610,7 @@ p {
       }
 
       &>.hero-text-hun {
-         padding-right: 10rem;
+         padding-right: 5rem;
       }
    }
 
@@ -651,6 +651,10 @@ p {
          margin-top: 2rem;
          float: none;
       }
+   }
+
+   .hero-text-hun {
+      padding-right: 0;
    }
 
    .desktop-btn {
@@ -737,6 +741,14 @@ p {
       &>div>p {
          margin-top: 1.5rem;
       }
+   }
+}
+
+.process-section-why-hun {
+   margin-top: 5rem;
+
+   &>.process-section-grid>div>h3 {
+      margin-top: 2rem;
    }
 }
 
@@ -1131,7 +1143,7 @@ p {
    &>div>img {
       @include borderrad;
       float: right;
-      width: 55%;
+      width: 70%;
    }
 }
 
@@ -1303,6 +1315,10 @@ footer {
    &>h2 {
       margin-left: 10vw;
    }
+
+   &>.intro-text {
+      margin: 0 10vw;
+   }
 }
 
 .swiper-slide {
@@ -1357,6 +1373,7 @@ footer {
 
 .swiper-pagination {
    scale: 2;
+   margin-bottom: 4rem;
 }
 
 .swiper-button-next {
@@ -1378,18 +1395,18 @@ footer {
 //Why Hungary?
 
 .tourist-img-1,
-.tourist-img-2 {
+.tourist-img-2,
+.tourist-img-3,
+.tourist-img-4,
+.tourist-img-5,
+.tourist-img-6  {
    background-size: 102%;
    background-repeat: no-repeat;
    @include borderrad;
 
    &>h4 {
       margin: 1rem 3rem;
-   }
-
-   &>p {
-      color: $white;
-      font-weight: 600;
+      color: $light-blue;
    }
 
 }
@@ -1403,6 +1420,29 @@ footer {
    background-image: url(/assets/images/tourist-img-2.png);
    background-position: bottom;
 }
+
+.tourist-img-3 {
+   background-image: url(/assets/images/hungarian-parliament.jpg);
+   background-position: bottom;
+}
+
+.tourist-img-4 {
+   background-image: url(/assets/images/varosliget.jpg   );
+   background-position: top;
+}
+
+.tourist-img-5 {
+   background-image: url(/assets/images/aquapolis-szeged.jpg);
+   background-position: top;
+}
+
+.tourist-img-6 {
+   background-image: url(/assets/images/szeged-dom.jpg);
+   background-position: top;
+   background-size: cover;
+}
+
+
 
 .cost-section {
    @include w-h-m;
@@ -1420,10 +1460,6 @@ footer {
       &>div>h5,
       p {
          margin: .5rem 1rem;
-      }
-
-      &>div>h5 {
-         color: $dark-blue;
       }
    }
 }

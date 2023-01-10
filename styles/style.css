@@ -78,6 +78,12 @@ button {
 }
 .primary-btn:hover {
   background-color: #5DA9E9;
+  transition: all 300ms ease-in;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 
 @media screen and (max-width: 1056px) {
@@ -1016,7 +1022,7 @@ footer .footer-grid > div > p {
   background-color: rgba(93, 170, 233, 0.5137254902);
 }
 .staff-section > .staff-card-grid > div > h3 {
-  margin-left: 2rem;
+  margin: 1rem 2rem;
   color: #003F91;
   font-weight: 500;
 }
@@ -1056,6 +1062,9 @@ footer .footer-grid > div > p {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+}
+.swiper-slide-grid > .swiper-card > p {
+  color: #F5FBFF;
 }
 .swiper-slide-grid > .swiper-card > span > img {
   margin: 3rem;

@@ -34,7 +34,7 @@ h3 {
 }
 
 // Sub-navigation buttons
-.sub-btn {
+.sub-btn, .sub-btn>a {
   display: grid;
   grid-template-rows: 1fr 1fr;
   align-items: center;
@@ -78,12 +78,11 @@ h3 {
     grid-template-rows: auto auto;
     width: auto;
     margin-bottom: 1vw;
-  
+
     // padding: 2vh;
 
     background-color: white;
     @include cardshadow();
-    @include borderrad();
     @include borderrad();
 
     &:hover {

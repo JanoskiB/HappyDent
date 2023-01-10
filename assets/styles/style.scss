@@ -117,7 +117,13 @@ button {
 
    &:hover {
       background-color: $medium-blue;
-   }
+      transition: all 300ms ease-in;
+      transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+}
 
    @include borderrad;
 
@@ -1129,7 +1135,7 @@ footer {
       background-color: #5daae983;
 
       &>div>h3 {
-         margin-left: 2rem;
+         margin: 1rem 2rem;
          color: $dark-blue;
          font-weight: 500;
       }
@@ -1172,6 +1178,10 @@ footer {
       &>.swiper-card {
          background-color: $medium-blue;
          @include borderrad;
+
+         &>p{
+            color: $light-blue;
+         }
 
          &>span>img {
             margin: 3rem;

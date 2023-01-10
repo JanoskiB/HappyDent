@@ -1245,6 +1245,10 @@ footer {
    @include w-h-m;
    height: fit-content;
 
+   &>h2{
+      margin-bottom: 5rem;
+   }
+
    &-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -1311,7 +1315,7 @@ footer {
 
 .testimonials-section {
    &>h2 {
-      margin-left: 10vw;
+      margin: 0 10vw;
    }
 
    &>.intro-text {
@@ -1329,11 +1333,12 @@ footer {
       gap: 4rem;
 
       &>.swiper-card {
-         background-color: $medium-blue;
+         background-color: #5daae983;
          @include borderrad;
 
          &>p {
-            color: $light-blue;
+            color: $dark-blue;
+            font-weight: 500;
          }
 
          &>span>img {
@@ -1353,7 +1358,9 @@ footer {
 
             &>h4 {
                display: inline-block;
-               margin: 3rem 3rem;
+               margin: 0rem 3rem;
+               position: relative;
+               bottom: 3rem;
             }
          }
 

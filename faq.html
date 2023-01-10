@@ -14,7 +14,8 @@
 <body>
   <header class="header" id="header">
     <section class="wrapper container">
-      <span><a href="index.html"><img class="logo" src="assets/icons/logo.svg" alt="logo of Lehoczky dental clinic"></a></span>
+      <span><a href="index.html"><img class="logo" src="assets/icons/logo.svg"
+            alt="logo of Lehoczky dental clinic"></a></span>
       <div class="burger" id="burger">
         <span class="burger-line"></span>
         <span class="burger-line"></span>
@@ -59,24 +60,33 @@
 
       <div class="faq-navigation">
         <div class="faq-squares">
-          <div class="sub-btn">
-            <img src="/assets/icons/faq/calendar-icon.svg" alt="Calendar icon">
-            <h5>Consultation<br>meeting</h5>
-          </div>
-          <div class="sub-btn">
-            <img src="/assets/icons/faq/treatments-icon.svg" alt="Calendar icon">
-            <h5>Treatments</h5>
-          </div>
-          <div class="sub-btn">
-            <img src="/assets/icons/faq/plane-icon.svg" alt="Calendar icon">
-            <h5>Traveling<br>process</h5>
-          </div>
-          <div class="sub-btn">
-            <img src="/assets/icons/faq/vacation-icon.svg" alt="Calendar icon">
-            <h5>Staying in<br>Hungary</h5>
-          </div>
+          <a class="scroll-a" href="#consult">
+            <div class="sub-btn">
+              <img src="/assets/icons/faq/calendar-icon.svg" alt="Calendar icon">
+              <h5>Consultation<br>meeting</h5>
+            </div>
+          </a>
+          <a class="scroll-a" href="#treatments">
+            <div class="sub-btn">
+              <img src="/assets/icons/faq/treatments-icon.svg" alt="Calendar icon">
+              <h5>Treatments</h5>
+            </div>
+          </a>
+          <a href="#travel">
+            <div class="sub-btn">
+              <img src="/assets/icons/faq/plane-icon.svg" alt="Calendar icon">
+              <h5>Traveling<br>process</h5>
+            </div>
+          </a>
+          <a href="#hungary">
+            <div class="sub-btn">
+              <img src="/assets/icons/faq/vacation-icon.svg" alt="Calendar icon">
+              <h5>Staying in<br>Hungary</h5>
+            </div>
+          </a>
         </div>
       </div>
+      
       <div class="faq-list">
         <div class="faq-header">
           <h1>Frequently asked question</h1>
@@ -84,7 +94,7 @@
         </div>
 
         <div class="card-sec">
-          <h2>Consultation meeting</h2>
+          <h2 id="consult">Consultation meeting</h2>
           <div class="card-base">
             <div class="card-heading">
               <h3>How can I set up a consultation meeting?</h3>
@@ -127,7 +137,7 @@
         </div>
 
         <div class="card-sec">
-          <h2>Treatments</h2>
+          <h2 id="treatments">Treatments</h2>
           <div class="card-base">
             <div class="card-heading">
               <h3>How can I set up a consultation meeting?</h3>
@@ -144,7 +154,7 @@
         </div>
 
         <div class="card-sec">
-          <h2>Traveling process</h2>
+          <h2 id="travel">Traveling process</h2>
           <div class="card-base">
             <div class="card-heading">
               <h3>How can I set up a consultation meeting?</h3>
@@ -161,7 +171,7 @@
         </div>
 
         <div class="card-sec">
-          <h2>Staying in Hungary</h2>
+          <h2 id="hungary">Staying in Hungary</h2>
           <div class="card-base">
             <div class="card-heading">
               <h3>How can I set up a consultation meeting?</h3>
@@ -182,7 +192,7 @@
 
     <div class="contact">
       <h2>Do you have any questions we haven't answered?</h2>
-      <button class="btn"><a href="contact.html">Contact us</a></button>
+      <button class="primary-btn"><a href="contact.html">Contact us</a></button>
     </div>
   </main>
   <footer>

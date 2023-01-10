@@ -478,6 +478,11 @@ p {
 }
 .hero-section .hero-hun-img > img {
   width: 90%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 .hero-section .hero-secondary-btn {
   margin-left: 1.5rem;
@@ -594,6 +599,11 @@ p {
     scale: 0.8;
   }
 }
+.process-section-grid > div > span > img {
+  height: 3rem;
+  margin-left: 0;
+}
+
 #wave1 {
   position: relative;
 }
@@ -919,6 +929,17 @@ p {
   width: 55%;
 }
 
+.consultation-hu {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  float: right;
+  height: 20rem;
+  width: 30rem;
+}
+
 @media screen and (max-width: 1056px) {
   .consultation-section {
     grid-template-columns: 1fr;
@@ -1001,7 +1022,7 @@ footer .footer-grid > div > p {
   margin-top: 5rem;
   margin-bottom: 10rem;
 }
-.staff-section > h3 {
+.staff-section > p {
   margin-left: 0;
   margin-bottom: 2rem;
 }
@@ -1020,14 +1041,12 @@ footer .footer-grid > div > p {
   gap: 0;
   background-color: rgba(93, 170, 233, 0.5137254902);
 }
-.staff-section > .staff-card-grid > div > h3 {
+.staff-section > .staff-card-grid > div > h4 {
   margin: 1rem 2rem;
-  color: #003F91;
-  font-weight: 500;
 }
 .staff-section > .staff-card-grid > div > .role {
   margin: 1rem 2rem;
-  color: #F5FBFF;
+  color: #5A5A5A;
   font-weight: 500;
 }
 .staff-section > .staff-card-grid > div > .abt-p {
@@ -1043,6 +1062,10 @@ footer .footer-grid > div > p {
     display: none;
   }
 }
+.testimonials-section > h2 {
+  margin-left: 10vw;
+}
+
 .swiper-slide-grid {
   width: 80vw;
   min-height: 80vh;

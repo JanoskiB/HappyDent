@@ -551,6 +551,7 @@ p {
 
    .hero-hun-img>img{
       width: 90%;
+      @include borderrad;
    }
 
    & .hero-secondary-btn {
@@ -680,6 +681,11 @@ p {
       }
 
    }
+}
+
+.process-section-grid>div>span>img {
+   height: 3rem;
+   margin-left: 0;
 }
 
 #wave1 {
@@ -1010,6 +1016,13 @@ p {
    }
 }
 
+.consultation-hu {
+   @include borderrad;
+   float: right;
+   height: 20rem;
+   width: 30rem;
+}
+
 @media screen and (max-width: 1056px) {
    .consultation-section {
       grid-template-columns: 1fr;
@@ -1020,9 +1033,8 @@ p {
          width: 100%;
       }
    }
-
-
 }
+
 
 
 footer {
@@ -1109,7 +1121,7 @@ footer {
 .staff-section {
    @include w-h-m;
 
-   &>h3 {
+   &>p {
       margin-left: 0;
       margin-bottom: 2rem;
    }
@@ -1123,15 +1135,13 @@ footer {
       gap: 0;
       background-color: #5daae983;
 
-      &>div>h3 {
+      &>div>h4 {
          margin: 1rem 2rem;
-         color: $dark-blue;
-         font-weight: 500;
       }
 
       &>div>.role {
          margin: 1rem 2rem;
-         color: $light-blue;
+         color: $grey;
          font-weight: 500;
       }
 
@@ -1154,6 +1164,12 @@ footer {
 
 
 // Swiper
+
+.testimonials-section {
+   &>h2{
+      margin-left: 10vw;
+   }
+}
 
 .swiper-slide {
 

@@ -905,6 +905,10 @@ p {
    color: $dark-blue
 }
 
+.text-highlight-var {
+   color: $medium-blue
+}
+
 
 .about-us-section {
    @include w-h-m;
@@ -1408,6 +1412,10 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 2rem;
+
+      &>div>img{
+        @include borderrad; 
+      }
 
       &>div>h5,
       p {

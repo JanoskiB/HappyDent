@@ -1127,6 +1127,15 @@ footer .footer-grid > div > p {
     min-height: 70vh;
   }
 }
+/*Read more functionality*/
+#more {
+  display: none;
+}
+
+#myBtn {
+  color: #5DA9E9;
+}
+
 .staff-section {
   width: 80vw;
   min-height: 80vh;
@@ -1134,44 +1143,37 @@ footer .footer-grid > div > p {
   margin-top: 5rem;
   margin-bottom: 10rem;
 }
-.staff-section > p {
-  margin-left: 0;
-  margin-bottom: 2rem;
-}
 .staff-section > .staff-card-grid {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 3rem;
+}
+@media screen and (max-width: 480px) {
+  .staff-section > .staff-card-grid {
+    margin-top: 1rem;
+  }
+}
+.staff-section > .staff-card-grid > div > img {
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-bottom: 4rem;
-  display: grid;
-  grid-template-columns: 1fr 2.5fr;
-  gap: 0;
-  background-color: rgba(93, 170, 233, 0.5137254902);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .staff-section > .staff-card-grid > div > h4 {
-  margin: 1rem 2rem;
-}
-.staff-section > .staff-card-grid > div > .role {
-  margin: 1rem 2rem;
-  color: #5A5A5A;
-  font-weight: 500;
-}
-.staff-section > .staff-card-grid > div > .abt-p {
-  margin-top: 1rem;
-  margin: 0 2rem;
+  margin: 1rem 0;
 }
 
-@media screen and (max-width: 1056px) {
-  .staff-card-grid {
-    background-color: #003F91;
-  }
-  .staff-card-grid > img {
-    display: none;
+@media screen and (max-width: 1000px) {
+  .staff-section > .staff-card-grid {
+    grid-template-columns: 1fr;
   }
 }
 .testimonials-section > h2 {

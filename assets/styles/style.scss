@@ -1268,47 +1268,40 @@ footer {
    }
 }
 
+/*Read more functionality*/
+
+#more {display: none;}
+
+#myBtn {
+   color: $medium-blue
+}
+
+
 .staff-section {
    @include w-h-m;
 
-   &>p {
-      margin-left: 0;
-      margin-bottom: 2rem;
-   }
-
    &>.staff-card-grid {
-      @include borderrad;
-      height: fit-content;
-      margin-bottom: 4rem;
+      @include intro-content-margin;
       display: grid;
-      grid-template-columns: 1fr 2.5fr;
-      gap: 0;
-      background-color: #5daae983;
+      grid-template-columns: 1fr 1fr 1fr;
+      height: fit-content;
+      gap: 3rem;
+
+      &>div>img {
+         @include borderrad;
+         width: fit-content;
+      }
 
       &>div>h4 {
-         margin: 1rem 2rem;
-      }
+         margin: 1rem 0;
 
-      &>div>.role {
-         margin: 1rem 2rem;
-         color: $grey;
-         font-weight: 500;
-      }
-
-      &>div>.abt-p {
-         margin-top: 1rem;
-         margin: 0 2rem;
       }
    }
 }
 
-@media screen and (max-width: 1056px) {
-   .staff-card-grid {
-      background-color: #003F91;
-   }
-
-   .staff-card-grid>img {
-      display: none
+@media screen and (max-width: 1000px) {
+   .staff-section>.staff-card-grid {
+      grid-template-columns: 1fr;
    }
 }
 

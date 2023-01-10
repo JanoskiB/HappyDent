@@ -805,6 +805,10 @@ p {
   color: #003F91;
 }
 
+.text-highlight-var {
+  color: #5DA9E9;
+}
+
 .about-us-section {
   width: 80vw;
   min-height: 80vh;
@@ -1313,7 +1317,14 @@ footer .footer-grid > div > p {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
 }
-.cost-section-grid > div > h4,
+.cost-section-grid > div > img {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.cost-section-grid > div > h5,
 .cost-section-grid p {
   margin: 0.5rem 1rem;
 }

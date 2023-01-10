@@ -55,6 +55,7 @@ button {
   box-shadow: none;
 }
 
+/*Buttons*/
 .primary-btn {
   background-color: #003F91;
   width: -webkit-fit-content;
@@ -86,10 +87,18 @@ button {
   -o-transform: scale(1.05);
 }
 
-@media screen and (max-width: 1056px) {
+@media screen and (max-width: 600px) {
   .primary-btn {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    height: 60px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 1rem;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
   }
 }
 .secondary-btn {
@@ -423,11 +432,6 @@ h4 {
   color: #003F91;
 }
 
-@media screen and (max-width: 1056px) {
-  h4 {
-    font-size: 1rem;
-  }
-}
 .hero-text {
   font-size: 1.5rem;
   /* 1.5 times body text*/
@@ -455,6 +459,50 @@ p {
   color: #5A5A5A;
 }
 
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+    /* 2 times body text*/
+    color: #003F91;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 1.8rem;
+    /* 1.8 times body text*/
+    color: #003F91;
+    font-weight: 700;
+    margin: 2rem 0;
+  }
+  h3 {
+    font-size: 1.6rem;
+    /* 1.6 times body text*/
+    color: #003F91;
+    font-weight: 300;
+  }
+  h4 {
+    font-size: 1.4rem;
+    /* 1.4 times body text*/
+    color: #003F91;
+  }
+  .hero-text {
+    font-size: 1.2rem;
+    /* 1.2 times body text*/
+    color: #5A5A5A;
+    font-weight: 300;
+    margin: 1rem 0;
+  }
+  .intro-text {
+    font-size: 1.2rem;
+    /* 1.2 times body text*/
+    color: #5A5A5A;
+    font-weight: 500;
+  }
+  .intro-text-var {
+    font-size: 1.2rem;
+    color: #5DA9E9;
+    font-weight: 500;
+  }
+}
 .hero-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -501,11 +549,23 @@ p {
   }
   .hero-section-left > h1 {
     margin-top: 4rem;
-    font-size: 250%;
   }
   .hero-section-right > img {
     margin-top: 2rem;
     float: none;
+  }
+  .desktop-btn {
+    display: none;
+  }
+  .mobile-btn {
+    display: block;
+    margin-top: 1.5rem;
+    text-decoration: underline;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-section-right > img {
+    width: 80vw;
   }
   .desktop-btn {
     display: none;
@@ -1095,7 +1155,6 @@ footer .footer-grid > div > p {
 }
 .swiper-slide-grid > .swiper-card > div > img {
   display: inline-block;
-  float: right;
   margin: 1rem 3rem;
   scale: 0.7;
 }

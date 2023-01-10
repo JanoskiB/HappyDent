@@ -649,6 +649,9 @@ p {
 .process-section-why-hun {
   margin-top: 5rem;
 }
+.process-section-why-hun > div > div > span > img {
+  scale: 1.4;
+}
 .process-section-why-hun > .process-section-grid > div > h3 {
   margin-top: 2rem;
 }
@@ -1108,6 +1111,9 @@ footer .footer-grid > div > p {
   margin-top: 5rem;
   margin-bottom: 10rem;
 }
+.expectations-section > h2 {
+  margin-bottom: 5rem;
+}
 .expectations-section-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1175,7 +1181,7 @@ footer .footer-grid > div > p {
   }
 }
 .testimonials-section > h2 {
-  margin-left: 10vw;
+  margin: 0 10vw;
 }
 .testimonials-section > .intro-text {
   margin: 0 10vw;
@@ -1193,7 +1199,7 @@ footer .footer-grid > div > p {
   gap: 4rem;
 }
 .swiper-slide-grid > .swiper-card {
-  background-color: #5DA9E9;
+  background-color: rgba(93, 170, 233, 0.5137254902);
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -1201,7 +1207,8 @@ footer .footer-grid > div > p {
   -o-border-radius: 20px;
 }
 .swiper-slide-grid > .swiper-card > p {
-  color: #F5FBFF;
+  color: #003F91;
+  font-weight: 500;
 }
 .swiper-slide-grid > .swiper-card > span > img {
   margin: 3rem;
@@ -1216,7 +1223,9 @@ footer .footer-grid > div > p {
 }
 .swiper-slide-grid > .swiper-card > div > h4 {
   display: inline-block;
-  margin: 3rem 3rem;
+  margin: 0rem 3rem;
+  position: relative;
+  bottom: 3rem;
 }
 
 @media screen and (max-width: 1056px) {

@@ -64,12 +64,15 @@ cards.forEach(card => {
    const header = card.querySelector('.card-heading');
    const arrow = card.querySelector('.card-arrow');
    const content = card.querySelector('.card-content');
+   // const arrowImg = document.querySelectorAll('#card-arrow > img');
+   // console.log($('#card-arrow img').attr('src')); 
 
    header.addEventListener('click', () => {
       if (content.style.display === 'block') {
          content.style.display = 'none';
       } else {
          content.style.display = 'block';
+         // arrowImg.src = '/assets/icons/arrow-down-icon.svg';
       }
    });
 
@@ -78,6 +81,7 @@ cards.forEach(card => {
          content.style.display = 'none';
       } else {
          content.style.display = 'block';
+         // arrowImg.src = '/assets/icons/arrow-down-icon.svg';
       }
    });
 });
@@ -148,4 +152,32 @@ function myFunction() {
      moreText.style.display = "inline";
    }
  }
+// For Github assets access
+// function addSrc () {
+//    var images = document.getElementsByTagName('img');
+//    var text = '/HappyDent';
+//    for (var i = 0; i < images.length; i++) {
+//       var imgSrc = images[i].src;
+//       images[i].src = text + imgSrc;
+//    };
+// };
+
+// window.onload = addSrc;
+
+const images = document.querySelector('img');
+
+images.addEventListener('load', () => {
+   images.src = '/HappyDent' + images.src;
+});
+
+
+// images.forEach(image => {
+//    const text = '/HappyDent';
+//    const imgSrc = image.src;
+//    images.src = text + imgSrc;
+
+//    window.onload = addSrc;
+// });
+
+
 

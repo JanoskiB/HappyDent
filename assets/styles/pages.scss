@@ -75,7 +75,7 @@ h3 {
 
     background-color: white;
     @include cardshadow();
-    @include borderrad()
+    @include borderrad();
   }
 
   &-heading {

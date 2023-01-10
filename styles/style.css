@@ -124,14 +124,9 @@ video {
   margin-left: 10vw;
 }
 
-.brand {
-  font-family: inherit;
-  font-size: 1.625rem;
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  color: #003F91;
+.brand > img {
+  scale: 0.75;
+  padding-top: 5px;
 }
 
 .header {

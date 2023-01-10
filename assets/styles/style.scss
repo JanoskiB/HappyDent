@@ -291,7 +291,7 @@ video {
       align-items: center;
       column-gap: 0.25rem;
       font-family: inherit;
-      font-size: 1rem;
+      font-size: 1.25rem;
       font-weight: 500;
       line-height: inherit;
       cursor: pointer;
@@ -325,6 +325,10 @@ video {
 
       &:hover {
          color: $dark-blue;
+      }
+
+      &>a{
+         padding-left: 0;
       }
    }
 

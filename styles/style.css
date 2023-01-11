@@ -1260,6 +1260,12 @@ footer .footer-grid > div > p {
     grid-template-columns: 1fr;
     min-height: 70vh;
   }
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
 }
 .swiper-pagination {
   scale: 2;

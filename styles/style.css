@@ -164,7 +164,7 @@ video {
 }
 
 .top-wrapper {
-  background-image: url(/assets/images/hero-bg.png);
+  background-image: url("assets/images/hero-bg.png");
   background-size: auto;
   background-repeat: no-repeat;
 }
@@ -987,15 +987,15 @@ p {
   color: #FFFFFF;
 }
 .accomodation-section-grid > .asc-1 {
-  background-image: url(assets/images/hotel-room-1.jpg);
+  background-image: url("assets/images/hotel-room-1.jpg");
   background-repeat: no-repeat;
 }
 .accomodation-section-grid > .asc-2 {
-  background-image: url(assets/images/hotel-room-2.png);
+  background-image: url("assets/images/hotel-room-2.png");
   background-repeat: no-repeat;
 }
 .accomodation-section-grid > .asc-3 {
-  background-image: url(assets/images/hotel-room-3.jpg);
+  background-image: url("assets/images/hotel-room-3.jpg");
   background-repeat: no-repeat;
 }
 
@@ -1055,7 +1055,7 @@ p {
 footer {
   background-color: #003F91;
   min-height: 40vh;
-  background-image: url(/assets/images/waves.png);
+  background-image: url("assets/images/waves.png");
   background-size: cover;
 }
 footer .footer-grid {
@@ -1286,32 +1286,32 @@ footer .footer-grid > div > p {
 }
 
 .tourist-img-1 {
-  background-image: url(/assets/images/tourist-img-1.png);
+  background-image: url("assets/images/tourist-img-1.png");
   background-position: -0.5rem;
 }
 
 .tourist-img-2 {
-  background-image: url(/assets/images/tourist-img-2.png);
+  background-image: url("assets/images/tourist-img-2.png");
   background-position: bottom;
 }
 
 .tourist-img-3 {
-  background-image: url(/assets/images/hungarian-parliament.jpg);
+  background-image: url("assets/images/hungarian-parliament.jpg");
   background-position: bottom;
 }
 
 .tourist-img-4 {
-  background-image: url(/assets/images/varosliget.jpg);
+  background-image: url("assets/images/varosliget.jpg");
   background-position: top;
 }
 
 .tourist-img-5 {
-  background-image: url(/assets/images/aquapolis-szeged.jpg);
+  background-image: url("assets/images/aquapolis-szeged.jpg");
   background-position: top;
 }
 
 .tourist-img-6 {
-  background-image: url(/assets/images/szeged-dom.jpg);
+  background-image: url("assets/images/szeged-dom.jpg");
   background-position: top;
   background-size: cover;
 }

@@ -86,6 +86,58 @@ cards.forEach(card => {
    });
 });
 
+
+
+// Read more button & functionality
+
+function myFunction() {
+   var dots = document.getElementById("dots");
+   var moreText = document.getElementById("more");
+   var btnText = document.getElementById("myBtn");
+ 
+   if (dots.style.display === "none") {
+     dots.style.display = "inline";
+     btnText.innerHTML = "Read more"; 
+     moreText.style.display = "none";
+   } else {
+     dots.style.display = "none";
+     btnText.innerHTML = "Read less"; 
+     moreText.style.display = "inline";
+   }
+ }
+
+// const images = document.querySelector('img');
+
+// images.addEventListener('load', () => {
+//    images.src = '/HappyDent' + images.src;
+// });
+
+
+// images.forEach(image => {
+//    const text = '/HappyDent';
+//    const imgSrc = image.src;
+//    images.src = text + imgSrc;
+
+//    window.onload = addSrc;
+// });
+
+// To top button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    document.getElementById("totop").style.display = "block";
+  } else {
+    document.getElementById("totop").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 // Booking form
 const form = document.getElementById("form");
 const result = document.getElementById("result");
@@ -132,54 +184,3 @@ form.addEventListener("submit", function (e) {
          }, 5000);
       });
 });
-
-// Contact form
-
-// Read more button & functionality
-
-function myFunction() {
-   var dots = document.getElementById("dots");
-   var moreText = document.getElementById("more");
-   var btnText = document.getElementById("myBtn");
- 
-   if (dots.style.display === "none") {
-     dots.style.display = "inline";
-     btnText.innerHTML = "Read more"; 
-     moreText.style.display = "none";
-   } else {
-     dots.style.display = "none";
-     btnText.innerHTML = "Read less"; 
-     moreText.style.display = "inline";
-   }
- }
-
- 
-// For Github assets access
-// function addSrc () {
-//    var images = document.getElementsByTagName('img');
-//    var text = '/HappyDent';
-//    for (var i = 0; i < images.length; i++) {
-//       var imgSrc = images[i].src;
-//       images[i].src = text + imgSrc;
-//    };
-// };
-
-// window.onload = addSrc;
-
-const images = document.querySelector('img');
-
-images.addEventListener('load', () => {
-   images.src = '/HappyDent' + images.src;
-});
-
-
-// images.forEach(image => {
-//    const text = '/HappyDent';
-//    const imgSrc = image.src;
-//    images.src = text + imgSrc;
-
-//    window.onload = addSrc;
-// });
-
-
-

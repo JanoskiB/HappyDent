@@ -1100,18 +1100,18 @@ p {
       }
 
       &>.asc-1 {
-         background-image: url('/assets/images/hotel-room-1.jpg');
+         background-image: url('../assets/images/hotel-room-1.jpg');
          background-repeat: no-repeat;
 
       }
 
       &>.asc-2 {
-         background-image: url('/assets/images/panzio.png');
+         background-image: url('../assets/images/panzio.png');
          background-repeat: no-repeat;
       }
 
       &>.asc-3 {
-         background-image: url('/assets/images/hotel-room-3.jpg');
+         background-image: url('../assets/images/hotel-room-3.jpg');
          background-repeat: no-repeat;
 
       }
@@ -1443,32 +1443,32 @@ footer {
 }
 
 .tourist-img-1 {
-   background-image: url('/assets/images/tourist-img-1.png');
+   background-image: url('../assets/images/tourist-img-1.png');
    background-position: -0.5rem;
 }
 
 .tourist-img-2 {
-   background-image: url('/assets/images/tourist-img-2.png');
+   background-image: url('../assets/images/tourist-img-2.png');
    background-position: bottom;
 }
 
 .tourist-img-3 {
-   background-image: url('/assets/images/hungarian-parliament.jpg');
+   background-image: url('../assets/images/hungarian-parliament.jpg');
    background-position: bottom;
 }
 
 .tourist-img-4 {
-   background-image: url('/assets/images/varosliget.jpg');
+   background-image: url('../assets/images/varosliget.jpg');
    background-position: top;
 }
 
 .tourist-img-5 {
-   background-image: url('/assets/images/aquapolis-szeged.jpg');
+   background-image: url('../assets/images/aquapolis-szeged.jpg');
    background-position: top;
 }
 
 .tourist-img-6 {
-   background-image: url('/assets/images/szeged-dom.jpg');
+   background-image: url('../assets/images/szeged-dom.jpg');
    background-position: top;
    background-size: cover;
 }
@@ -1505,4 +1505,10 @@ footer {
    .cost-section-grid {
       grid-template-columns: 1fr 1fr;
    }
+}
+
+#totop {
+   position: fixed;
+   right: 10px;
+   bottom: 50px;
 }

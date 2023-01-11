@@ -347,11 +347,16 @@ a.scroll-a {
     border-top-right-radius: 25px;
     width: 50%;
     font-size: 1.2rem;
-    color: $dark-blue;
     font-weight: 600;
-    background-color: $medium-blue;
+    background-color: $dark-blue;
+    color: $light-blue;
     padding: 1rem;
   }
+}
+
+.form-wrapper>.tabDiv>.active-button{
+  background-color: $medium-blue-background;
+  color: $dark-blue;
 }
 
 .form {

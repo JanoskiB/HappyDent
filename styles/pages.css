@@ -269,10 +269,15 @@ a.scroll-a {
   border-top-right-radius: 25px;
   width: 50%;
   font-size: 1.2rem;
-  color: #003F91;
   font-weight: 600;
-  background-color: #5DA9E9;
+  background-color: #003F91;
+  color: #F5FBFF;
   padding: 1rem;
+}
+
+.form-wrapper > .tabDiv > .active-button {
+  background-color: rgba(93, 169, 233, 0.5);
+  color: #003F91;
 }
 
 .form-grid {

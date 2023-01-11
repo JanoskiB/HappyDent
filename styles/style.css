@@ -64,20 +64,16 @@ button {
   height: 2.75rem;
   margin-top: 5rem;
   box-shadow: var(--shadow-large);
+  font-size: 1rem;
+  padding: 0 1.5rem;
+  color: #F5FBFF;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-.primary-btn > a {
-  color: #FFFFFF;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-.primary-btn > a > img {
+.primary-btn > img {
   display: inline;
   height: 1rem;
   padding-left: 0.5rem;
@@ -91,6 +87,10 @@ button {
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
+  -webkit-transition: all 300ms ease-in;
+  -moz-transition: all 300ms ease-in;
+  -ms-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
 }
 
 @media screen and (max-width: 600px) {

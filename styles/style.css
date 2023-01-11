@@ -133,6 +133,10 @@ button {
   width: 80vw;
 }
 
+.maps-btn {
+  margin-top: 2rem;
+}
+
 img,
 video {
   display: block;

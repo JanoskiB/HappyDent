@@ -164,7 +164,7 @@ video {
 }
 
 .top-wrapper {
-  background-image: url("../images/hero-bg.png");
+  background-image: url("../../assets/images/hero-bg.png");
   background-size: auto;
   background-repeat: no-repeat;
 }
@@ -1286,7 +1286,7 @@ footer .footer-grid > div > p {
 }
 
 .tourist-img-1 {
-  background-image: url("../images/tourist-img-1.png");
+  background-image: url("../../assets/images/tourist-img-1.png");
   background-position: 0.5rem;
 }
 

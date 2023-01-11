@@ -987,15 +987,15 @@ p {
   color: #FFFFFF;
 }
 .accomodation-section-grid > .asc-1 {
-  background-image: url(/assets/images/hotel-room-1.jpg);
+  background-image: url(assets/images/hotel-room-1.jpg);
   background-repeat: no-repeat;
 }
 .accomodation-section-grid > .asc-2 {
-  background-image: url(/assets/images/hotel-room-2.png);
+  background-image: url(assets/images/hotel-room-2.png);
   background-repeat: no-repeat;
 }
 .accomodation-section-grid > .asc-3 {
-  background-image: url(/assets/images/hotel-room-3.jpg);
+  background-image: url(assets/images/hotel-room-3.jpg);
   background-repeat: no-repeat;
 }
 

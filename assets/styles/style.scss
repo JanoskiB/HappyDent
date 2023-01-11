@@ -41,7 +41,7 @@ $mediaMinWidth: 480px;
 
 /* Margin between the intro text and the section's main content*/
 @mixin intro-content-margin {
-   margin-top: 5rem;
+   margin-top: 3rem;
 
    @media screen and (max-width: 480px) {
       margin-top: 1rem;
@@ -1244,6 +1244,7 @@ footer {
 .expectations-section {
    @include w-h-m;
    height: fit-content;
+   margin-bottom: 5rem;
 
    &>h2{
       margin-bottom: 5rem;
@@ -1278,7 +1279,8 @@ footer {
 #more {display: none;}
 
 #myBtn {
-   color: $medium-blue
+   color: $dark-blue;
+   padding: 1rem;
 }
 
 
@@ -1290,16 +1292,26 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       height: fit-content;
-      gap: 3rem;
+      gap: 2rem;
+
+      &>div {
+         @include borderrad;
+         background-color: #5daae983;
+         width: fit-content;
+      }
 
       &>div>img {
-         @include borderrad;
+        @include borderrad;
          width: fit-content;
+         padding: 1rem;
       }
 
       &>div>h4 {
          margin: 1rem 0;
+      }
 
+      &>div>h4,p {
+         padding: 0 1rem;
       }
    }
 }
@@ -1307,6 +1319,10 @@ footer {
 @media screen and (max-width: 1000px) {
    .staff-section>.staff-card-grid {
       grid-template-columns: 1fr;
+
+      &>div>p {
+         padding-bottom: 1rem;
+      }
    }
 }
 
@@ -1352,7 +1368,6 @@ footer {
 
          &>div {
             display: flex;
-    
             margin: 3rem;
          }
 

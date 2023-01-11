@@ -493,44 +493,38 @@ video {
 /* Typography*/
 
 h1 {
-   font-size: 2.5rem;
-   /* 2.5 times body text*/
+   font-size: 2.5rem; /* 2.5 times body text*/
    color: $dark-blue;
    font-weight: 700;
 }
 
 h2 {
-   font-size: 2.25rem;
-   /* 2.25 times body text*/
+   font-size: 2.25rem; /* 2.25 times body text*/
    color: $dark-blue;
    font-weight: 700;
    margin: 2rem 0;
 }
 
 h3 {
-   font-size: 2rem;
-   /* 2 times body text*/
+   font-size: 2rem; /* 2 times body text*/
    color: $dark-blue;
    font-weight: 300;
 }
 
 h4 {
-   font-size: 1.75rem;
-   /* 1.75 times body text*/
+   font-size: 1.75rem; /* 1.75 times body text*/
    color: $dark-blue;
 }
 
 .hero-text {
-   font-size: 1.5rem;
-   /* 1.5 times body text*/
+   font-size: 1.5rem; /* 1.5 times body text*/
    color: $grey;
    font-weight: 300;
    margin: 2rem 0;
 }
 
 .intro-text {
-   font-size: 1.25rem;
-   /* 1.25 times body text*/
+   font-size: 1.25rem; /* 1.25 times body text*/
    color: $grey;
    font-weight: 500;
 }

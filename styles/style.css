@@ -1380,4 +1380,9 @@ footer .footer-grid > div > p {
   .cost-section-grid {
     grid-template-columns: 1fr 1fr;
   }
+}
+#totop {
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
 }/*# sourceMappingURL=style.css.map */

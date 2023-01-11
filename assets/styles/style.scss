@@ -149,16 +149,16 @@ button {
 
 @media screen and (max-width: 600px) {
    .primary-btn {
-         height: 60px;
-         width: fit-content;
-         padding: 0 1rem;
-         @include borderrad-mobile;
+      height: 60px;
+      width: fit-content;
+      padding: 0 1rem;
+      @include borderrad-mobile;
 
-         &>a {
-            font-size: 1.2rem;
-            font-weight: 600;
-         }
+      &>a {
+         font-size: 1.2rem;
+         font-weight: 600;
       }
+   }
 }
 
 .secondary-btn {
@@ -324,7 +324,7 @@ video {
          color: $dark-blue;
       }
 
-      &>a{
+      &>a {
          padding-left: 0;
       }
    }
@@ -551,7 +551,7 @@ p {
       color: $dark-blue;
       font-weight: 700;
    }
-   
+
    h2 {
       font-size: 1.8rem;
       /* 1.8 times body text*/
@@ -559,14 +559,14 @@ p {
       font-weight: 700;
       margin: 2rem 0;
    }
-   
+
    h3 {
       font-size: 1.6rem;
       /* 1.6 times body text*/
       color: $dark-blue;
       font-weight: 300;
    }
-   
+
    h4 {
       font-size: 1.4rem;
       /* 1.4 times body text*/
@@ -580,14 +580,14 @@ p {
       font-weight: 300;
       margin: 1rem 0;
    }
-   
+
    .intro-text {
       font-size: 1.2rem;
       /* 1.2 times body text*/
       color: $grey;
       font-weight: 500;
    }
-   
+
    .intro-text-var {
       font-size: 1.2rem;
       color: $medium-blue;
@@ -749,7 +749,7 @@ p {
 .process-section-why-hun {
    margin-top: 5rem;
 
-   &>h2{
+   &>h2 {
       margin-bottom: 5rem;
    }
 
@@ -908,7 +908,7 @@ p {
 
 @media screen and (max-width: 600px) {
    .prices-section {
-      
+
       &-left>p {
          width: 80vw;
       }
@@ -1249,7 +1249,7 @@ footer {
    height: fit-content;
    margin-bottom: 5rem;
 
-   &>h2{
+   &>h2 {
       margin-bottom: 5rem;
    }
 
@@ -1279,7 +1279,9 @@ footer {
 
 /*Read more functionality*/
 
-#more {display: none;}
+#more {
+   display: none;
+}
 
 #myBtn {
    color: $dark-blue;
@@ -1304,7 +1306,7 @@ footer {
       }
 
       &>div>img {
-        @include borderrad;
+         @include borderrad;
          width: fit-content;
          padding: 1rem;
       }
@@ -1313,7 +1315,8 @@ footer {
          margin: 1rem 0;
       }
 
-      &>div>h4,p {
+      &>div>h4,
+      p {
          padding: 0 1rem;
       }
    }
@@ -1333,7 +1336,7 @@ footer {
 // Swiper
 
 .testimonials-section {
-   
+
    &>h2 {
       margin: 2rem 10vw;
    }
@@ -1426,7 +1429,7 @@ footer {
 .tourist-img-3,
 .tourist-img-4,
 .tourist-img-5,
-.tourist-img-6  {
+.tourist-img-6 {
    background-size: 102%;
    background-repeat: no-repeat;
    @include borderrad;
@@ -1440,7 +1443,7 @@ footer {
 
 .tourist-img-1 {
    background-image: url('/assets/images/tourist-img-1.png');
-   background-position: 0.5rem;
+   // background-position: 0.5rem;
 }
 
 .tourist-img-2 {
@@ -1473,11 +1476,12 @@ footer {
 
 .cost-section {
    @include w-h-m;
-   &>h4{
+
+   &>h4 {
       font-size: 2rem;
       color: $medium-blue;
       padding: .5rem 0;
-    }
+   }
 
    &-grid {
       margin: 5rem 0;
@@ -1485,14 +1489,14 @@ footer {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 2rem;
 
-      &>div>img{
-        @include borderrad; 
+      &>div>img {
+         @include borderrad;
       }
 
-      &>div>h4{
+      &>div>h4 {
          font-size: 1.2rem;
          padding: .5rem 0;
-       }
+      }
    }
 }
 

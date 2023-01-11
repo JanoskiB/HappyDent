@@ -1195,7 +1195,8 @@ footer .footer-grid > div > p {
 .staff-section > .staff-card-grid > div > h4 {
   margin: 1rem 0;
 }
-.staff-section > .staff-card-grid > div > h4, .staff-section > .staff-card-grid p {
+.staff-section > .staff-card-grid > div > h4,
+.staff-section > .staff-card-grid p {
   padding: 0 1rem;
 }
 
@@ -1310,7 +1311,6 @@ footer .footer-grid > div > p {
 
 .tourist-img-1 {
   background-image: url("/assets/images/tourist-img-1.png");
-  background-position: 0.5rem;
 }
 
 .tourist-img-2 {

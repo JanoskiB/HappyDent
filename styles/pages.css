@@ -330,6 +330,7 @@ a.scroll-a {
 }
 .booking-form-submit > button {
   height: auto;
+  margin-top: 1rem;
 }
 .booking-form-submit > button > h5 {
   margin: 0.8rem 1rem;

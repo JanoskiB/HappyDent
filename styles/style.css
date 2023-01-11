@@ -234,7 +234,7 @@ video {
   -moz-column-gap: 0.25rem;
        column-gap: 0.25rem;
   font-family: inherit;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 500;
   line-height: inherit;
   cursor: pointer;
@@ -1199,7 +1199,7 @@ footer .footer-grid > div > p {
   min-height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 2rem;
 }
 .swiper-slide-grid > .swiper-card {
   background-color: rgba(93, 170, 233, 0.5137254902);
@@ -1219,16 +1219,15 @@ footer .footer-grid > div > p {
 .swiper-slide-grid > .swiper-card > p {
   margin: 0 3rem;
 }
-.swiper-slide-grid > .swiper-card > div > img {
-  display: inline-block;
-  margin: 1rem 3rem;
-  scale: 0.7;
+.swiper-slide-grid > .swiper-card > div {
+  display: flex;
+  margin: 3rem;
 }
 .swiper-slide-grid > .swiper-card > div > h4 {
-  display: inline-block;
-  margin: 0rem 3rem;
-  position: relative;
-  bottom: 3rem;
+  margin-left: 1.5rem;
+}
+.swiper-slide-grid > .swiper-card > div > img {
+  height: 2.5rem;
 }
 
 @media screen and (max-width: 1056px) {

@@ -290,7 +290,7 @@ video {
       align-items: center;
       column-gap: 0.25rem;
       font-family: inherit;
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       font-weight: 500;
       line-height: inherit;
       cursor: pointer;
@@ -1314,6 +1314,7 @@ footer {
 // Swiper
 
 .testimonials-section {
+   
    &>h2 {
       margin: 0 10vw;
    }
@@ -1330,7 +1331,7 @@ footer {
       min-height: 50vh;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 4rem;
+      gap: 2rem;
 
       &>.swiper-card {
          background-color: #5daae983;
@@ -1350,17 +1351,20 @@ footer {
          }
 
          &>div {
-            &>img {
-               display: inline-block;
-               margin: 1rem 3rem;
-               scale: .7;
-            }
+            display: flex;
+    
+            margin: 3rem;
+         }
 
+         &>div {
             &>h4 {
-               display: inline-block;
-               margin: 0rem 3rem;
-               position: relative;
-               bottom: 3rem;
+               margin-left: 1.5rem;
+            }
+         }
+
+         &>div {
+            &>img {
+               height: 2.5rem;
             }
          }
 

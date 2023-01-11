@@ -234,6 +234,7 @@ a.scroll-a {
 }
 
 // Contact page
+
 .contact {
   padding: 10vh 0;
   text-align: center;
@@ -249,14 +250,17 @@ a.scroll-a {
   &-booking,
   &-form {
     background-color: $medium-blue-background;
-    @include borderrad();
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
     padding: 5vh;
     color: white;
+
+    &>h2 {
+      margin-top: 0;
+    }
   }
 
   &-info {
-    position: sticky;
-    top: 0;
 
     &-grid {
       padding-top: 5vh;
@@ -303,19 +307,10 @@ a.scroll-a {
         }
       }
     }
-
-    &>h2 {
-      grid-column: 1/ span 2;
-    }
   }
 
   &-form {
     grid-column: 2;
-
-
-    &>h2 {
-      margin-top: 0;
-    }
 
     &-name {
       grid-column: 1;
@@ -331,15 +326,31 @@ a.scroll-a {
   }
 }
 
-.form-wrapper>.tabDiv {
-  width: 100%;
-  margin: 0rem 2rem;
-
-  &>.formTab{
-    font-size: 1.5rem;
+@media screen and (max-width: 1000px) {
+  .contact {
+    &-grid {
+      grid-template-columns: 1fr;
+    }
   }
-  &>.formTabRight{
-    margin-left: 5rem;
+}
+
+
+
+
+.form-wrapper>.tabDiv {
+  display: flex;
+  width: 100%;
+  margin: 0rem;
+
+  &>.formTab {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 50%;
+    font-size: 1.2rem;
+    color: $dark-blue;
+    font-weight: 600;
+    background-color: $medium-blue;
+    padding: 1rem;
   }
 }
 

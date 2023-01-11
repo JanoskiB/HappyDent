@@ -164,7 +164,7 @@ video {
 }
 
 .top-wrapper {
-  background-image: url("../../assets/images/hero-bg.png");
+  background-image: url("../assets/images/hero-bg.png");
   background-size: auto;
   background-repeat: no-repeat;
 }
@@ -1059,7 +1059,7 @@ p {
 footer {
   background-color: #003F91;
   min-height: 40vh;
-  background-image: url("../images/waves.png");
+  background-image: url("../assets/images/waves.png");
   background-size: cover;
 }
 footer .footer-grid {

@@ -42,6 +42,8 @@ a.scroll-a {
     height: 10vh;
     grid-template-rows: auto;
     grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 1rem;
   }
 }
 .sub-btn:hover {

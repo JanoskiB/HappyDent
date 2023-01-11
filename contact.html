@@ -5,10 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
   <script defer src="assets/script/script.js"></script>
   <link rel="stylesheet" href="styles/pages.css">
   <link rel="stylesheet" href="styles/style.css">
-  <title>Happy Dent</title>
+  <title>Lehoczky Dental Tourism</title>
 </head>
 
 <body>
@@ -28,11 +41,10 @@
             <span class="menu-link" data-toggle="submenu"><a class="menu-link"
                 href="treatments.html">Treatments</a></span>
             <ul class="submenu">
-              <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-              <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-              <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-              <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-
+              <li class="submenu-item"><a href="treatments.html#oralSurgery" class="submenu-link">Oral surgery</a></li>
+              <li class="submenu-item"><a href="treatments.html#implants" class="submenu-link">Implants</a></li>
+              <li class="submenu-item"><a href="treatments.html#endodontics" class="submenu-link">Endodontics</a></li>
+              <li class="submenu-item"><a href="treatments.html#dentures" class="submenu-link">Dentures</a></li>
             </ul>
           </li>
           <li class="menu-item"><a href="why-hungary.html" class="menu-link">Why Hungary?</a></li>
@@ -40,17 +52,19 @@
             <span class="menu-link" data-toggle="submenu"><a class="menu-link"
                 href="travelling.html">Travelling</a></span>
             <ul class="submenu">
-              <li class="submenu-item"><a href="#" class="submenu-link">Before travelling</a></li>
-              <li class="submenu-item"><a href="#" class="submenu-link">Travelling</a></li>
-              <li class="submenu-item"><a href="#" class="submenu-link">During your stay</a></li>
+              <li class="submenu-item"><a href="travelling.html#beforeTravelling" class="submenu-link">Before
+                  travelling</a></li>
+              <li class="submenu-item"><a href="travelling.html#travelling" class="submenu-link">Travelling</a></li>
+              <li class="submenu-item"><a href="travelling.html#duringYourStay" class="submenu-link">During your
+                  stay</a></li>
             </ul>
           </li>
           <li class="menu-item"><a href="about-us.html" class="menu-link">About us</a></li>
           <li class="menu-item"><a href="faq.html" class="menu-link">FAQ</a></li>
           <li class="menu-item menu-item-tel"><img class="phone-icon" src="assets/icons/phone-icon.svg"
               alt="phone icon"><a href="tel:+4591810272" class="menu-link-tel"> +45 91 81 02 72</a></li>
-          <li class="menu-item"><button class="primary-btn"><a href="contact.html"
-            style="color: #003F91; font-weight: bold;">Contact</a></button></li>
+          <li class="menu-item"><button class="primary-btn" type="button" onclick="location.href='contact.html'"
+              style="font-weight: bold;">Contact</button></li>
         </ul>
       </nav>
     </section>
@@ -87,8 +101,8 @@
             <h4>Visit us</h4>
             <p>Our clinic is open on weekdays
               between 8:00 and 18:00 CET</p>
-            <a
-              href="https://www.google.com/maps/place/Lehoczky+Dental+Fog%C3%A1szati+Centrum/@46.2456172,20.1731792,18z/data=!3m1!4b1!4m5!3m4!1s0x474488458e59175d:0xb081c8fcaff13f04!8m2!3d46.2456172!4d20.1737589" target="_blank">6726
+            <a href="https://www.google.com/maps/place/Lehoczky+Dental+Fog%C3%A1szati+Centrum/@46.2456172,20.1731792,18z/data=!3m1!4b1!4m5!3m4!1s0x474488458e59175d:0xb081c8fcaff13f04!8m2!3d46.2456172!4d20.1737589"
+              target="_blank">6726
               Töltés street 21.
               Szeged, Hungary</a>
           </div>
@@ -97,8 +111,10 @@
 
       <div class="form-wrapper">
         <div class="tabDiv">
-          <button class="formTab" onclick="openForm('Booking')">Book a meeting</button>
-          <button class="formTab formTabRight" onclick="openForm('GeneralQ')">Contact us</button>
+          <button class="formTab active-button" data-form='form1'
+            onclick="openForm('Booking'), toggleButtonColor(this)">Book a meeting</button>
+          <button class="formTab active-button formTabRight" data-form='form1'
+            onclick="openForm('GeneralQ'), toggleButtonColor(this)">Contact us</button>
         </div>
         <div id="Booking" class="contactForm">
           <div class="contact-booking">
@@ -129,13 +145,13 @@
                 <input type="text" name="description" id="description" placeholder="Type your issue here" required>
               </div>
               <div class="booking-form-attachment">
-                <label for="file">Attachment of panoramic X-ray</label>
+                <label for="file">Attachment of CBCT scan</label>
                 <input type="file" name="file" id="file" placeholder="Drop your media file here or browse files"
                   required>
               </div>
               <div class="booking-form-submit">
-                <button type="submit" class="btn">
-                  <h5> Send message</h5>
+                <button type="submit" class="primary-btn">
+                  <h5>Send message</h5>
                 </button>
               </div>
               <p id="result2">
@@ -165,8 +181,8 @@
                 <input type="text" name="question" id="question" placeholder="Type your question here" required>
               </div>
               <div class="booking-form-submit">
-                <button type="submit" class="btn">
-                  <h5> Send message</h5>
+                <button type="submit" class="primary-btn">
+                  <h5>Send message</h5>
                 </button>
               </div>
               <p id="result">
@@ -176,7 +192,9 @@
         </div>
       </div>
     </div>
-    </div>
+
+    <button onclick="topFunction()" id="totop" title="Go to top"><img src="assets/icons/to-top-icon.svg"
+        alt="Arrow up"></button>
   </main>
 
   <footer>
@@ -208,14 +226,31 @@
     </div>
   </footer>
 
+
   <script>
-    function openForm(formName) {
-      var i;
-      var x = document.getElementsByClassName("contactForm");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+    function openForm(formName = null) {
+      if (!formName) {
+        var forms = document.querySelectorAll(".contactForm");
+        forms.forEach(form => form.style.display = "none");
+        var buttons = document.querySelectorAll(".formTab");
+        return;
       }
-      document.getElementById(formName).style.display = "block";
+      var form = document.querySelector(`#${formName}`);
+      if (!form) {
+        console.error(`Invalid form name: ${formName}`);
+        return;
+      }
+      var forms = document.querySelectorAll(".contactForm");
+      forms.forEach(f => f.style.display = "none");
+      form.style.display = "block";
+    }
+
+    function toggleButtonColor(button) {
+      var activeButton = document.querySelector('.active-button');
+      if (activeButton) {
+        activeButton.classList.remove('active-button');
+      }
+      button.classList.add('active-button');
     }
   </script>
 

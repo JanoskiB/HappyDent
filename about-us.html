@@ -5,11 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
     <script defer src="assets/script/script.js"></script>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/style.css">
-    <title>About us</title>
+    <title>Lehoczky Dental Tourism</title>
 </head>
 
 <body>
@@ -29,11 +42,14 @@
                         <span class="menu-link" data-toggle="submenu"><a class="menu-link"
                                 href="treatments.html">Treatments</a></span>
                         <ul class="submenu">
-                            <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-
+                            <li class="submenu-item"><a href="treatments.html#oralSurgery" class="submenu-link">Oral
+                                    surgery</a></li>
+                            <li class="submenu-item"><a href="treatments.html#implants"
+                                    class="submenu-link">Implants</a></li>
+                            <li class="submenu-item"><a href="treatments.html#endodontics"
+                                    class="submenu-link">Endodontics</a></li>
+                            <li class="submenu-item"><a href="treatments.html#dentures"
+                                    class="submenu-link">Dentures</a></li>
                         </ul>
                     </li>
                     <li class="menu-item"><a href="why-hungary.html" class="menu-link">Why Hungary?</a></li>
@@ -41,9 +57,12 @@
                         <span class="menu-link" data-toggle="submenu"><a class="menu-link"
                                 href="travelling.html">Travelling</a></span>
                         <ul class="submenu">
-                            <li class="submenu-item"><a href="#" class="submenu-link">Before travelling</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-link">Travelling</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-link">During your stay</a></li>
+                            <li class="submenu-item"><a href="travelling.html#beforeTravelling"
+                                    class="submenu-link">Before travelling</a></li>
+                            <li class="submenu-item"><a href="travelling.html#travelling"
+                                    class="submenu-link">Travelling</a></li>
+                            <li class="submenu-item"><a href="travelling.html#duringYourStay"
+                                    class="submenu-link">During your stay</a></li>
                         </ul>
                     </li>
                     <li class="menu-item"><a href="about-us.html" class="menu-link"
@@ -51,7 +70,8 @@
                     <li class="menu-item"><a href="faq.html" class="menu-link">FAQ</a></li>
                     <li class="menu-item menu-item-tel"><img class="phone-icon" src="assets/icons/phone-icon.svg"
                             alt="phone icon"><a href="tel:+4591810272" class="menu-link-tel"> +45 91 81 02 72</a></li>
-                    <li class="menu-item"><button class="primary-btn"><a href="contact.html">Contact</a></button></li>
+                    <li class="menu-item"><button class="primary-btn" type="button"
+                            onclick="location.href='contact.html'">Contact</button></li>
                 </ul>
             </nav>
         </section>
@@ -67,12 +87,12 @@
                 problem, based on your possibilities and needs.
             </p>
             <div class="desktop-btn">
-                <button class="primary-btn"><a href="#expectations">Get to know us<img
-                            src="assets/icons/double-down.svg" alt="Scroll down icon"></a></button>
+                <button class="primary-btn" type="button" onclick="location.href='#expectations'">Get to know us<img
+                        src="assets/icons/double-down.svg" alt="Scroll down icon"></button>
             </div>
             <div class="mobile-btn">
-                <button class="primary-btn"><a href="#expectations">Get to know us<img
-                            src="assets/icons/double-down.svg" alt="Scroll down icon"></a></button>
+                <button class="primary-btn" type="button" onclick="location.href='#expectations'">Get to know us<img
+                        src="assets/icons/double-down.svg" alt="Scroll down icon"></button>
             </div>
         </div>
         <div class="hero-section-right">
@@ -225,14 +245,17 @@
                 <p class="intro-text">
                     Book a free consultation meeting with us to get your journey started!
                 </p>
-                <button class="primary-btn"><a href="contact.html">Book a meeting<img src="assets/icons/arrow-right.svg"
-                            alt="Arrow pointing to right"></a></button>
+                <button class="primary-btn" type="button" onclick="location.href='contact.html'">Book a meeting<img
+                        src="assets/icons/arrow-right.svg" alt="Arrow pointing to right"></button>
             </div>
             <div>
                 <img src="assets/images/happy-client.jpg"
                     alt="happy client beautiful smile consultation meeting Lehoczky dental tourism clinic">
             </div>
         </div>
+
+        <button onclick="topFunction()" id="totop" title="Go to top"><img src="assets/icons/to-top-icon.svg"
+                alt="Arrow up"></button>
     </main>
     <footer>
         <div class="footer-grid">

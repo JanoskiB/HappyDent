@@ -5,10 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
   <script defer src="assets/script/script.js"></script>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/pages.css">
-  <title>FAQ</title>
+  <title>Lehoczky Dental Tourism</title>
 </head>
 
 <body>
@@ -28,11 +41,10 @@
             <span class="menu-link" data-toggle="submenu"><a class="menu-link"
                 href="treatments.html">Treatments</a></span>
             <ul class="submenu">
-              <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-              <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-              <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-              <li class="submenu-item"><a href="#" class="submenu-link">Treatment link</a></li>
-
+              <li class="submenu-item"><a href="treatments.html#oralSurgery" class="submenu-link">Oral surgery</a></li>
+              <li class="submenu-item"><a href="treatments.html#implants" class="submenu-link">Implants</a></li>
+              <li class="submenu-item"><a href="treatments.html#endodontics" class="submenu-link">Endodontics</a></li>
+              <li class="submenu-item"><a href="treatments.html#dentures" class="submenu-link">Dentures</a></li>
             </ul>
           </li>
           <li class="menu-item"><a href="why-hungary.html" class="menu-link">Why Hungary?</a></li>
@@ -40,16 +52,20 @@
             <span class="menu-link" data-toggle="submenu"><a class="menu-link"
                 href="travelling.html">Travelling</a></span>
             <ul class="submenu">
-              <li class="submenu-item"><a href="#" class="submenu-link">Before travelling</a></li>
-              <li class="submenu-item"><a href="#" class="submenu-link">Travelling</a></li>
-              <li class="submenu-item"><a href="#" class="submenu-link">During your stay</a></li>
+              <li class="submenu-item"><a href="travelling.html#beforeTravelling" class="submenu-link">Before
+                  travelling</a></li>
+              <li class="submenu-item"><a href="travelling.html#travelling" class="submenu-link">Travelling</a></li>
+              <li class="submenu-item"><a href="travelling.html#duringYourStay" class="submenu-link">During your
+                  stay</a></li>
             </ul>
           </li>
           <li class="menu-item"><a href="about-us.html" class="menu-link">About us</a></li>
-          <li class="menu-item"><a href="faq.html" class="menu-link" style="color: #003F91; font-weight: bold;">FAQ</a></li>
+          <li class="menu-item"><a href="faq.html" class="menu-link" style="color: #003F91; font-weight: bold;">FAQ</a>
+          </li>
           <li class="menu-item menu-item-tel"><img class="phone-icon" src="assets/icons/phone-icon.svg"
               alt="phone icon"><a href="tel:+4591810272" class="menu-link-tel"> +45 91 81 02 72</a></li>
-          <li class="menu-item"><button class="primary-btn"><a href="contact.html">Contact</a></button></li>
+          <li class="menu-item"><button class="primary-btn" type="button"
+              onclick="location.href='contact.html'">Contact</button></li>
         </ul>
       </nav>
     </section>
@@ -97,15 +113,26 @@
           <h2 id="consult">Consultation meeting</h2>
           <div class="card-base">
             <div class="card-heading">
-              <h3>How can I set up a consultation meeting?</h3>
+              <h3>How much does a consultation meeting cost?</h3>
             </div>
             <div class="card-arrow">
               <img id="arrow" src="assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
             </div>
             <div class="card-content">
-              <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
-                about
-                yourself and your dental issue. </p>
+              <p>The consultation meeting is free, although before the consultation you must provide the full jaw CBCT
+                scan which cost depends on your home country dentrist's prices.</p>
+            </div>
+          </div>
+          <div class="card-base">
+            <div class="card-heading">
+              <h3>How long does a consultation meeting last?</h3>
+            </div>
+            <div class="card-arrow">
+              <img src="assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
+            </div>
+            <div class="card-content">
+              <p>The length of the consultation meeting depends on the severity of your problem and the amount of
+                questions you might have about the process. In general meetings last around 15-30 minutes.</p>
             </div>
           </div>
           <div class="card-base">
@@ -117,21 +144,8 @@
             </div>
             <div class="card-content">
               <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
-                about
-                yourself and your dental issue. </p>
-            </div>
-          </div>
-          <div class="card-base">
-            <div class="card-heading">
-              <h3>How can I set up a consultation meeting?</h3>
-            </div>
-            <div class="card-arrow">
-              <img src="assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
-            </div>
-            <div class="card-content">
-              <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
-                about
-                yourself and your dental issue. </p>
+                about yourself and your dental issue. </p>
+              <button class="primary-btn" type="button" onclick="location.href='contact.html'">Book a meeting</button>
             </div>
           </div>
         </div>
@@ -140,15 +154,40 @@
           <h2 id="treatments">Treatments</h2>
           <div class="card-base">
             <div class="card-heading">
-              <h3>How can I set up a consultation meeting?</h3>
+              <h3>What kind of treatments do you offer?</h3>
             </div>
             <div class="card-arrow">
               <img src="assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
             </div>
             <div class="card-content">
-              <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
-                about
-                yourself and your dental issue. </p>
+              <p>The list of treatments can be seen on our Treatments page, which includes a brief explanation of each
+                treatment.</p>
+              <button class="primary-btn" type="button" onclick="location.href='treatments.html'">Treatments</button>
+            </div>
+          </div>
+          <div class="card-base">
+            <div class="card-heading">
+              <h3>How long will the healing period last?</h3>
+            </div>
+            <div class="card-arrow">
+              <img src="assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
+            </div>
+            <div class="card-content">
+              <p>Healing period depends on a specific treatment and the severity of your issue. When you book a meeting
+                with our staff, you are encouraged to ask about the healing period for your specific case.</p>
+              <button class="primary-btn" type="button" onclick="location.href='contact.html'">Book a meeting</button>
+            </div>
+          </div>
+          <div class="card-base">
+            <div class="card-heading">
+              <h3>What if the treatment I am looking for is not on the list?</h3>
+            </div>
+            <div class="card-arrow">
+              <img src="assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
+            </div>
+            <div class="card-content">
+              <p>Our clinic provides all round dental service, so in case the treatment you are interested in is not on
+                our list, you are encouraged to contact the clinic with questions regarding that. </p>
             </div>
           </div>
         </div>
@@ -157,15 +196,35 @@
           <h2 id="travel">Traveling process</h2>
           <div class="card-base">
             <div class="card-heading">
-              <h3>How can I set up a consultation meeting?</h3>
+              <h3>How much does it cost to get to Hungary from Denmark?</h3>
             </div>
             <div class="card-arrow">
               <img src="assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
             </div>
             <div class="card-content">
-              <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
-                about
-                yourself and your dental issue. </p>
+              <p></p>
+            </div>
+          </div>
+          <div class="card-base">
+            <div class="card-heading">
+              <h3>How will I get to the dentist's office?</h3>
+            </div>
+            <div class="card-arrow">
+              <img src="assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
+            </div>
+            <div class="card-content">
+              <p></p>
+            </div>
+          </div>
+          <div class="card-base">
+            <div class="card-heading">
+              <h3></h3>
+            </div>
+            <div class="card-arrow">
+              <img src="assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
+            </div>
+            <div class="card-content">
+              <p></p>
             </div>
           </div>
         </div>
@@ -174,15 +233,25 @@
           <h2 id="hungary">Staying in Hungary</h2>
           <div class="card-base">
             <div class="card-heading">
-              <h3>How can I set up a consultation meeting?</h3>
+              <h3>Where can I live?</h3>
             </div>
             <div class="card-arrow">
               <img src="assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
             </div>
             <div class="card-content">
-              <p>To set up a video consultation meeting with our staff, you have to contact us, by filling out details
-                about
-                yourself and your dental issue. </p>
+              <p>We provide help with booking your accomodation in Szeged. After the meeting you can contact our team
+                and we will provide you with information on the best accomodation options for your stay. </p>
+            </div>
+          </div>
+          <div class="card-base">
+            <div class="card-heading">
+              <h3>What can I do in Hungary?</h3>
+            </div>
+            <div class="card-arrow">
+              <img src="assets/icons/arrow-down-icon.svg" alt="Arrow down icon">
+            </div>
+            <div class="card-content">
+              <p></p>
             </div>
           </div>
         </div>
@@ -192,8 +261,11 @@
 
     <div class="contact">
       <h2>Do you have any questions we haven't answered?</h2>
-      <button class="primary-btn"><a href="contact.html">Contact us</a></button>
+      <button class="primary-btn" type="button" onclick="location.href='contact.html'">Contact us</button>
     </div>
+
+    <button onclick="topFunction()" id="totop" title="Go to top"><img src="assets/icons/to-top-icon.svg"
+        alt="Arrow up"></button>
   </main>
   <footer>
     <div class="footer-grid">

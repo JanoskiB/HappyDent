@@ -57,17 +57,33 @@ overlayMenu.addEventListener("click", toggleMenu);
 navbarMenu.addEventListener("click", toggleSubMenu);
 window.addEventListener("resize", resizeWindow);
 
+function myFunction() {
+   var dots = document.getElementById("dots");
+   var moreText = document.getElementById("more");
+   var btnText = document.getElementById("myBtn");
+
+   if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+   } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+   }
+};
+
 // Open/close question card
 const cards = document.querySelectorAll('.card-base');
 
 cards.forEach(card => {
-   const header = card.querySelector('.card-heading');
-   const arrow = card.querySelector('.card-arrow');
+   // const header = card.querySelector('.card-heading');
+   // const arrow = card.querySelector('.card-arrow');
    const content = card.querySelector('.card-content');
    // const arrowImg = document.querySelectorAll('#card-arrow > img');
    // console.log($('#card-arrow img').attr('src')); 
 
-   header.addEventListener('click', () => {
+   card.addEventListener('click', () => {
       if (content.style.display === 'block') {
          content.style.display = 'none';
       } else {
@@ -76,15 +92,53 @@ cards.forEach(card => {
       }
    });
 
-   arrow.addEventListener('click', () => {
-      if (content.style.display === 'block') {
-         content.style.display = 'none';
-      } else {
-         content.style.display = 'block';
-         // arrowImg.src = '/assets/icons/arrow-down-icon.svg';
-      }
-   });
+   // arrow.addEventListener('click', () => {
+   //    if (content.style.display === 'block') {
+   //       content.style.display = 'none';
+   //    } else {
+   //       content.style.display = 'block';
+   //       // arrowImg.src = '/assets/icons/arrow-down-icon.svg';
+   //    }
+   // });
 });
+
+
+
+// Read more button & functionality
+
+
+
+// const images = document.querySelector('img');
+
+// images.addEventListener('load', () => {
+//    images.src = '/HappyDent' + images.src;
+// });
+
+
+// images.forEach(image => {
+//    const text = '/HappyDent';
+//    const imgSrc = image.src;
+//    images.src = text + imgSrc;
+
+//    window.onload = addSrc;
+// });
+
+// To top button
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      document.getElementById("totop").style.display = "block";
+   } else {
+      document.getElementById("totop").style.display = "none";
+   }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+   document.body.scrollTop = 0; // For Safari
+   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 // Booking form
 const form = document.getElementById("form");
@@ -132,54 +186,3 @@ form.addEventListener("submit", function (e) {
          }, 5000);
       });
 });
-
-// Contact form
-
-// Read more button & functionality
-
-function myFunction() {
-   var dots = document.getElementById("dots");
-   var moreText = document.getElementById("more");
-   var btnText = document.getElementById("myBtn");
- 
-   if (dots.style.display === "none") {
-     dots.style.display = "inline";
-     btnText.innerHTML = "Read more"; 
-     moreText.style.display = "none";
-   } else {
-     dots.style.display = "none";
-     btnText.innerHTML = "Read less"; 
-     moreText.style.display = "inline";
-   }
- }
-
- 
-// For Github assets access
-// function addSrc () {
-//    var images = document.getElementsByTagName('img');
-//    var text = '/HappyDent';
-//    for (var i = 0; i < images.length; i++) {
-//       var imgSrc = images[i].src;
-//       images[i].src = text + imgSrc;
-//    };
-// };
-
-// window.onload = addSrc;
-
-const images = document.querySelector('img');
-
-images.addEventListener('load', () => {
-   images.src = '/HappyDent' + images.src;
-});
-
-
-// images.forEach(image => {
-//    const text = '/HappyDent';
-//    const imgSrc = image.src;
-//    images.src = text + imgSrc;
-
-//    window.onload = addSrc;
-// });
-
-
-

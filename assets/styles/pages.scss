@@ -71,6 +71,8 @@ a.scroll-a {
     height: 10vh;
     grid-template-rows: auto;
     grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 1rem;
   }
 
 
@@ -173,6 +175,10 @@ a.scroll-a {
     &>p {
       color: $dark-blue;
       padding: 0 2vh;
+    }
+
+    &>button {
+      margin: 2rem 0 0 1rem;
     }
   }
 
@@ -347,11 +353,16 @@ a.scroll-a {
     border-top-right-radius: 25px;
     width: 50%;
     font-size: 1.2rem;
-    color: $dark-blue;
     font-weight: 600;
-    background-color: $medium-blue;
+    background-color: $dark-blue;
+    color: $light-blue;
     padding: 1rem;
   }
+}
+
+.form-wrapper>.tabDiv>.active-button{
+  background-color: $medium-blue-background;
+  color: $dark-blue;
 }
 
 .form {
@@ -417,6 +428,7 @@ a.scroll-a {
 
     &-submit>button {
       height: auto;
+      margin-top: 1rem;
 
       &>h5 {
         margin: 0.8rem 1rem;

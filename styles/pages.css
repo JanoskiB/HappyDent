@@ -42,6 +42,8 @@ a.scroll-a {
     height: 10vh;
     grid-template-rows: auto;
     grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 1rem;
   }
 }
 .sub-btn:hover {
@@ -133,6 +135,9 @@ a.scroll-a {
 .card-content > p {
   color: #003F91;
   padding: 0 2vh;
+}
+.card-content > button {
+  margin: 2rem 0 0 1rem;
 }
 
 .faq-grid {
@@ -269,10 +274,15 @@ a.scroll-a {
   border-top-right-radius: 25px;
   width: 50%;
   font-size: 1.2rem;
-  color: #003F91;
   font-weight: 600;
-  background-color: #5DA9E9;
+  background-color: #003F91;
+  color: #F5FBFF;
   padding: 1rem;
+}
+
+.form-wrapper > .tabDiv > .active-button {
+  background-color: rgba(93, 169, 233, 0.5);
+  color: #003F91;
 }
 
 .form-grid {
@@ -330,6 +340,7 @@ a.scroll-a {
 }
 .booking-form-submit > button {
   height: auto;
+  margin-top: 1rem;
 }
 .booking-form-submit > button > h5 {
   margin: 0.8rem 1rem;

@@ -64,20 +64,16 @@ button {
   height: 2.75rem;
   margin-top: 5rem;
   box-shadow: var(--shadow-large);
+  font-size: 1rem;
+  padding: 0 1.5rem;
+  color: #F5FBFF;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-.primary-btn > a {
-  color: #FFFFFF;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-.primary-btn > a > img {
+.primary-btn > img {
   display: inline;
   height: 1rem;
   padding-left: 0.5rem;
@@ -91,6 +87,10 @@ button {
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
+  -webkit-transition: all 300ms ease-in;
+  -moz-transition: all 300ms ease-in;
+  -ms-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
 }
 
 @media screen and (max-width: 600px) {
@@ -772,23 +772,14 @@ p {
   .prices-section-right > div > p {
     margin-top: 0.8rem;
   }
-  .prices-section-right > .treatments-column {
-    padding: 0.5rem;
-    padding-left: 1rem;
-  }
   .prices-section-right > .hungary-column {
-    background-color: #DFEEFB;
-    padding: 0.5rem 0.5rem;
+    background-color: #fafdff;
   }
-  .prices-section-right > .hungary-column > p {
-    margin-bottom: 2.3rem;
+  .prices-section-right > div > h4 {
+    font-size: 0.8rem;
   }
-  .prices-section-right > .denmark-column {
-    padding: 0.5rem;
-    padding-right: 1rem;
-  }
-  .prices-section-right > .denmark-column > p {
-    margin-bottom: 2.3rem;
+  .prices-section-right > div > p {
+    font-size: 0.63rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -839,12 +830,20 @@ p {
   -o-border-radius: 20px;
 }
 
+@media screen and (max-width: 800px) {
+  .about-us-section-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .flights-section {
   width: 80vw;
   min-height: 80vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .flights-section-grid {
   margin-bottom: 2rem;
@@ -903,11 +902,6 @@ p {
     width: 25vw;
   }
 }
-@media screen and (max-width: 600px) {
-  .card-btn-container > a {
-    display: none;
-  }
-}
 @media screen and (max-width: 1200px) {
   .flights-section-grid {
     gap: 1rem;
@@ -931,6 +925,10 @@ p {
   }
   .f-s-card-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  .f-s-card-grid-right {
+    margin-left: 0rem;
+    margin-top: 0rem;
   }
 }
 .card-btn-container {
@@ -985,15 +983,15 @@ p {
   color: #FFFFFF;
 }
 .accomodation-section-grid > .asc-1 {
-  background-image: url("/assets/images/hotel-room-1.jpg");
+  background-image: url("../assets/images/hotel-room-1.jpg");
   background-repeat: no-repeat;
 }
 .accomodation-section-grid > .asc-2 {
-  background-image: url("/assets/images/panzio.png");
+  background-image: url("../assets/images/panzio.png");
   background-repeat: no-repeat;
 }
 .accomodation-section-grid > .asc-3 {
-  background-image: url("/assets/images/hotel-room-3.jpg");
+  background-image: url("../assets/images/hotel-room-3.jpg");
   background-repeat: no-repeat;
 }
 
@@ -1189,7 +1187,8 @@ footer .footer-grid > div > p {
 .staff-section > .staff-card-grid > div > h4 {
   margin: 1rem 0;
 }
-.staff-section > .staff-card-grid > div > h4, .staff-section > .staff-card-grid p {
+.staff-section > .staff-card-grid > div > h4,
+.staff-section > .staff-card-grid p {
   padding: 0 1rem;
 }
 
@@ -1253,6 +1252,12 @@ footer .footer-grid > div > p {
     grid-template-columns: 1fr;
     min-height: 70vh;
   }
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
 }
 .swiper-pagination {
   scale: 2;
@@ -1303,32 +1308,32 @@ footer .footer-grid > div > p {
 }
 
 .tourist-img-1 {
-  background-image: url("/assets/images/tourist-img-1.png");
-  background-position: 0.5rem;
+  background-image: url("../assets/images/tourist-img-1.png");
+  background-position: -0.5rem;
 }
 
 .tourist-img-2 {
-  background-image: url("/assets/images/tourist-img-2.png");
+  background-image: url("../assets/images/tourist-img-2.png");
   background-position: bottom;
 }
 
 .tourist-img-3 {
-  background-image: url("/assets/images/hungarian-parliament.jpg");
+  background-image: url("../assets/images/hungarian-parliament.jpg");
   background-position: bottom;
 }
 
 .tourist-img-4 {
-  background-image: url("/assets/images/varosliget.jpg");
+  background-image: url("../assets/images/varosliget.jpg");
   background-position: top;
 }
 
 .tourist-img-5 {
-  background-image: url("/assets/images/aquapolis-szeged.jpg");
+  background-image: url("../assets/images/aquapolis-szeged.jpg");
   background-position: top;
 }
 
 .tourist-img-6 {
-  background-image: url("/assets/images/szeged-dom.jpg");
+  background-image: url("../assets/images/szeged-dom.jpg");
   background-position: top;
   background-size: cover;
 }
@@ -1367,4 +1372,9 @@ footer .footer-grid > div > p {
   .cost-section-grid {
     grid-template-columns: 1fr 1fr;
   }
+}
+#totop {
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
 }/*# sourceMappingURL=style.css.map */

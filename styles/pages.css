@@ -134,6 +134,9 @@ a.scroll-a {
   color: #003F91;
   padding: 0 2vh;
 }
+.card-content > button {
+  margin: 2rem 0 0 1rem;
+}
 
 .faq-grid {
   margin-top: 75px;

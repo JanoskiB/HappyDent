@@ -71,6 +71,8 @@ a.scroll-a {
     height: 10vh;
     grid-template-rows: auto;
     grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 1rem;
   }
 
 
@@ -173,6 +175,10 @@ a.scroll-a {
     &>p {
       color: $dark-blue;
       padding: 0 2vh;
+    }
+
+    &>button {
+      margin: 2rem 0 0 1rem;
     }
   }
 

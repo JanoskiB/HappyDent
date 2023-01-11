@@ -1311,6 +1311,7 @@ footer .footer-grid > div > p {
 
 .tourist-img-1 {
   background-image: url("/assets/images/tourist-img-1.png");
+  background-position: -0.5rem;
 }
 
 .tourist-img-2 {

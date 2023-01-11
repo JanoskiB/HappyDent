@@ -1,6 +1,6 @@
 $dark-blue: #003F91;
 $medium-blue: #5DA9E9;
-$meduim-blue-background: rgba(93, 169, 233, 0.5);
+$medium-blue-background: rgba(93, 169, 233, 0.5);
 $light-blue: #F5FBFF;
 $grey: #777676;
 
@@ -90,7 +90,7 @@ a.scroll-a {
       grid-column: 2;
       grid-row: 1/ span 2;
       align-self: center;
-      
+
     }
   }
 
@@ -240,7 +240,7 @@ a.scroll-a {
 
   &-grid {
     display: grid;
-    grid-template-columns: 25vw 50vw;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto;
     padding: 5vw 10vw;
     gap: 10vh;
@@ -248,7 +248,7 @@ a.scroll-a {
 
   &-booking,
   &-form {
-    background-color: $meduim-blue-background;
+    background-color: $medium-blue-background;
     @include borderrad();
     padding: 5vh;
     color: white;
@@ -328,6 +328,18 @@ a.scroll-a {
     &-question {
       grid-column: 1/ span 2;
     }
+  }
+}
+
+.form-wrapper>.tabDiv {
+  width: 100%;
+  margin: 0rem 2rem;
+
+  &>.formTab{
+    font-size: 1.5rem;
+  }
+  &>.formTabRight{
+    margin-left: 5rem;
   }
 }
 
@@ -465,7 +477,7 @@ input {
       }
 
       &>.card-base {
-        background-color: $meduim-blue-background;
+        background-color: $medium-blue-background;
       }
     }
   }
@@ -474,7 +486,7 @@ input {
     padding: 5vw 10vw;
 
     &-info {
-      background-color: $meduim-blue-background;
+      background-color: $medium-blue-background;
       @include borderrad();
       padding: 3vw;
 

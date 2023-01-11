@@ -778,23 +778,14 @@ p {
   .prices-section-right > div > p {
     margin-top: 0.8rem;
   }
-  .prices-section-right > .treatments-column {
-    padding: 0.5rem;
-    padding-left: 1rem;
-  }
   .prices-section-right > .hungary-column {
-    background-color: #DFEEFB;
-    padding: 0.5rem 0.5rem;
+    background-color: #fafdff;
   }
-  .prices-section-right > .hungary-column > p {
-    margin-bottom: 2.3rem;
+  .prices-section-right > div > h4 {
+    font-size: 0.8rem;
   }
-  .prices-section-right > .denmark-column {
-    padding: 0.5rem;
-    padding-right: 1rem;
-  }
-  .prices-section-right > .denmark-column > p {
-    margin-bottom: 2.3rem;
+  .prices-section-right > div > p {
+    font-size: 0.63rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -845,12 +836,20 @@ p {
   -o-border-radius: 20px;
 }
 
+@media screen and (max-width: 800px) {
+  .about-us-section-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .flights-section {
   width: 80vw;
   min-height: 80vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .flights-section-grid {
   margin-bottom: 2rem;
@@ -909,11 +908,6 @@ p {
     width: 25vw;
   }
 }
-@media screen and (max-width: 600px) {
-  .card-btn-container > a {
-    display: none;
-  }
-}
 @media screen and (max-width: 1200px) {
   .flights-section-grid {
     gap: 1rem;
@@ -937,6 +931,10 @@ p {
   }
   .f-s-card-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  .f-s-card-grid-right {
+    margin-left: 0rem;
+    margin-top: 0rem;
   }
 }
 .card-btn-container {

@@ -879,27 +879,16 @@ p {
          }
       }
 
-      &-right>.treatments-column {
-         padding: .5rem;
-         padding-left: 1rem;
-      }
-
       &-right>.hungary-column {
-         background-color: #DFEEFB;
-         padding: .5rem .5rem
+         background-color: #fafdff;
       }
 
-      &-right>.hungary-column>p {
-         margin-bottom: 2.3rem;
+      &-right>div>h4{
+         font-size: .8rem;
       }
 
-      &-right>.denmark-column {
-         padding: .5rem;
-         padding-right: 1rem;
-      }
-
-      &-right>.denmark-column>p {
-         margin-bottom: 2.3rem;
+      &-right>div>p{
+         font-size: .63rem;
       }
 
    }
@@ -950,8 +939,15 @@ p {
    }
 }
 
+@media screen and (max-width: 800px) {
+   .about-us-section-grid{
+      grid-template-columns: 1fr;
+   }
+}
+
 .flights-section {
    @include w-h-m;
+   height: fit-content;
 
    &-grid {
       @include content-button-margin;
@@ -1011,20 +1007,10 @@ p {
    }
 }
 
-@media screen and (max-width: 600px) {
-   .card-btn-container {
-
-      &>a {
-         display: none;
-      }
-   }
-}
-
 @media screen and (max-width: 1200px) {
    .flights-section-grid {
       gap: 1rem;
    }
-
    .f-s-card {
       &-grid {
          grid-template-columns: 1fr;
@@ -1053,6 +1039,13 @@ p {
    .f-s-card {
       &-grid {
          grid-template-columns: 1fr 1fr;
+      }
+   }
+
+   .f-s-card-grid {
+      &-right {
+         margin-left: 0rem;
+         margin-top: 0rem;
       }
    }
 }

@@ -152,6 +152,8 @@ function myFunction() {
      moreText.style.display = "inline";
    }
  }
+
+ 
 // For Github assets access
 // function addSrc () {
 //    var images = document.getElementsByTagName('img');

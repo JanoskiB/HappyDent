@@ -427,38 +427,44 @@ video {
 
 /* Typography*/
 h1 {
-  font-size: 2.5rem; /* 2.5 times body text*/
+  font-size: 2.5rem;
+  /* 2.5 times body text*/
   color: #003F91;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25rem; /* 2.25 times body text*/
+  font-size: 2.25rem;
+  /* 2.25 times body text*/
   color: #003F91;
   font-weight: 700;
   margin: 2rem 0;
 }
 
 h3 {
-  font-size: 2rem; /* 2 times body text*/
+  font-size: 2rem;
+  /* 2 times body text*/
   color: #003F91;
   font-weight: 300;
 }
 
 h4 {
-  font-size: 1.75rem; /* 1.75 times body text*/
+  font-size: 1.75rem;
+  /* 1.75 times body text*/
   color: #003F91;
 }
 
 .hero-text {
-  font-size: 1.5rem; /* 1.5 times body text*/
+  font-size: 1.5rem;
+  /* 1.5 times body text*/
   color: #5A5A5A;
   font-weight: 300;
   margin: 2rem 0;
 }
 
 .intro-text {
-  font-size: 1.25rem; /* 1.25 times body text*/
+  font-size: 1.25rem;
+  /* 1.25 times body text*/
   color: #5A5A5A;
   font-weight: 500;
 }
@@ -554,6 +560,13 @@ p {
 
 .mobile-btn {
   display: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.primary-btn-hero {
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 1056px) {
@@ -597,7 +610,7 @@ p {
 }
 .process-section {
   width: 80vw;
-  min-height: 80vh;
+  min-height: 60vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -663,7 +676,7 @@ p {
 @media screen and (max-width: 1056px) {
   .process-section {
     width: 80vw;
-    min-height: 80vh;
+    min-height: 60vh;
     margin: 0 auto;
     margin-top: 5rem;
     margin-bottom: 10rem;
@@ -703,7 +716,7 @@ p {
 
 .prices-section {
   width: 80vw;
-  min-height: 80vh;
+  min-height: 60vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -767,7 +780,7 @@ p {
 @media screen and (max-width: 1056px) {
   .prices-section {
     width: 80vw;
-    min-height: 80vh;
+    min-height: 60vh;
     margin: 0 auto;
     margin-top: 5rem;
     margin-bottom: 10rem;
@@ -809,7 +822,7 @@ p {
 
 .about-us-section {
   width: 80vw;
-  min-height: 80vh;
+  min-height: 60vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -846,7 +859,7 @@ p {
 }
 .flights-section {
   width: 80vw;
-  min-height: 80vh;
+  min-height: 60vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -952,7 +965,7 @@ p {
 
 .accomodation-section {
   width: 80vw;
-  min-height: 80vh;
+  min-height: 60vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -1014,11 +1027,10 @@ p {
 }
 .consultation-section {
   width: 80vw;
-  min-height: 80vh;
+  min-height: 60vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
-  min-height: 50vh;
   margin-top: 10rem;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -1034,6 +1046,7 @@ p {
   -o-border-radius: 20px;
   float: right;
   width: 70%;
+  margin-top: 2rem;
 }
 
 .consultation-hu {
@@ -1108,7 +1121,7 @@ footer .footer-grid > div > p {
 }
 .expectations-section {
   width: 80vw;
-  min-height: 80vh;
+  min-height: 60vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -1152,7 +1165,7 @@ footer .footer-grid > div > p {
 
 .staff-section {
   width: 80vw;
-  min-height: 80vh;
+  min-height: 60vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -1218,7 +1231,7 @@ footer .footer-grid > div > p {
 
 .swiper-slide-grid {
   width: 80vw;
-  min-height: 80vh;
+  min-height: 60vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -1283,7 +1296,7 @@ footer .footer-grid > div > p {
 
 .location-section {
   width: 80vw;
-  min-height: 80vh;
+  min-height: 60vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -1349,7 +1362,7 @@ footer .footer-grid > div > p {
 
 .cost-section {
   width: 80vw;
-  min-height: 80vh;
+  min-height: 60vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;

@@ -188,7 +188,7 @@ a.scroll-a {
 }
 
 .contact {
-  padding: 10vh 0;
+  padding: 10vh 10vw;
   text-align: center;
 }
 .contact-grid {
@@ -405,8 +405,9 @@ input::placeholder {
 }
 
 .travel-card-sec {
+  margin-top: 5rem;
   display: grid;
-  grid-template-columns: 15vw 60vw;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 4vw;
   padding: 0 10vw;
@@ -416,15 +417,20 @@ input::placeholder {
 }
 .travel-card-number {
   grid-column: 1;
+  margin-top: 10rem;
+  margin-left: 5rem;
 }
 .travel-card-list {
   grid-column: 2;
+  margin-top: 2rem;
 }
 .travel-card-list > p {
-  margin-bottom: 2vw;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 .travel-card-list > .card-base {
   background-color: rgba(93, 169, 233, 0.5);
+  margin-bottom: 1rem;
 }
 .travel-cost {
   padding: 5vw 10vw;
@@ -437,4 +443,10 @@ input::placeholder {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   padding: 3vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .travel-card-number {
+    display: none;
+  }
 }/*# sourceMappingURL=pages.css.map */

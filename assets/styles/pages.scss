@@ -242,7 +242,7 @@ a.scroll-a {
 // Contact page
 
 .contact {
-  padding: 10vh 0;
+  padding: 10vh 10vw;
   text-align: center;
 
   &-grid {
@@ -492,8 +492,9 @@ input {
 .travel {
   &-card {
     &-sec {
+      margin-top: 5rem;
       display: grid;
-      grid-template-columns: 15vw 60vw;
+      grid-template-columns: 1fr;
       grid-template-rows: auto;
 
       gap: 4vw;
@@ -506,17 +507,22 @@ input {
 
     &-number {
       grid-column: 1;
+      margin-top: 10rem;
+      margin-left: 5rem;
     }
 
     &-list {
       grid-column: 2;
+      margin-top: 2rem;
 
       &>p {
-        margin-bottom: 2vw;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
       }
 
       &>.card-base {
         background-color: $medium-blue-background;
+        margin-bottom: 1rem;
       }
     }
   }
@@ -530,5 +536,11 @@ input {
       padding: 3vw;
 
     }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .travel-card-number{
+    display: none;
   }
 }

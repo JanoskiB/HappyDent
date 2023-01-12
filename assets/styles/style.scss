@@ -141,7 +141,7 @@ button {
       -moz-transition: all 300ms ease-in;
       -ms-transition: all 300ms ease-in;
       -o-transition: all 300ms ease-in;
-}
+   }
 
    @include borderrad;
 
@@ -182,7 +182,7 @@ button {
    width: 80vw;
 }
 
-.maps-btn{
+.maps-btn {
    margin-top: 2rem;
 }
 
@@ -194,7 +194,7 @@ video {
    object-fit: cover;
 }
 
-#totop{
+#totop {
    display: none;
    margin-right: 2.5vw;
 }
@@ -499,38 +499,44 @@ video {
 /* Typography*/
 
 h1 {
-   font-size: 2.5rem; /* 2.5 times body text*/
+   font-size: 2.5rem;
+   /* 2.5 times body text*/
    color: $dark-blue;
    font-weight: 700;
 }
 
 h2 {
-   font-size: 2.25rem; /* 2.25 times body text*/
+   font-size: 2.25rem;
+   /* 2.25 times body text*/
    color: $dark-blue;
    font-weight: 700;
    margin: 2rem 0;
 }
 
 h3 {
-   font-size: 2rem; /* 2 times body text*/
+   font-size: 2rem;
+   /* 2 times body text*/
    color: $dark-blue;
    font-weight: 300;
 }
 
 h4 {
-   font-size: 1.75rem; /* 1.75 times body text*/
+   font-size: 1.75rem;
+   /* 1.75 times body text*/
    color: $dark-blue;
 }
 
 .hero-text {
-   font-size: 1.5rem; /* 1.5 times body text*/
+   font-size: 1.5rem;
+   /* 1.5 times body text*/
    color: $grey;
    font-weight: 300;
    margin: 2rem 0;
 }
 
 .intro-text {
-   font-size: 1.25rem; /* 1.25 times body text*/
+   font-size: 1.25rem;
+   /* 1.25 times body text*/
    color: $grey;
    font-weight: 500;
 }
@@ -638,6 +644,11 @@ p {
 
 .mobile-btn {
    display: none;
+   height: fit-content;
+}
+
+.primary-btn-hero{
+   margin-top: 2rem;
 }
 
 @media screen and (max-width: 1056px) {
@@ -695,7 +706,7 @@ p {
 
 @mixin w-h-m {
    width: 80vw;
-   min-height: 80vh;
+   min-height: 60vh;
    margin: 0 auto;
    margin-top: 5rem;
    margin-bottom: 10rem;
@@ -887,11 +898,11 @@ p {
          background-color: #fafdff;
       }
 
-      &-right>div>h4{
+      &-right>div>h4 {
          font-size: .8rem;
       }
 
-      &-right>div>p{
+      &-right>div>p {
          font-size: .63rem;
       }
 
@@ -944,7 +955,7 @@ p {
 }
 
 @media screen and (max-width: 800px) {
-   .about-us-section-grid{
+   .about-us-section-grid {
       grid-template-columns: 1fr;
    }
 }
@@ -1015,6 +1026,7 @@ p {
    .flights-section-grid {
       gap: 1rem;
    }
+
    .f-s-card {
       &-grid {
          grid-template-columns: 1fr;
@@ -1134,7 +1146,6 @@ p {
 
 .consultation-section {
    @include w-h-m;
-   min-height: 50vh;
    margin-top: 10rem;
    display: grid;
    grid-template-columns: 1fr 1.2fr;
@@ -1147,6 +1158,7 @@ p {
       @include borderrad;
       float: right;
       width: 70%;
+      margin-top: 2rem;
    }
 }
 
@@ -1399,7 +1411,7 @@ footer {
    .swiper-button-next {
       display: none;
    }
-   
+
    .swiper-button-prev {
       display: none;
    }

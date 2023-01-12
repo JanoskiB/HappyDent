@@ -146,6 +146,11 @@ video {
      object-fit: cover;
 }
 
+#totop {
+  display: none;
+  margin-right: 2.5vw;
+}
+
 .container {
   max-width: 100vw;
   height: auto;

@@ -103,10 +103,9 @@ tripBtn.addEventListener('click', () => {
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
+   document.getElementById("totop").style.display = "none";
    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
       document.getElementById("totop").style.display = "block";
-   } else {
-      document.getElementById("totop").style.display = "none";
    }
 };
 

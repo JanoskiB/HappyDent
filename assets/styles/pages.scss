@@ -184,6 +184,14 @@ a.scroll-a {
 
 }
 
+.arrow-image {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+
 // FAQ page
 .faq {
   &-grid {
@@ -360,7 +368,7 @@ a.scroll-a {
   }
 }
 
-.form-wrapper>.tabDiv>.active-button{
+.form-wrapper>.tabDiv>.active-button {
   background-color: $medium-blue-background;
   color: $dark-blue;
 }

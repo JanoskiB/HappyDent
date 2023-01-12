@@ -140,6 +140,14 @@ a.scroll-a {
   margin: 2rem 0 0 1rem;
 }
 
+.arrow-image {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+
 .faq-grid {
   margin-top: 75px;
   padding: 0 10vw;

@@ -57,6 +57,7 @@ overlayMenu.addEventListener("click", toggleMenu);
 navbarMenu.addEventListener("click", toggleSubMenu);
 window.addEventListener("resize", resizeWindow);
 
+// Read more button & functionality
 function myFunction() {
    var dots = document.getElementById("dots");
    var moreText = document.getElementById("more");
@@ -77,51 +78,26 @@ function myFunction() {
 const cards = document.querySelectorAll('.card-base');
 
 cards.forEach(card => {
-   // const header = card.querySelector('.card-heading');
-   // const arrow = card.querySelector('.card-arrow');
    const content = card.querySelector('.card-content');
-   // const arrowImg = document.querySelectorAll('#card-arrow > img');
-   // console.log($('#card-arrow img').attr('src')); 
+   const arrowImg = document.querySelector('.arrow-image');
 
    card.addEventListener('click', () => {
       if (content.style.display === 'block') {
          content.style.display = 'none';
+         arrowImg.style.transform = 'rotate(0deg)';
       } else {
          content.style.display = 'block';
-         // arrowImg.src = '/assets/icons/arrow-down-icon.svg';
+         arrowImg.style.transform = 'rotate(180deg)';
       }
    });
-
-   // arrow.addEventListener('click', () => {
-   //    if (content.style.display === 'block') {
-   //       content.style.display = 'none';
-   //    } else {
-   //       content.style.display = 'block';
-   //       // arrowImg.src = '/assets/icons/arrow-down-icon.svg';
-   //    }
-   // });
 });
 
+// Tripadvisor button
+const tripBtn = document.getElementById('tripadvisor-btn');
 
-
-// Read more button & functionality
-
-
-
-// const images = document.querySelector('img');
-
-// images.addEventListener('load', () => {
-//    images.src = '/HappyDent' + images.src;
-// });
-
-
-// images.forEach(image => {
-//    const text = '/HappyDent';
-//    const imgSrc = image.src;
-//    images.src = text + imgSrc;
-
-//    window.onload = addSrc;
-// });
+tripBtn.addEventListener('click', () => {
+   window.open('https://www.tripadvisor.dk/Tourism-g274912-Szeged_Csongrad_County_Southern_Great_Plain-Vacations.html', '_blank');
+});
 
 // To top button
 window.onscroll = function () { scrollFunction() };
@@ -132,7 +108,7 @@ function scrollFunction() {
    } else {
       document.getElementById("totop").style.display = "none";
    }
-}
+};
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {

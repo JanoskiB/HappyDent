@@ -599,7 +599,7 @@ p {
 .process-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
 }
 .process-section-grid {
   display: grid;
@@ -635,7 +635,7 @@ p {
 }
 .process-section-grid > div > .step {
   font-size: 3rem;
-  color: #003F91;
+  color: #5DA9E9;
   font-weight: 700;
 }
 .process-section-grid > div > p {
@@ -656,7 +656,7 @@ p {
   .process-section {
     width: 80vw;
     min-height: 60vh;
-    margin: 5rem 10vw;
+    margin: 10rem 10vw;
   }
   .process-section-grid {
     grid-template-columns: 1fr;
@@ -686,7 +686,7 @@ p {
 .prices-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
   min-height: 45vh;
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -748,7 +748,7 @@ p {
   .prices-section {
     width: 80vw;
     min-height: 60vh;
-    margin: 5rem 10vw;
+    margin: 10rem 10vw;
     grid-template-columns: 1fr;
   }
   .prices-section-right {
@@ -788,7 +788,7 @@ p {
 .about-us-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
   min-height: 100vh;
 }
 .about-us-section > h2 {
@@ -823,7 +823,7 @@ p {
 .flights-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -931,7 +931,7 @@ p {
 .accomodation-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
 }
 .accomodation-section-grid {
   display: grid;
@@ -972,7 +972,7 @@ p {
   background-repeat: no-repeat;
 }
 .accomodation-section-grid > .asc-2 {
-  background-image: url("../assets/images/panzio.png");
+  background-image: url("../assets/images/hotel-room-2.png");
   background-repeat: no-repeat;
 }
 .accomodation-section-grid > .asc-3 {
@@ -991,7 +991,7 @@ p {
 .consultation-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
   min-height: 50vh;
   margin-top: 10rem;
   display: grid;
@@ -1087,7 +1087,7 @@ footer .footer-grid > div > p {
 .expectations-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1121,14 +1121,14 @@ footer .footer-grid > div > p {
   display: none;
 }
 
-#myBtn {
-  color: #003F91;
+#readMoreBtn {
+  margin-top: 2rem;
 }
 
 .dentist-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
 }
 .dentist-section-grid {
   display: grid;
@@ -1147,7 +1147,7 @@ footer .footer-grid > div > p {
   margin-top: 2rem;
 }
 .dentist-section-grid > div > div > img {
-  height: 1.5rem;
+  height: 2rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
 }
@@ -1162,7 +1162,7 @@ footer .footer-grid > div > p {
 .swiper-slide-grid {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
   min-height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1225,7 +1225,7 @@ footer .footer-grid > div > p {
 .location-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
 }
 .location-section > p {
   margin-bottom: 2rem;
@@ -1289,7 +1289,7 @@ footer .footer-grid > div > p {
 .cost-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
 }
 .cost-section > h4 {
   font-size: 2rem;

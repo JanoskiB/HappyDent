@@ -696,7 +696,7 @@ p {
 @mixin w-h-m {
    width: 80vw;
    min-height: 60vh;
-   margin: 5rem 10vw;
+   margin: 10rem 10vw;
 
 }
 
@@ -737,7 +737,7 @@ p {
 
       &>div>.step {
          font-size: 3rem;
-         color: $dark-blue;
+         color: $medium-blue;
          font-weight: 700;
       }
 
@@ -1105,7 +1105,7 @@ p {
       }
 
       &>.asc-2 {
-         background-image: url('../assets/images/panzio.png');
+         background-image: url('../assets/images/hotel-room-2.png');
          background-repeat: no-repeat;
       }
 
@@ -1280,8 +1280,8 @@ footer {
    display: none;
 }
 
-#myBtn {
-   color: $dark-blue;
+#readMoreBtn {
+   margin-top: 2rem;
 }
 
 
@@ -1303,7 +1303,7 @@ footer {
       }
 
       >div>div>img {
-         height: 1.5rem;
+         height: 2rem;
          margin-top: 3rem;
          margin-bottom: 1rem;
          

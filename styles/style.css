@@ -134,6 +134,11 @@ button {
   width: 80vw;
 }
 
+@media screen and (max-width: 1056px) {
+  .btn-mobile-position {
+    margin: 0;
+  }
+}
 img,
 video {
   display: block;
@@ -464,12 +469,6 @@ h4 {
   font-weight: 500;
 }
 
-.intro-text-var {
-  font-size: 1.25rem;
-  color: #5DA9E9;
-  font-weight: 500;
-}
-
 p {
   font-size: 1rem;
   /* body text */
@@ -535,7 +534,8 @@ p {
 .hero-section-left > .hero-text-hun {
   padding-right: 5rem;
 }
-.hero-section-left > div > button, .hero-section-left a {
+.hero-section-left > div > button,
+.hero-section-left a {
   margin-top: 2rem;
 }
 .hero-section-right > img {
@@ -598,29 +598,20 @@ p {
 }
 .process-section {
   width: 80vw;
-  min-height: 80vh;
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
-  margin: 5rem 10vw;
   min-height: 60vh;
+  margin: 5rem 10vw;
 }
 .process-section-grid {
   display: grid;
+  margin-bottom: 3rem;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   margin-top: 3rem;
-  margin-bottom: 2rem;
   justify-items: start;
 }
 @media screen and (max-width: 480px) {
   .process-section-grid {
     margin-top: 1rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .process-section-grid {
-    margin-bottom: 4rem;
   }
 }
 .process-section-grid > div {
@@ -664,10 +655,8 @@ p {
 @media screen and (max-width: 1056px) {
   .process-section {
     width: 80vw;
-    min-height: 80vh;
-    margin: 0 auto;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
+    min-height: 60vh;
+    margin: 5rem 10vw;
   }
   .process-section-grid {
     grid-template-columns: 1fr;
@@ -694,27 +683,17 @@ p {
   margin-left: 0;
 }
 
-#wave1 {
-  position: relative;
-}
-
-#wave2 {
-  position: relative;
-}
-
 .prices-section {
   width: 80vw;
-  min-height: 80vh;
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  min-height: 60vh;
+  margin: 5rem 10vw;
   min-height: 45vh;
   display: grid;
   grid-template-columns: 2fr 3fr;
 }
 .prices-section-left {
   float: left;
-  margin-right: 5rem;
+  margin: 0 5rem 2rem 0;
 }
 .prices-section-left > h2 {
   margin-top: 0;
@@ -768,10 +747,8 @@ p {
 @media screen and (max-width: 1056px) {
   .prices-section {
     width: 80vw;
-    min-height: 80vh;
-    margin: 0 auto;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
+    min-height: 60vh;
+    margin: 5rem 10vw;
     grid-template-columns: 1fr;
   }
   .prices-section-right {
@@ -793,8 +770,8 @@ p {
   }
 }
 @media screen and (max-width: 600px) {
-  .prices-section-left > p {
-    width: 80vw;
+  .prices-section-left {
+    width: 100%;
   }
   .prices-section-right {
     margin-top: 2rem;
@@ -810,10 +787,8 @@ p {
 
 .about-us-section {
   width: 80vw;
-  min-height: 80vh;
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  min-height: 60vh;
+  margin: 5rem 10vw;
   min-height: 100vh;
 }
 .about-us-section > h2 {
@@ -847,10 +822,8 @@ p {
 }
 .flights-section {
   width: 80vw;
-  min-height: 80vh;
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  min-height: 60vh;
+  margin: 5rem 10vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -903,6 +876,10 @@ p {
   margin-right: 1.5rem;
 }
 
+.disclaimer {
+  margin-bottom: 2rem;
+}
+
 /*medium devices - tablets*/
 @media screen and (max-width: 1250px) {
   .flights-section-grid {
@@ -953,10 +930,8 @@ p {
 
 .accomodation-section {
   width: 80vw;
-  min-height: 80vh;
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  min-height: 60vh;
+  margin: 5rem 10vw;
 }
 .accomodation-section-grid {
   display: grid;
@@ -1010,18 +985,17 @@ p {
     grid-template-columns: 1fr;
   }
   .accomodation-section-grid > div {
-    height: 60vh;
+    min-height: 50vh;
   }
 }
 .consultation-section {
   width: 80vw;
-  min-height: 80vh;
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  min-height: 60vh;
+  margin: 5rem 10vw;
   min-height: 50vh;
   margin-top: 10rem;
   display: grid;
+  gap: 4rem;
   grid-template-columns: 1fr 1.2fr;
 }
 .consultation-section > div > h2 {
@@ -1112,10 +1086,8 @@ footer .footer-grid > div > p {
 }
 .expectations-section {
   width: 80vw;
-  min-height: 80vh;
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  min-height: 60vh;
+  margin: 5rem 10vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1156,10 +1128,8 @@ footer .footer-grid > div > p {
 
 .staff-section {
   width: 80vw;
-  min-height: 80vh;
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  min-height: 60vh;
+  margin: 5rem 10vw;
 }
 .staff-section > .staff-card-grid {
   margin-top: 3rem;
@@ -1222,10 +1192,8 @@ footer .footer-grid > div > p {
 
 .swiper-slide-grid {
   width: 80vw;
-  min-height: 80vh;
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  min-height: 60vh;
+  margin: 5rem 10vw;
   min-height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1287,10 +1255,8 @@ footer .footer-grid > div > p {
 
 .location-section {
   width: 80vw;
-  min-height: 80vh;
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  min-height: 60vh;
+  margin: 5rem 10vw;
 }
 .location-section > p {
   margin-bottom: 2rem;
@@ -1353,10 +1319,8 @@ footer .footer-grid > div > p {
 
 .cost-section {
   width: 80vw;
-  min-height: 80vh;
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  min-height: 60vh;
+  margin: 5rem 10vw;
 }
 .cost-section > h4 {
   font-size: 2rem;

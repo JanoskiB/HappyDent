@@ -294,6 +294,10 @@ a.scroll-a {
   color: #003F91;
 }
 
+.inactive-btn {
+  background-color: #003F91;
+}
+
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

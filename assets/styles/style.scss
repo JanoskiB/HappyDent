@@ -183,6 +183,12 @@ button {
    width: 80vw;
 }
 
+@media screen and (max-width: 1056px) {
+   .btn-mobile-position {
+      margin: 0;
+   }
+}
+
 img,
 video {
    display: block;
@@ -281,7 +287,7 @@ video {
       .menu-item button {
          margin-top: 2rem;
          margin-left: 1rem;
-         }
+      }
    }
 
    & img {
@@ -336,8 +342,8 @@ video {
    }
 
    @media screen and (max-width: 1274px) {
-   .menu-item-tel {
-      display: none;
+      .menu-item-tel {
+         display: none;
       }
    }
 
@@ -535,13 +541,6 @@ h4 {
    font-weight: 500;
 }
 
-.intro-text-var {
-   font-size: 1.25rem;
-   color: $medium-blue;
-   font-weight: 500;
-}
-
-
 p {
    font-size: 1rem;
    /* body text */
@@ -618,7 +617,8 @@ p {
          padding-right: 5rem;
       }
 
-      &>div>button,a {
+      &>div>button,
+      a {
          margin-top: 2rem;
       }
    }
@@ -695,23 +695,20 @@ p {
 
 @mixin w-h-m {
    width: 80vw;
-   min-height: 80vh;
-   margin: 0 auto;
-   margin-top: 5rem;
-   margin-bottom: 10rem;
+   min-height: 60vh;
+   margin: 5rem 10vw;
+
 }
 
 .process-section {
    @include w-h-m;
-   margin: 5rem 10vw;
-   min-height: 60vh;
 
    &-grid {
       display: grid;
+      margin-bottom: 3rem;
       grid-template-columns: 1fr 1fr 1fr;
       width: 100%;
       @include intro-content-margin;
-      @include content-button-margin;
       justify-items: start;
 
       &>div {
@@ -793,21 +790,14 @@ p {
       }
 
    }
+
+
 }
 
 .process-section-grid>div>span>img {
    height: 3rem;
    margin-left: 0;
 }
-
-#wave1 {
-   position: relative;
-}
-
-#wave2 {
-   position: relative;
-}
-
 
 .prices-section {
    @include w-h-m;
@@ -817,7 +807,7 @@ p {
 
    &-left {
       float: left;
-      margin-right: 5rem;
+      margin: 0 5rem 2rem 0;
    }
 
    &-left>h2 {
@@ -902,8 +892,8 @@ p {
 @media screen and (max-width: 600px) {
    .prices-section {
 
-      &-left>p {
-         width: 80vw;
+      &-left {
+         width: 100%;
       }
 
       &-right {
@@ -998,6 +988,10 @@ p {
       margin-left: 1rem;
       margin-right: 1.5rem;
    }
+}
+
+.disclaimer{
+   margin-bottom: 2rem;
 }
 
 /*medium devices - tablets*/
@@ -1128,7 +1122,7 @@ p {
       grid-template-columns: 1fr;
 
       &>div {
-         height: 60vh;
+         min-height: 50vh;
       }
    }
 }
@@ -1138,6 +1132,7 @@ p {
    min-height: 50vh;
    margin-top: 10rem;
    display: grid;
+   gap: 4rem;
    grid-template-columns: 1fr 1.2fr;
 
    &>div>h2 {

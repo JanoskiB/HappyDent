@@ -5,19 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/icons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/icons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/icons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicons/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <script defer src="assets/script/script.js"></script>
   <!-- <script defer src="toTop.js"></script> -->
   <link rel="stylesheet" href="styles/style.css">
@@ -31,8 +24,7 @@
   <div class="top-wrapper">
     <header class="header" id="header">
       <section class="wrapper container">
-        <span><a href="index.html"><img class="logo" src="assets/icons/logo.svg"
-              alt="Lehoczky dental logo"></a></span>
+        <span><a href="index.html"><img class="logo" src="assets/icons/logo.svg" alt="Lehoczky dental logo"></a></span>
         <div class="burger" id="burger">
           <span class="burger-line"></span>
           <span class="burger-line"></span>
@@ -42,8 +34,8 @@
         <nav class="navbar" id="navbar">
           <ul class="menu" id="menu">
             <li class="menu-item menu-dropdown">
-              <span class="menu-link" data-toggle="submenu"><a class="menu-link"
-                  href="treatments.html">Treatments<img src="assets/icons/dropdown.svg" alt="Icon indicating drop-down menu"></a></span>
+              <span class="menu-link" data-toggle="submenu"><a class="menu-link" href="treatments.html">Treatments<img
+                    src="assets/icons/dropdown.svg" alt="Icon indicating drop-down menu"></a></span>
               <ul class="submenu">
                 <li class="submenu-item"><a href="treatments.html#oralSurgery" class="submenu-link">Oral surgery</a>
                 </li>
@@ -54,8 +46,8 @@
             </li>
             <li class="menu-item"><a href="why-hungary.html" class="menu-link">Why Hungary?</a></li>
             <li class="menu-item menu-dropdown">
-              <span class="menu-link" data-toggle="submenu"><a class="menu-link"
-                  href="travelling.html">Travelling <img src="assets/icons/dropdown.svg" alt="Icon indicating drop-down menu"></a></span>
+              <span class="menu-link" data-toggle="submenu"><a class="menu-link" href="travelling.html">Travelling <img
+                    src="assets/icons/dropdown.svg" alt="Icon indicating drop-down menu"></a></span>
               <ul class="submenu">
                 <li class="submenu-item"><a href="travelling.html#beforeTravelling" class="submenu-link">Before
                     travelling</a></li>
@@ -66,8 +58,8 @@
             </li>
             <li class="menu-item"><a href="about-us.html" class="menu-link">About us</a></li>
             <li class="menu-item"><a href="faq.html" class="menu-link">FAQ</a></li>
-            <li class="menu-item menu-item-tel"><img src="assets/icons/phone-icon.svg"
-                alt="phone icon"><a href="tel:+4591810272" class="menu-link-tel"> +45 91 81 02 72</a></li>
+            <li class="menu-item menu-item-tel"><img src="assets/icons/phone-icon.svg" alt="phone icon"><a
+                href="tel:+4591810272" class="menu-link-tel"> +45 91 81 02 72</a></li>
             <li class="menu-item"> <button class="primary-btn"
                 onclick="window.location.href = 'contact.html'">Contact</button>
             </li>
@@ -96,7 +88,7 @@
         </div>
       </div>
       <div class="hero-section-right">
-        <img src="assets/images/hero-img.png" alt="Lehoczky Dental Happy Dent Dental tourism Hungary hero image">
+        <img src="assets/images/hero-img.png" alt="Lehoczky Dental Tourism Hungary hero image">
       </div>
     </div>
   </div>
@@ -167,9 +159,9 @@
         </div>
 
       </div>
-      <div class="btn-container">
-        <a class="secondary-btn btn-center-position" href="travelling.html">Learn more</a>
-      </div>
+      <button class="primary-btn btn-center-position btn-mobile-position"
+        onclick="window.location.href = 'travelling.html'">Learn more<img src="assets/icons/arrow-right.svg"
+          alt="Arrow pointing to right"></button>
     </div>
 
     <div class="about-us-section">
@@ -195,7 +187,7 @@
 
         <div class="f-s-card">
           <h4>BLL - BUD</h4>
-          <h3>DKK 432</h3>
+          <h3>DKK 432*</h3>
           <div class="f-s-card-grid">
             <div class="f-s-card-grid-left">
 
@@ -225,7 +217,7 @@
 
         <div class="f-s-card">
           <h4>CPH - BUD</h4>
-          <h3>DKK 539</h3>
+          <h3>DKK 539*</h3>
           <div class="f-s-card-grid">
             <div class="f-s-card-grid-left">
 
@@ -256,7 +248,7 @@
 
         <div class="f-s-card">
           <h4>BLL - BUD</h4>
-          <h3>DKK 443</h3>
+          <h3>DKK 443*</h3>
           <div class="f-s-card-grid">
             <div class="f-s-card-grid-left">
 
@@ -285,15 +277,21 @@
           </div>
         </div>
       </div>
+      <div class="disclaimer">
+        <p>
+          *The actual price of plane tickets may differ.
+        </p>
+      </div>
       <div class="btn-container">
-        <button class="primary-btn btn-center-position" onclick="window.location.href = 'travelling.html'">More about
+        <button class="primary-btn btn-center-position btn-mobile-position"
+          onclick="window.location.href = 'travelling.html'">More about
           travelling<img src="assets/icons/arrow-right.svg" alt="Arrow pointing to right"></button>
       </div>
     </div>
 
     <div class="accomodation-section">
       <h2>Where will you stay?</h2>
-      <p class="intro-text-var">You can see selected hotels and AirBnbs close to our clinic.</p>
+      <p class="intro-text">You can see selected hotels and AirBnbs close to our clinic.</p>
 
       <div class="accomodation-section-grid">
         <div class="asc-1">
@@ -333,7 +331,7 @@
             src="assets/icons/arrow-right.svg" alt="Arrow pointing to right"></button>
       </div>
       <div>
-        <img src="assets/images/consultation.png" alt="consultation meeting Lehoczky dental tourism clinic">
+        <img src="assets/images/consultation.png" alt="Consultation meeting with Lehoczky Dental Tourism">
       </div>
     </div>
 
@@ -357,7 +355,7 @@
         <a href="#">Cookie policy</a>
       </div>
       <div class="footer-r">
-        <p>+45 91 81 02 72</p>
+        <a href="tel:+4591810272">+45 91 81 02 72</a>
         <a href="mailto:info@lehoczkydental.com">info@lehoczkydental.com</a>
         <p>6726 Töltés street 21. <br>
           Szeged, Hungary</p>

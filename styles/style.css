@@ -1007,6 +1007,7 @@ p {
 }
 .consultation-section > div > h2 {
   margin-top: 0;
+  margin-bottom: 2rem;
 }
 .consultation-section > div > img {
   border-radius: 20px;
@@ -1028,7 +1029,6 @@ p {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   float: right;
-  height: 20rem;
   width: 30rem;
 }
 

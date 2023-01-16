@@ -697,7 +697,6 @@ p {
    width: 80vw;
    min-height: 60vh;
    margin: 10rem 10vw;
-
 }
 
 .process-section {
@@ -1145,6 +1144,7 @@ p {
 
    &>div>h2 {
       margin-top: 0;
+      margin-bottom: 2rem;
    }
 
    &>div>img {
@@ -1161,7 +1161,6 @@ p {
 .consultation-hu {
    @include borderrad;
    float: right;
-   height: 20rem;
    width: 30rem;
 }
 

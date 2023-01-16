@@ -133,10 +133,6 @@ button {
   width: 80vw;
 }
 
-.maps-btn {
-  margin-top: 2rem;
-}
-
 img,
 video {
   display: block;
@@ -144,11 +140,6 @@ video {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-#totop {
-  display: none;
-  margin-right: 2.5vw;
 }
 
 .container {
@@ -216,6 +207,12 @@ video {
   }
 }
 
+.menu > li > img {
+  scale: 0.7;
+  position: relative;
+  top: 1.6rem;
+  left: 1rem;
+}
 .menu-item {
   position: relative;
   display: inline-block;
@@ -232,9 +229,6 @@ video {
 }
 .menu img {
   scale: 0.7;
-  position: relative;
-  top: 1.4rem;
-  left: 1rem;
 }
 .menu-link {
   display: flex;
@@ -560,13 +554,6 @@ p {
 
 .mobile-btn {
   display: none;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.primary-btn-hero {
-  margin-top: 2rem;
 }
 
 @media screen and (max-width: 1056px) {
@@ -610,7 +597,7 @@ p {
 }
 .process-section {
   width: 80vw;
-  min-height: 60vh;
+  min-height: 80vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -676,7 +663,7 @@ p {
 @media screen and (max-width: 1056px) {
   .process-section {
     width: 80vw;
-    min-height: 60vh;
+    min-height: 80vh;
     margin: 0 auto;
     margin-top: 5rem;
     margin-bottom: 10rem;
@@ -716,7 +703,7 @@ p {
 
 .prices-section {
   width: 80vw;
-  min-height: 60vh;
+  min-height: 80vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -780,7 +767,7 @@ p {
 @media screen and (max-width: 1056px) {
   .prices-section {
     width: 80vw;
-    min-height: 60vh;
+    min-height: 80vh;
     margin: 0 auto;
     margin-top: 5rem;
     margin-bottom: 10rem;
@@ -822,7 +809,7 @@ p {
 
 .about-us-section {
   width: 80vw;
-  min-height: 60vh;
+  min-height: 80vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -859,7 +846,7 @@ p {
 }
 .flights-section {
   width: 80vw;
-  min-height: 60vh;
+  min-height: 80vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -965,7 +952,7 @@ p {
 
 .accomodation-section {
   width: 80vw;
-  min-height: 60vh;
+  min-height: 80vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -1027,10 +1014,11 @@ p {
 }
 .consultation-section {
   width: 80vw;
-  min-height: 60vh;
+  min-height: 80vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
+  min-height: 50vh;
   margin-top: 10rem;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -1046,7 +1034,6 @@ p {
   -o-border-radius: 20px;
   float: right;
   width: 70%;
-  margin-top: 2rem;
 }
 
 .consultation-hu {
@@ -1121,7 +1108,7 @@ footer .footer-grid > div > p {
 }
 .expectations-section {
   width: 80vw;
-  min-height: 60vh;
+  min-height: 80vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -1165,7 +1152,7 @@ footer .footer-grid > div > p {
 
 .staff-section {
   width: 80vw;
-  min-height: 60vh;
+  min-height: 80vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -1231,7 +1218,7 @@ footer .footer-grid > div > p {
 
 .swiper-slide-grid {
   width: 80vw;
-  min-height: 60vh;
+  min-height: 80vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -1296,7 +1283,7 @@ footer .footer-grid > div > p {
 
 .location-section {
   width: 80vw;
-  min-height: 60vh;
+  min-height: 80vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -1362,7 +1349,7 @@ footer .footer-grid > div > p {
 
 .cost-section {
   width: 80vw;
-  min-height: 60vh;
+  min-height: 80vh;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -1399,12 +1386,4 @@ footer .footer-grid > div > p {
   position: fixed;
   right: 10px;
   bottom: 50px;
-}
-
-.rotate {
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
 }/*# sourceMappingURL=style.css.map */

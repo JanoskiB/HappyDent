@@ -182,21 +182,12 @@ button {
    width: 80vw;
 }
 
-.maps-btn {
-   margin-top: 2rem;
-}
-
 img,
 video {
    display: block;
    max-width: 100%;
    height: auto;
    object-fit: cover;
-}
-
-#totop {
-   display: none;
-   margin-right: 2.5vw;
 }
 
 .container {
@@ -220,7 +211,6 @@ video {
    margin: 0 auto;
    padding-top: .5rem;
 }
-
 
 .top-wrapper {
    background-image: url("../assets/images/hero-bg.png");
@@ -267,6 +257,15 @@ video {
 }
 
 .menu {
+   &>li {
+      >img {
+         scale: .7;
+         position: relative;
+         top: 1.6rem;
+         left: 1rem;
+      }
+   }
+
    &-item {
       position: relative;
       display: inline-block;
@@ -281,15 +280,11 @@ video {
       .menu-item button {
          margin-top: 2rem;
          margin-left: 1rem;
-      }
+         }
    }
-
 
    & img {
       scale: .7;
-      position: relative;
-      top: 1.4rem;
-      left: 1rem;
    }
 
    &-link {
@@ -340,8 +335,8 @@ video {
    }
 
    @media screen and (max-width: 1274px) {
-      .menu-item-tel {
-         display: none;
+   .menu-item-tel {
+      display: none;
       }
    }
 
@@ -372,8 +367,6 @@ video {
       }
    }
 }
-
-
 
 .submenu {
    position: absolute;
@@ -644,11 +637,6 @@ p {
 
 .mobile-btn {
    display: none;
-   height: fit-content;
-}
-
-.primary-btn-hero{
-   margin-top: 2rem;
 }
 
 @media screen and (max-width: 1056px) {
@@ -706,7 +694,7 @@ p {
 
 @mixin w-h-m {
    width: 80vw;
-   min-height: 60vh;
+   min-height: 80vh;
    margin: 0 auto;
    margin-top: 5rem;
    margin-bottom: 10rem;
@@ -1146,6 +1134,7 @@ p {
 
 .consultation-section {
    @include w-h-m;
+   min-height: 50vh;
    margin-top: 10rem;
    display: grid;
    grid-template-columns: 1fr 1.2fr;
@@ -1158,7 +1147,6 @@ p {
       @include borderrad;
       float: right;
       width: 70%;
-      margin-top: 2rem;
    }
 }
 
@@ -1528,11 +1516,3 @@ footer {
    right: 10px;
    bottom: 50px;
 }
-
-.rotate {
-   transform: rotate(180deg);
-   -webkit-transform: rotate(180deg);
-   -moz-transform: rotate(180deg);
-   -ms-transform: rotate(180deg);
-   -o-transform: rotate(180deg);
- }

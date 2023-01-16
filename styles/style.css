@@ -789,10 +789,6 @@ p {
   width: 80vw;
   min-height: 60vh;
   margin: 10rem 10vw;
-  min-height: 100vh;
-}
-.about-us-section > h2 {
-  margin-top: 4rem;
 }
 .about-us-section-grid {
   display: grid;

@@ -508,21 +508,25 @@ input {
     &-sec {
       margin-top: 5rem;
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: 15vw 60vw;
       grid-template-rows: auto;
 
-      gap: 4vw;
+      
       padding: 0 10vw;
 
       &>h2 {
         grid-column: 1/ span 2;
+      }
+
+      @media screen and (max-width: 1000px) {
+        grid-template-columns: 1fr;
       }
     }
 
     &-number {
       grid-column: 1;
       margin-top: 10rem;
-      margin-left: 5rem;
+      // margin-left: 5rem;
       width: 20vh;
       height: 20vh;
 

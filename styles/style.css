@@ -599,7 +599,7 @@ p {
 .process-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
 }
 .process-section-grid {
   display: grid;
@@ -635,7 +635,7 @@ p {
 }
 .process-section-grid > div > .step {
   font-size: 3rem;
-  color: #003F91;
+  color: #5DA9E9;
   font-weight: 700;
 }
 .process-section-grid > div > p {
@@ -656,7 +656,7 @@ p {
   .process-section {
     width: 80vw;
     min-height: 60vh;
-    margin: 5rem 10vw;
+    margin: 10rem 10vw;
   }
   .process-section-grid {
     grid-template-columns: 1fr;
@@ -686,7 +686,7 @@ p {
 .prices-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
   min-height: 45vh;
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -748,7 +748,7 @@ p {
   .prices-section {
     width: 80vw;
     min-height: 60vh;
-    margin: 5rem 10vw;
+    margin: 10rem 10vw;
     grid-template-columns: 1fr;
   }
   .prices-section-right {
@@ -788,8 +788,10 @@ p {
 .about-us-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
-  min-height: 60vh;
+  margin: 10rem 10vw;
+  min-height: 100vh;
+}
+.about-us-section > h2 {
   margin-top: 4rem;
 }
 .about-us-section-grid {
@@ -832,7 +834,7 @@ p {
 .flights-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -940,7 +942,7 @@ p {
 .accomodation-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
 }
 .accomodation-section-grid {
   display: grid;
@@ -981,7 +983,7 @@ p {
   background-repeat: no-repeat;
 }
 .accomodation-section-grid > .asc-2 {
-  background-image: url("../assets/images/panzio.png");
+  background-image: url("../assets/images/hotel-room-2.png");
   background-repeat: no-repeat;
 }
 .accomodation-section-grid > .asc-3 {
@@ -1000,7 +1002,7 @@ p {
 .consultation-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
   min-height: 50vh;
   margin-top: 10rem;
   display: grid;
@@ -1096,7 +1098,7 @@ footer .footer-grid > div > p {
 .expectations-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1130,68 +1132,37 @@ footer .footer-grid > div > p {
   display: none;
 }
 
-#myBtn {
-  color: #003F91;
-  padding: 1rem;
+#readMoreBtn {
+  margin-top: 2rem;
 }
 
-.staff-section {
+.dentist-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
 }
-.staff-section > .staff-card-grid {
-  margin-top: 3rem;
+.dentist-section-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  gap: 2rem;
+  margin-top: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
 }
-@media screen and (max-width: 480px) {
-  .staff-section > .staff-card-grid {
-    margin-top: 1rem;
-  }
-}
-.staff-section > .staff-card-grid > div {
+.dentist-section-grid > img {
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  background-color: rgba(93, 170, 233, 0.5137254902);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
-.staff-section > .staff-card-grid > div > img {
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 1rem;
+.dentist-section-grid > div > div {
+  margin-top: 2rem;
 }
-.staff-section > .staff-card-grid > div > h4 {
-  margin: 1rem 0;
-}
-.staff-section > .staff-card-grid > div > h4,
-.staff-section > .staff-card-grid p {
-  padding: 0 1rem;
+.dentist-section-grid > div > div > img {
+  height: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 1000px) {
-  .staff-section > .staff-card-grid {
-    grid-template-columns: 1fr;
-  }
-  .staff-section > .staff-card-grid > div > p {
-    padding-bottom: 1rem;
-  }
-}
 .testimonials-section > h2 {
   margin: 2rem 10vw;
 }
@@ -1202,7 +1173,7 @@ footer .footer-grid > div > p {
 .swiper-slide-grid {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
   min-height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1265,7 +1236,7 @@ footer .footer-grid > div > p {
 .location-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
 }
 .location-section > p {
   margin-bottom: 2rem;
@@ -1329,7 +1300,7 @@ footer .footer-grid > div > p {
 .cost-section {
   width: 80vw;
   min-height: 60vh;
-  margin: 5rem 10vw;
+  margin: 10rem 10vw;
 }
 .cost-section > h4 {
   font-size: 2rem;

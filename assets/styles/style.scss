@@ -807,7 +807,7 @@ p {
 
    &-left {
       float: left;
-      margin-right: 5rem;
+      margin: 0 5rem 2rem 0;
    }
 
    &-left>h2 {
@@ -988,6 +988,10 @@ p {
       margin-left: 1rem;
       margin-right: 1.5rem;
    }
+}
+
+.disclaimer{
+   margin-bottom: 2rem;
 }
 
 /*medium devices - tablets*/

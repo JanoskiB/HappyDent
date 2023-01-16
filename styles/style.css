@@ -693,7 +693,7 @@ p {
 }
 .prices-section-left {
   float: left;
-  margin-right: 5rem;
+  margin: 0 5rem 2rem 0;
 }
 .prices-section-left > h2 {
   margin-top: 0;
@@ -874,6 +874,10 @@ p {
 .f-s-card-grid-right {
   margin-left: 1rem;
   margin-right: 1.5rem;
+}
+
+.disclaimer {
+  margin-bottom: 2rem;
 }
 
 /*medium devices - tablets*/

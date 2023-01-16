@@ -342,26 +342,6 @@ a.scroll-a {
 .booking-form-attachment {
   grid-column: 1/span 2;
 }
-.booking-form-attachment > input[type=file] {
-  height: 8rem;
-  background-color: white;
-  background-image: url(../assets/icons/drop-your-media.svg);
-  background-size: 75%;
-  background-repeat: no-repeat;
-  background-position: 65%;
-}
-.booking-form-attachment > input[type=file]::-moz-placeholder {
-  text-align: center;
-  color: #003F91;
-}
-.booking-form-attachment > input[type=file]:-ms-input-placeholder {
-  text-align: center;
-  color: #003F91;
-}
-.booking-form-attachment > input[type=file]::placeholder {
-  text-align: center;
-  color: #003F91;
-}
 .booking-form-submit > button {
   height: auto;
   margin-top: 1rem;

@@ -437,19 +437,21 @@ a.scroll-a {
 
       grid-column: 1/ span 2;
 
-      &>input[type=file] {
-        height: 8rem;
-        background-color: white ;
-        background-image: url(../assets/icons/drop-your-media.svg);
-        background-size: 75%;
-        background-repeat: no-repeat;
-        background-position: 65%;
+      
 
-        &::placeholder {
-          text-align: center;
-          color: #003F91;
-        }
-      }
+      // &>input[type=file] {
+      //   height: 8rem;
+      //   background-color: white ;
+      //   background-image: url(../assets/icons/drop-your-media.svg);
+      //   background-size: 75%;
+      //   background-repeat: no-repeat;
+      //   background-position: 65%;
+
+      //   &::placeholder {
+      //     text-align: center;
+      //     color: #003F91;
+      //   }
+      // }
     }
 
 

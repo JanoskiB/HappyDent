@@ -202,6 +202,7 @@ a.scroll-a {
     grid-template-columns: 15vw 60vw;
     width: 100%;
     min-height: 100vh;
+    gap: 5vw;
 
   }
 
@@ -517,6 +518,10 @@ input {
       grid-column: 1;
       margin-top: 10rem;
       margin-left: 5rem;
+      width: 20vh;
+      height: 20vh;
+
+      
     }
 
     &-list {

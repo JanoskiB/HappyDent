@@ -1278,50 +1278,32 @@ footer {
 
 #myBtn {
    color: $dark-blue;
-   padding: 1rem;
 }
 
 
-.staff-section {
+.dentist-section {
    @include w-h-m;
 
-   &>.staff-card-grid {
-      @include intro-content-margin;
+   &-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      height: fit-content;
-      gap: 2rem;
+      margin-top: 2rem;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
 
-      &>div {
+      >img {
          @include borderrad;
-         background-color: #5daae983;
-         width: fit-content;
       }
 
-      &>div>img {
-         @include borderrad;
-         width: fit-content;
-         padding: 1rem;
+      >div>div {
+        margin-top: 2rem;
       }
 
-      &>div>h4 {
-         margin: 1rem 0;
-      }
-
-      &>div>h4,
-      p {
-         padding: 0 1rem;
-      }
-   }
-}
-
-@media screen and (max-width: 1000px) {
-   .staff-section>.staff-card-grid {
-      grid-template-columns: 1fr;
-
-      &>div>p {
-         padding-bottom: 1rem;
-      }
+      >div>div>img {
+         height: 1.5rem;
+         margin-top: 3rem;
+         margin-bottom: 1rem;
+         
+       }
    }
 }
 

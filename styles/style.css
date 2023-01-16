@@ -1119,66 +1119,35 @@ footer .footer-grid > div > p {
 
 #myBtn {
   color: #003F91;
-  padding: 1rem;
 }
 
-.staff-section {
+.dentist-section {
   width: 80vw;
   min-height: 60vh;
   margin: 5rem 10vw;
 }
-.staff-section > .staff-card-grid {
-  margin-top: 3rem;
+.dentist-section-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  gap: 2rem;
+  margin-top: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
 }
-@media screen and (max-width: 480px) {
-  .staff-section > .staff-card-grid {
-    margin-top: 1rem;
-  }
-}
-.staff-section > .staff-card-grid > div {
+.dentist-section-grid > img {
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  background-color: rgba(93, 170, 233, 0.5137254902);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
-.staff-section > .staff-card-grid > div > img {
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 1rem;
+.dentist-section-grid > div > div {
+  margin-top: 2rem;
 }
-.staff-section > .staff-card-grid > div > h4 {
-  margin: 1rem 0;
-}
-.staff-section > .staff-card-grid > div > h4,
-.staff-section > .staff-card-grid p {
-  padding: 0 1rem;
+.dentist-section-grid > div > div > img {
+  height: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 1000px) {
-  .staff-section > .staff-card-grid {
-    grid-template-columns: 1fr;
-  }
-  .staff-section > .staff-card-grid > div > p {
-    padding-bottom: 1rem;
-  }
-}
 .testimonials-section > h2 {
   margin: 2rem 10vw;
 }

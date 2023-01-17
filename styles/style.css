@@ -1159,8 +1159,13 @@ footer .footer-grid > div > p {
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 1056px) {
+  .dentist-section-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .testimonials-section > h2 {
-  margin: 2rem 10vw;
+  margin: 0 10vw;
 }
 .testimonials-section > .intro-text {
   margin: 0 10vw;
@@ -1170,6 +1175,7 @@ footer .footer-grid > div > p {
   width: 80vw;
   min-height: 60vh;
   margin: 10rem 10vw;
+  margin: 2rem 10vw;
   min-height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr;

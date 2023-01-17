@@ -1318,13 +1318,20 @@ footer {
    }
 }
 
+@media screen and (max-width: 1056px) {
+   .dentist-section-grid {
+      grid-template-columns: 1fr;
+   }
+}
+
 
 // Swiper
 
 .testimonials-section {
+   
 
    &>h2 {
-      margin: 2rem 10vw;
+      margin: 0 10vw;
    }
 
    &>.intro-text {
@@ -1338,6 +1345,7 @@ footer {
 
    &-grid {
       @include w-h-m;
+      margin: 2rem 10vw;
       min-height: 50vh;
       display: grid;
       grid-template-columns: 1fr 1fr;
